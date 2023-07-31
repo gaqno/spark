@@ -1,10 +1,10 @@
 <template>
   <section class="mx-auto flex flex-col items-center p-4 mb-[10em]">
     <HeroComponent
-      title="Rede Ancora"
+      title="Spark ✨"
       subtitle="Acompanhe os dados da sua empresa em tempo real!"
       icon="mdi:chart-line"
-      src="https://cdn.bitrix24.com.br/b13589949/landing/752/75237a3538fbde58202e90d90bb298d0/bg_2x.jpg"
+      src="https://images.unsplash.com/photo-1511268594014-0e9d3ea5c33e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
       button-text="Ver relatórios"
       @change-view="onChangeView('reports')"
     />

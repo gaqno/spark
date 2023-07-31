@@ -2,6 +2,7 @@ export const useAppStore = defineStore("app", {
   state: () => ({
     darkMode: false,
     loading: false,
+    route: "home",
     language: "pt",
     modal: {
       show: false,

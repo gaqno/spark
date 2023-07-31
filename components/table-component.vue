@@ -29,7 +29,7 @@
     <div class="mt-8 flow-root">
       <div class="max-h-[50vh] -mx-4 -my-2  scrollbar scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div class="inline-block min-h-[48vh] min-w-full py-2 align-middle sm:px-6 lg:px-8">
-          <table class="min-w-full  divide-y divide-gray-300">
+          <table class="min-w-full  divide-y divide-gray-300 bg-slate-100 rounded">
             <thead>
               <tr>
                 <th
@@ -88,7 +88,7 @@
                   <span v-if="td.type === 'group_info'">
                     <div class="flex items-center">
                       <div class="h-11 w-11 flex-shrink-0">
-                        <img class="h-11 w-11 rounded-full" :src="tr[td.field[0]]" alt="">
+                        <img class="h-11 w-11 ring ring-primary rounded-full" :src="tr[td.field[0]]" alt="">
                       </div>
                       <div class="ml-4">
                         <div
@@ -171,6 +171,14 @@
 
                   <span v-if="td.type === 'number'">
                     {{ tr[td.field] }}
+                  </span>
+
+                  <span v-if="td.type === 'age'">
+                    {{ tr[td.field] }} anos
+                  </span>
+
+                  <span v-if="td.type === 'city_state'">
+                    {{ tr[td.field].city }} - {{ tr[td.field].state }}
                   </span>
 
                   <div v-if="td.type === 'actions'">

@@ -19,15 +19,15 @@
                 Início
               </a>
             </li>
-            <li>
-              <a>
+            <li v-if="app.route.includes('report')">
+              <a @click="props.action('reports')">
                 <Icon name="carbon:report" class="mr-2" />
                 Relatórios
               </a>
             </li>
-            <li>
+            <li v-if="app.route.includes('report')">
               <Icon name="mdi:chart-bell-curve" class="mr-2" />
-              Produtos
+              {{ formatBreadcrumb(app.route) }}
             </li>
           </ul>
         </div>
@@ -43,7 +43,7 @@
 
           <div class="flex grow w-20 md:w-62 h-screen flex-col bg-gray-900 py-4 min-h-auto">
             <nav class="flex flex-1 flex-col mx-auto">
-              <ul role="list" class="flex flex-1 flex-col">
+              <ul role="list" class="flex flex-1 flex-col gap-y-6">
                 <li v-for="item in views.main" :key="item.name">
                   <ul role="list" class="-mx-2 space-y-1">
                     <li>
@@ -225,4 +225,27 @@ const views = ref({
     },
   ],
 });
+
+const formatBreadcrumb = (name) => {
+  if (name === "report_users") {
+    return "Usuários";
+  }
+  if (name === "reports") {
+    return "Gráficos";
+  }
+  if (name === "report_products") {
+    return "Produtos";
+  }
+  if (name === "report_storage") {
+    return "Estoque";
+  }
+  if (name === "report_teams") {
+    return "Times";
+  }
+  if (name === "Users") {
+    return "Usuários";
+  }
+
+  return name;
+};
 </script>

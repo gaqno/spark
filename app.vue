@@ -12,7 +12,7 @@ import { useAppStore } from "./store/app";
 import "./global.css";
 
 const app = useAppStore();
-useHead({ title: "Rede Ancora" });
+useHead({ title: "GAQNO - Spark ✨" });
 
 </script>
 

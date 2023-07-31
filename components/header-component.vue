@@ -13,6 +13,9 @@
           <label for="my-drawer-3" class="btn btn-ghost" @click="handleView">
             <img class="w-auto max-h-12" src="@/static/img/logo.png">
           </label>
+          <span class="text-xl">
+            Spark ✨
+          </span>
           <div class="ml-auto gap-4">
           </div>
         </div>
@@ -77,7 +80,7 @@
                             </strong>
 
                             <span class="text-primary">
-                              gabriel.aquino@redeancora.com.br
+                              gabriel.aquino@outlook.com.br
                             </span>
                           </p>
 

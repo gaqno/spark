@@ -1,24 +1,20 @@
 <template>
   <div>
-    <section :class="['mx-2 max-h-[80vh] py-4 flex flex-col justify-between px-4 text-black rounded-xl p-4 object-contain bg-[url(https://cdn.bitrix24.com.br/b13589949/landing/77f/77f9503f0e1c3c922d71a6806d08b413/Sem-titulo-2_1x.png)] bg-cover bg-center']">
+    <section :class="['mx-2 min-h-[70vh] max-h-[80vh] py-4 flex flex-col justify-between px-4 text-black rounded-xl p-4 object-contain bg-[url(https://images.unsplash.com/photo-1530151368975-0179454159af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80)] bg-cover bg-center']">
       <article class="w-[50vw] w-full pt-auto bg-slate-800/80 rounded-xl p-4 sm:p-6 lg:p-8">
         <div class="flex items-start sm:gap-8">
           <Icon name="mdi:star-four-points-small" class="text-6xl text-white" />
           <div class="w-full text-sm">
             <p class="text-white pr-6">
-              Olá! Eu sou seu assistente virtual da <b>Rede Ancora</b>, como posso tirar suas dúvidas?
+              Olá! Eu sou seu assistente virtual da <b>Spark ✨</b>, como posso tirar suas dúvidas?
             </p>
             <p class="text-white">
               Pergunte-me qualquer coisa!
             </p>
 
             <div class="flex flex-col gap-y-2 mt-4 text-blue-400">
-              <p class="hover:underline hover:cursor-pointer" @click.prevent="emit('tip', 'Qual o processo de compra?')">
-                Qual o processo de compra?
-              </p>
-
-              <p class="hover:underline hover:cursor-pointer" @click.prevent="emit('tip', 'Quantos funcionários a Rede Ancora tem?')">
-                Quantos funcionários a Rede Ancora tem?
+              <p class="hover:underline hover:cursor-pointer" @click.prevent="emit('tip', 'Como você pode me ajudar?')">
+                Como você pode me ajudar?
               </p>
             </div>
           </div>

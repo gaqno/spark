@@ -6,7 +6,6 @@
           <SidebarComponent :action="handleView">
             <template #content>
               <TransitionGroup
-                :key="`${currentView}_transition`"
                 enter-active-class="transition ease-out duration-300"
                 enter-from-class="opacity-0"
                 enter-to-class="opacity-100"
@@ -15,12 +14,12 @@
                 leave-to-class="opacity-0"
               >
                 <HomeComponent
-                  v-if="currentView === 'home'"
+                  v-if="app.route === 'home'"
                   @change-view="$event => handleView($event)"
                 />
 
                 <ChatComponent
-                  v-else-if="currentView === 'assistant'"
+                  v-else-if="app.route === 'assistant'"
                   :loading-steam="loadingSteam"
                   :response-stream="responseStream"
                   @ask="$event => ask($event)"
@@ -28,9 +27,7 @@
                 />
 
                 <ReportsComponent
-                  v-else-if="currentView === 'reports'"
-                  :data="reportData"
-                  :pagination="pagination"
+                  v-else-if="app.route === 'reports' || app.route.includes('report')"
                 />
               </TransitionGroup>
             </template>
@@ -54,37 +51,6 @@ const app = useAppStore();
 const loadingSteam = ref(false);
 const response = ref({});
 const responseStream = ref([] as IResponse[]);
-const currentView = ref("home");
-const reportData = ref([]);
-const pagination = ref({
-  pages: 1,
-  actual: 10,
-  limit: 10,
-  total: 10,
-});
-
-const fetchDummy = () => {
-  return new Promise((resolve, reject) => {
-    fetch("https://jsonplaceholder.typicode.com/todos")
-      .then(response => response.json())
-      .then((json) => {
-        pagination.value = {
-          actual: 1,
-          limit: 10,
-          pages: 1,
-          total: json.length,
-        };
-        reportData.value = json.map((i: any) => ({
-          completed: i.completed,
-          id: i.id,
-          title: i.title,
-          userId: i.userId,
-        }));
-        resolve(json);
-      })
-      .catch(err => reject(err));
-  });
-};
 
 const ask = (value: string) => {
   if (!value) { return; }
@@ -108,12 +74,12 @@ const handleTips = (text: string) => {
 
 const handleView = (view: string) => {
   if (view === "") { return; }
-  currentView.value = view;
+  app.$patch({ route: view });
 };
 
 onMounted(() => {
   Promise.all([
-    fetchDummy(),
+    // fetchDummy(),
   ]);
 });
 

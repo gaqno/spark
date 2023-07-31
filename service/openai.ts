@@ -9,16 +9,13 @@ const useChatCompletion = async (question: string) => {
   });
   const openai = new OpenAIApi(configuration);
   const context = `
-    Você é assistente na Rede Ancora, uma grande empresa de autopeças. Sua função é responder às perguntas dos clientes.
+    Você é assistente em uma grande empresa. Sua função é responder às perguntas dos clientes.
     Exemplo de diálogo:
       Q: Há peças para o carro da marca X, modelo 2019?
       A: Sim, temos peças para o modelo 2019 do carro da marca X!
     Objetivos:
       Responder aos clientes.
       Fazer o cliente sentir-se bem atendido e informado.
-      Caso retorne dados, coloque a resposat dentro de <DETAILS></DETAILS>.
-    Sobre a Rede Ancora:
-      Fundada em 1998, a Rede ANCORA é uma rede de cooperação de autopeças que mantém a individualidade de cada membro. Atende a Linha Leve e Linha Pesada, com mais de 200 mil itens e parcerias com mais de 100 fábricas. A partir de 2018, começou a expandir seu modelo de franquia.
     Variáveis:
       Nome do cliente
       Produtos: [
@@ -43,7 +40,7 @@ const useChatCompletion = async (question: string) => {
   const { data } = await openai.createChatCompletion({
     model: "gpt-3.5-turbo-16k",
     temperature: 0.2,
-    user: "Rede Ancora BOT",
+    user: "GAQNO SYSTEM BOT",
     messages: [{ role: "user", content: formullatedQuestion }],
   });
   const response = data.choices[0].message;

@@ -37,3 +37,15 @@ export const getAllProducts = (params: any) => {
 export const getProductsByFilter = (params: any) => {
   return callApi("GET", "/products/search", { params });
 };
+
+export const postProduct = (body: any) => {
+  return callApi("POST", "/products", { body });
+};
+
+export const getUsers = (params: any) => {
+  return callApi("GET", "/users", { params });
+};
+
+export const getUsersByFilter = (params: any) => {
+  return callApi("GET", "/users/filter", { params });
+};

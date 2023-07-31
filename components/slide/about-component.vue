@@ -3,7 +3,7 @@
     <div class="bg-primary px-4 py-6 sm:px-6">
       <div class="flex items-center justify-between">
         <h2 id="slide-over-title" class="text-base font-semibold leading-6 text-white">
-          Rede Ancora
+          Spark ✨
         </h2>
 
         <button class="btn btn-ghost text-white" @click="app.toggleSlide">
@@ -22,29 +22,15 @@
 
             <span class="flex flex-col gap-y-4 mt-4 text-left text-gray-500 text-sm">
               <p>
-                A Rede ANCORA foi fundada em 1998 em São Paulo, Brasil, por Álvaro Pereira e outros 12 empresários com o objetivo de criar soluções conjuntas para seus negócios com base em um modelo de rede de cooperação.
+                Tecnologias utilizadas:
               </p>
-              <p>
-                A rede opera na indústria de autopeças, com franquias em 14 estados brasileiros e no Distrito Federal.
-              </p>
-              <p>
-                A rede tem 12 centros de distribuição regional e um portal de compras online com mais de 200.000 itens.
-              </p>
-              <p>
-                ANCORA é uma das maiores redes em seu segmento no Brasil e oferece condições exclusivas e acesso a grandes fabricantes de autopeças para seus franqueados.
-              </p>
-              <p>
-                A rede também fornece treinamento e disseminação de conhecimento técnico para seus franqueados. A rede está em expansão e aceitando novos franqueados.
-              </p>
+              <ul>
+                <li>Vue 3</li>
+                <li>Nuxt 3</li>
+                <li>TailwindCSS</li>
+                <li>OpenIA</li>
+              </ul>
             </span>
-            <iframe
-              class="w-full aspect-video mt-4 rounded"
-              src="https://www.youtube.com/embed/JaS2fI7TKj8"
-              title="Rede Ancora"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
           </div>
         </div>
       </div>
