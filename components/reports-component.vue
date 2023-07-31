@@ -7,7 +7,7 @@
     leave-from-class="opacity-100"
     leave-to-class="opacity-0"
   >
-    <section v-if="currentReportView === 'graph'" class="pb-20">
+    <section v-if="currentReportView === 'graphs'" class="pb-20">
       <div class="relative isolate overflow-hidden bg-gray-900 mx-8 rounded py-12">
         <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
         <div
@@ -46,7 +46,7 @@
               Acompanhe o desempenho de vendas dos seus produtos.
             </p>
             <div class="card-actions justify-end">
-              <button class="btn bg-primary text-white" @click.prevent="currentReportView = 'products'">
+              <button class="btn bg-primary text-white" @click.prevent="currentReportView = 'report_products'">
                 Detalhes
               </button>
             </div>
@@ -67,7 +67,7 @@
             </h2>
             <p>Acompanhe o relatório financeiro</p>
             <div class="card-actions justify-end">
-              <button class="btn bg-primary text-white" @click.prevent="currentReportView = 'financing'">
+              <button class="btn bg-primary text-white" @click.prevent="currentReportView = 'report_financing'">
                 Detalhes
               </button>
             </div>
@@ -88,7 +88,7 @@
             </h2>
             <p>Acompanhe qual item mais tem no estoque.</p>
             <div class="card-actions justify-end">
-              <button class="btn bg-primary text-white" @click.prevent="currentReportView = 'storage'">
+              <button class="btn bg-primary text-white" @click.prevent="currentReportView = 'report_storage'">
                 Detalhes
               </button>
             </div>
@@ -109,7 +109,7 @@
             </h2>
             <p>Acompanhe qual item mais tem no estoque.</p>
             <div class="card-actions justify-end">
-              <button class="btn bg-primary text-white" @click.prevent="currentReportView = 'teams'">
+              <button class="btn bg-primary text-white" @click.prevent="currentReportView = 'report_teams'">
                 Detalhes
               </button>
             </div>
@@ -118,7 +118,7 @@
       </div>
     </section>
 
-    <section v-else-if="currentReportView === 'products'" class="p-8">
+    <section v-else-if="currentReportView === 'report_products'" class="p-8">
       <TableComponent
         template="products"
         :title="`Total de produtos`"
@@ -144,6 +144,60 @@
         </template>
       </TableComponent>
     </section>
+
+    <section v-else-if="currentReportView === 'report_financing'" class="p-8">
+      <TableComponent
+        template="financing"
+        :title="`Total de finanças`"
+        :action="handleSlide"
+        :actions="[
+          { label: 'Editar', icon: 'mdi:square-edit-outline', template: 'edit' },
+        ]"
+        :columns="[
+          { label: 'Titulo', field: 'title', sortable: false, details: false, type: 'string' },
+          { label: 'Quantidade', field: 'id', sortable: false, details: false, type: 'string' },
+          { label: 'Completada', field: 'active', sortable: false, details: false, type: 'boolean' },
+          { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
+        ]"
+        :data="props.data"
+        :description="`Você possui ${pagination.total} produtos cadastrados.`"
+        :pagination="props.pagination"
+      >
+        <template #actions>
+          <button class="btn btn-ghost w-full mt-2 md:w-fit md:mt-0" @click="handleSlide">
+            <Icon name="mdi:filter-outline" size="1.5em" class="mr-2" />
+            Filtros
+          </button>
+        </template>
+      </TableComponent>
+    </section>
+
+    <section v-else-if="currentReportView === 'report_storage'" class="p-8">
+      <TableComponent
+        template="Estoque"
+        :title="`Acompanhe o estoque`"
+        :action="handleSlide"
+        :actions="[
+          { label: 'Editar', icon: 'mdi:square-edit-outline', template: 'edit' },
+        ]"
+        :columns="[
+          { label: 'Titulo', field: 'title', sortable: false, details: false, type: 'string' },
+          { label: 'ID', field: 'id', sortable: false, details: false, type: 'string' },
+          { label: 'Completada', field: 'active', sortable: false, details: false, type: 'boolean' },
+          { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
+        ]"
+        :data="props.data"
+        :description="`Você possui ${pagination.total} produtos cadastrados no estoque.`"
+        :pagination="props.pagination"
+      >
+        <template #actions>
+          <button class="btn btn-ghost w-full mt-2 md:w-fit md:mt-0" @click="handleSlide">
+            <Icon name="mdi:filter-outline" size="1.5em" class="mr-2" />
+            Filtros
+          </button>
+        </template>
+      </TableComponent>
+    </section>
   </Transition>
 </template>
 
@@ -151,8 +205,11 @@
 import { Bar, Line, Bubble, Doughnut } from "vue-chartjs";
 import { Chart as ChartJS, Title, Tooltip, ArcElement, PointElement, Legend, BarElement, CategoryScale, LinearScale, LineElement } from "chart.js";
 import { useAppStore } from "@/store/app";
+import { getAllProducts } from "@/service/api";
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, ArcElement, CategoryScale, PointElement, LinearScale, LineElement);
+
+const DEMONSTRATE_REF = true;
 
 const app = useAppStore();
 const props = defineProps({
@@ -165,11 +222,12 @@ const props = defineProps({
     required: true,
   },
 });
-const currentReportView = ref("graph");
+const currentReportView = ref("graphs");
 const chartOptions = {
   responsive: true,
   maintainAspectRatio: false,
 };
+const products = ref([]);
 
 const productsData = ref({
   labels: [],
@@ -202,17 +260,14 @@ const getRandomInt = () => {
 };
 
 const getRandomXYR = () => {
-  // Define the range for the random values
   const maxX = 300;
   const maxY = 500;
   const maxR = 50;
 
-  // Generate the random values
   const _x = Math.floor(Math.random() * maxX);
   const _y = Math.floor(Math.random() * maxY);
   const _r = Math.floor(Math.random() * maxR);
 
-  // Return the object
   return { x: _x, y: _y, r: _r };
 };
 
@@ -345,8 +400,50 @@ const handleSlide = (value) => {
   });
 };
 
-onMounted(() => {
-  if (currentReportView.value === "graph") {
+const fetchProducts = () => {
+  return new Promise((resolve, reject) => {
+    getAllProducts()
+      .then((res) => {
+        products.value = res.products.map(i => ({
+          ...i,
+          title: i.title,
+          description: i.description,
+          discountPercentage: i.discountPercentage,
+          id: i.id,
+          images: i.images,
+          price: i.price.toLocaleString("pt-br", { style: "currency", currency: "BRL" }),
+          rating: i.rating,
+          stock: i.stock,
+          thumbnail: i.thumbnail,
+        }));
+
+        const obj = {
+          labels: [],
+          datasets: [
+            {
+              label: "Vendas",
+              backgroundColor: "#da2032",
+              data: [],
+            },
+          ],
+        };
+
+        for (let i = 0; i < products.value.length; i++) {
+          obj.labels.push(products.value[i].title);
+          obj.datasets[0].data.push(products.value[i].stock);
+        }
+
+        productsData.value = obj;
+        resolve(res.data);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
+};
+
+const DEMONSTRATE = () => {
+  if (currentReportView.value === "graphs") {
     setInterval(() => {
       productsData.value = randomData("bar");
       financingData.value = randomData("line");
@@ -356,5 +453,15 @@ onMounted(() => {
   } else {
     clearInterval();
   }
+};
+
+onMounted(() => {
+  watchEffect(() => console.log(currentReportView.value));
+
+  Promise.all([
+    fetchProducts(),
+  ]);
+
+  if (DEMONSTRATE_REF) { DEMONSTRATE(); }
 });
 </script>

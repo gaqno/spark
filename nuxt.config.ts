@@ -30,6 +30,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
+      BASE_API: process.env.BASE_API,
       OPENAI_API_KEY: process.env.OPENAI_API_KEY,
       OPENAI_CONTEXT: process.env.OPENAI_CONTEXT,
     },

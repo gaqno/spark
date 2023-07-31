@@ -37,7 +37,7 @@
 
     <div class="drawer-side">
       <label for="my-drawer" class="drawer-overlay"></label>
-      <ul :class="[app.sidebar ? 'w-80' : 'w-20', 'menu h-full bg-base-200 text-base-content']">
+      <ul :class="[app.sidebar ? 'w-80' : 'w-20', 'text-center h-full bg-base-200 text-base-content']">
         <div class="drawer-side bg-primary">
           <label for="my-drawer" class="drawer-overlay"></label>
 
@@ -67,7 +67,10 @@
                         </label>
                         <ul v-if="item.child && item.child.length > 0" tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-slate-700 rounded-box w-auto -ml-2.5">
                           <li v-for="child in item.child" :key="child.name" class="flex flex-row w-auto gap-y-4">
-                            <div class="w-full text-white/50 hover:text-white">
+                            <div
+                              class="w-full text-white/50 hover:text-white"
+                              @click.prevent="props.action(child.screen)"
+                            >
                               <Icon :name="child.icon" size="1em" class="mr-2 my-2" />
                               <span class="text-sm truncate">
                                 {{ child.name }}
@@ -81,9 +84,8 @@
                 </li>
 
                 <li>
-                  <div class="divide"></div>
                   <ul role="list" class="-mx-2 mt-2 space-y-1 mx-auto">
-                    <Icon name="octicon:dash-16" size="1.7em" class="flex mx-4 text-white/30" />
+                    <Icon name="octicon:dash-16" size="1.7em" class="flex mx-4 text-white/10" />
                     <li v-for="team in views.teams" :key="team.name">
                       <!-- Current: "bg-gray-800 text-white", Default: "text-gray-400 hover:text-white hover:bg-gray-800" -->
                       <a :data-tip="team.name" class="tooltip tooltip-right text-gray-400 cursor-pointer hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
@@ -110,10 +112,11 @@
 <script setup>
 import { useAppStore } from "@/store/app";
 
-const emits = defineEmits(["change-view"]);
 const props = defineProps({
-  action: Function,
-  default: () => {},
+  action: {
+    type: Function,
+    default: () => {},
+  },
 });
 
 const app = useAppStore();
@@ -173,45 +176,31 @@ const views = ref({
     {
       name: "Relatórios",
       icon: "mdi:chart-line",
-      screen: "reports",
+      screen: "",
       notifications: 7,
       child: [
         {
+          name: "Resumo Geral",
+          icon: "mdi:monitor-dashboard",
+          screen: "reports",
+          notifications: 2,
+        },
+        {
           name: "Produtos",
           icon: "eos-icons:products",
-          screen: "report",
+          screen: "report_products",
           notifications: 2,
-          inner: [
-            {
-              name: "Todos os produtos",
-              icon: "eos-icons:products",
-              screen: "report/products",
-              filter: "all",
-            },
-            {
-              name: "Produtos mais vendidos",
-              icon: "ph:chart-line-up-bold",
-              screen: "report/products",
-              filter: "best",
-            },
-            {
-              name: "Produtos menos vendidos",
-              icon: "ph:chart-line-down-bold",
-              screen: "report/products",
-              filter: "worst",
-            },
-          ],
         },
         {
           name: "Financeiro",
           icon: "icon-park-outline:financing-one",
-          screen: "report",
+          screen: "report_financing",
           notifications: 4,
         },
         {
           name: "Estoque",
           icon: "material-symbols:inventory-2-outline",
-          screen: "report",
+          screen: "report_storage",
           notifications: 1,
         },
       ],

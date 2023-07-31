@@ -5,13 +5,12 @@
       v-model="app.slide.show"
       type="checkbox"
       class="drawer-toggle"
-      @change="handleView"
     >
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
       <div class="w-full navbar bg-base-100">
         <div class="flex-none ml-2">
-          <label for="my-drawer-3" class="btn btn-ghost">
+          <label for="my-drawer-3" class="btn btn-ghost" @click="handleView">
             <img class="w-auto max-h-12" src="@/static/img/logo.png">
           </label>
           <div class="ml-auto gap-4">
@@ -139,7 +138,7 @@ const app = useAppStore();
 
 const handleView = () => {
   app.setSlide({
-    show: true,
+    show: false,
     template: "about_us",
     data: {},
   });

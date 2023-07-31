@@ -107,7 +107,7 @@ const handleTips = (text: string) => {
 };
 
 const handleView = (view: string) => {
-  console.log(view);
+  if (view === "") { return; }
   currentView.value = view;
 };
 

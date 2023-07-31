@@ -240,7 +240,7 @@
             class="btn btn-ghost"
             @click="emits('update')"
           >
-            <Icon name="mdi:chevron-double-left" />
+            <Icon name="mdi:chevron-double-left" size="2em" />
           </button>
 
           <button

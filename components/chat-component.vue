@@ -1,8 +1,8 @@
 <template>
   <div>
-    <section :class="['mx-2 min-h-[70vh] flex flex-col justify-between px-4 text-black rounded-xl p-4 object-contain bg-[url(https://cdn.bitrix24.com.br/b13589949/landing/77f/77f9503f0e1c3c922d71a6806d08b413/Sem-titulo-2_1x.png)] bg-cover bg-center']">
+    <section :class="['mx-2 max-h-[80vh] py-4 flex flex-col justify-between px-4 text-black rounded-xl p-4 object-contain bg-[url(https://cdn.bitrix24.com.br/b13589949/landing/77f/77f9503f0e1c3c922d71a6806d08b413/Sem-titulo-2_1x.png)] bg-cover bg-center']">
       <article class="w-[50vw] w-full pt-auto bg-slate-800/80 rounded-xl p-4 sm:p-6 lg:p-8">
-        <div class="flex mb-4 items-start sm:gap-8">
+        <div class="flex items-start sm:gap-8">
           <Icon name="mdi:star-four-points-small" class="text-6xl text-white" />
           <div class="w-full text-sm">
             <p class="text-white pr-6">

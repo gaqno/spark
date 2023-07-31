@@ -43,6 +43,11 @@ export const useAppStore = defineStore("app", {
     setSlide (slide: { show: boolean; template: string; data: any }) {
       this.slide = slide;
     },
+    toggleToasterError () {
+      this.toast.show = true;
+      this.toast.title = "Erro :(";
+      this.toast.content = "Por favor, tente novamente mais tarde.";
+    },
     toggleLanguage () {
       const langs = ["pt", "en", "cn"];
       const index = langs.indexOf(this.language);
