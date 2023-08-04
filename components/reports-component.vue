@@ -196,7 +196,7 @@
           :pagination="pagination"
         >
           <template #actions>
-            <button class="btn btn-ghost w-full mt-2 md:w-fit md:mt-0" @click="handleSlide">
+            <button class="btn bg-primary hover:bg-secondary w-full mt-2 md:w-fit md:mt-0" @click="handleSlide">
               <Icon name="mdi:filter-outline" size="1.5em" class="mr-2" />
               Filtros
             </button>
@@ -255,7 +255,7 @@
           :pagination="pagination"
         >
           <template #actions>
-            <button class="btn btn-ghost w-full mt-2 md:w-fit md:mt-0" @click="handleSlide">
+            <button class="btn bg-primary hover:bg-secondary w-full mt-2 md:w-fit md:mt-0" @click="handleSlide">
               <Icon name="mdi:filter-outline" size="1.5em" class="mr-2" />
               Filtros
             </button>
@@ -345,7 +345,7 @@ const fetchProducts = () => {
         pagination.value = {
           total: res.total,
           limit: res.limit,
-          page: 1,
+          actual: 1,
           pages: Math.ceil(res.total / res.limit),
         };
         products.value = res.products.map(i => ({

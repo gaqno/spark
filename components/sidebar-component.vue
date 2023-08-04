@@ -37,11 +37,11 @@
 
     <div class="drawer-side">
       <label for="my-drawer" class="drawer-overlay"></label>
-      <ul :class="[app.sidebar ? 'w-80' : 'w-20', 'text-center h-full bg-base-200 text-base-content']">
+      <ul :class="[app.sidebar ? 'w-80' : 'w-20', 'text-center h-full bg-base-200']">
         <div class="drawer-side bg-primary">
           <label for="my-drawer" class="drawer-overlay"></label>
 
-          <div class="flex grow w-20 md:w-62 h-screen flex-col bg-gray-900 py-4 min-h-auto">
+          <div class="flex grow w-20 md:w-62 h-screen flex-col bg-gray-900 pt-2 min-h-screen mb-[5.5em]">
             <nav class="flex flex-1 flex-col mx-auto">
               <ul role="list" class="flex flex-1 flex-col gap-y-6">
                 <li v-for="item in views.main" :key="item.name">
@@ -203,6 +203,12 @@ const views = ref({
           screen: "report_storage",
           notifications: 1,
         },
+        {
+          name: "Usuários",
+          icon: "mdi:account-group-outline",
+          screen: "report_users",
+          notifications: 0,
+        },
       ],
     },
   ],
@@ -217,11 +223,6 @@ const views = ref({
       name: "Recursos Humanos",
       icon: "material-symbols:assistant-outline",
       screen: "assistant",
-    },
-    {
-      name: "Marketing",
-      icon: "mdi:folder-outline",
-      screen: "contact",
     },
   ],
 });

@@ -9,10 +9,7 @@
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
       <div class="w-full navbar bg-base-100">
-        <div class="flex-none ml-2">
-          <label for="my-drawer-3" class="btn btn-ghost" @click="handleView">
-            <img class="w-auto max-h-12" src="@/static/img/logo.png">
-          </label>
+        <div class="flex-none ml-2 rounded hover:bg-black/10 p-4 cursor-pointer" @click="handleView">
           <span class="text-xl">
             Spark ✨
           </span>
@@ -141,7 +138,7 @@ const app = useAppStore();
 
 const handleView = () => {
   app.setSlide({
-    show: false,
+    show: true,
     template: "about_us",
     data: {},
   });

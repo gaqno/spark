@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section :class="['mx-2 min-h-[70vh] max-h-[80vh] py-4 flex flex-col justify-between px-4 text-black rounded-xl p-4 object-contain bg-[url(https://images.unsplash.com/photo-1530151368975-0179454159af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80)] bg-cover bg-center']">
+    <section :class="['mx-8 min-h-[70vh] max-h-[80vh] py-4 flex flex-col justify-between px-4 text-black rounded-xl p-4 object-contain bg-[url(https://images.unsplash.com/photo-1530151368975-0179454159af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80)] bg-cover bg-center']">
       <article class="w-[50vw] w-full pt-auto bg-slate-800/80 rounded-xl p-4 sm:p-6 lg:p-8">
         <div class="flex items-start sm:gap-8">
           <Icon name="mdi:star-four-points-small" class="text-6xl text-white" />
