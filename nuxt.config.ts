@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxtjs/eslint-module",
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/i18n",
     "nuxt-icon",
     "nuxt-delay-hydration",
     "nuxt-swiper",
@@ -22,9 +21,6 @@ export default defineNuxtConfig({
       "defineStore", // import { defineStore } from 'pinia'
       ["defineStore", "definePiniaStore"], // import { defineStore as definePiniaStore } from 'pinia'
     ],
-  },
-  i18n: {
-    vueI18n: "./i18n.config.ts",
   },
   tailwindcss: {
     cssPath: "~/global.css",
