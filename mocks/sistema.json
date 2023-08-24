@@ -1,0 +1,146 @@
+[
+  {
+    "idSistema": "1",
+    "nome": "SSO",
+    "url": null,
+    "descricao": null,
+    "status": "A",
+    "icone": null,
+    "permissoes": null
+  },
+  {
+    "idSistema": "2",
+    "nome": "Admin SSO",
+    "url": "https://app.hmg.redeancora.com.br/admin",
+    "descricao": null,
+    "status": "A",
+    "icone": "gear",
+    "permissoes": null
+  },
+  {
+    "idSistema": "3",
+    "nome": "Integrador ANCORA",
+    "url": null,
+    "descricao": null,
+    "status": "A",
+    "icone": null,
+    "permissoes": null
+  },
+  {
+    "idSistema": "4",
+    "nome": "Portal de Compras",
+    "url": "https://app.hmg.redeancora.com.br/b2b",
+    "descricao": null,
+    "status": "A",
+    "icone": "cart",
+    "permissoes": null
+  },
+  {
+    "idSistema": "5",
+    "nome": "Portal ANCORA",
+    "url": "https://app.hmg.redeancora.com.br/portal",
+    "descricao": null,
+    "status": "A",
+    "icone": "house",
+    "permissoes": null
+  },
+  {
+    "idSistema": "7",
+    "nome": "Benner API",
+    "url": null,
+    "descricao": null,
+    "status": "A",
+    "icone": null,
+    "permissoes": null
+  },
+  {
+    "idSistema": "8",
+    "nome": "Integrador WMS",
+    "url": null,
+    "descricao": null,
+    "status": "A",
+    "icone": null,
+    "permissoes": null
+  },
+  {
+    "idSistema": "9",
+    "nome": "Boas Práticas Admin",
+    "url": "https://app.hmg.redeancora.com.br/boas-praticas-admin",
+    "descricao": null,
+    "status": "A",
+    "icone": "bookmark-check",
+    "permissoes": null
+  },
+  {
+    "idSistema": "10",
+    "nome": "Comunicações",
+    "url": "https://app.hmg.redeancora.com.br/comunicacoes",
+    "descricao": null,
+    "status": "A",
+    "icone": "megaphone",
+    "permissoes": null
+  },
+  {
+    "idSistema": "11",
+    "nome": "NDD API",
+    "url": null,
+    "descricao": null,
+    "status": "A",
+    "icone": null,
+    "permissoes": null
+  },
+  {
+    "idSistema": "12",
+    "nome": "Email Producer",
+    "url": null,
+    "descricao": null,
+    "status": "A",
+    "icone": null,
+    "permissoes": null
+  },
+  {
+    "idSistema": "13",
+    "nome": "NFE API",
+    "url": null,
+    "descricao": null,
+    "status": "A",
+    "icone": null,
+    "permissoes": null
+  },
+  {
+    "idSistema": "14",
+    "nome": "Minhas Franquias",
+    "url": "https://app.hmg.redeancora.com.br/minhas-franquias",
+    "descricao": null,
+    "status": "A",
+    "icone": "shop-window",
+    "permissoes": null
+  },
+  {
+    "idSistema": "22",
+    "nome": "Integrador NFE",
+    "url": null,
+    "descricao": null,
+    "status": "A",
+    "icone": null,
+    "permissoes": null
+  },
+  {
+    "idSistema": "25",
+    "nome": "Integrador Aprimora",
+    "url": null,
+    "descricao": null,
+    "status": "A",
+    "icone": null,
+    "permissoes": null
+  },
+  {
+    "idSistema": "34",
+    "nome": "Catálogo de Produtos",
+    "url": "https://catalogo.redeancora.com.br/",
+    "descricao": "Catálogo de Produtos da Rede ANCORA",
+    "status": "A",
+    "icone": "tools",
+    "permissoes": null
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "idPerfil": "1",
+    "nomePerfil": "SISTEMAS_EXTERNOS",
+    "nomeSistema": "SSO"
+  },
+  {
+    "idPerfil": "2",
+    "nomePerfil": "ACESSO_ADMIN_SSO",
+    "nomeSistema": "SSO"
+  },
+  {
+    "idPerfil": "3",
+    "nomePerfil": "ACESSO_PORTAL",
+    "nomeSistema": "SSO"
+  },
+  {
+    "idPerfil": "4",
+    "nomePerfil": "ADMINISTRADORES",
+    "nomeSistema": "Admin SSO"
+  },
+  {
+    "idPerfil": "5",
+    "nomePerfil": "FRANQUEADO",
+    "nomeSistema": "Integrador ANCORA"
+  },
+  {
+    "idPerfil": "6",
+    "nomePerfil": "LOJISTA",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "7",
+    "nomePerfil": "COMPRADOR",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "8",
+    "nomePerfil": "BALCÃO",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "9",
+    "nomePerfil": "FINANCEIRO",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "10",
+    "nomePerfil": "GARANTIA",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "11",
+    "nomePerfil": "ENTRADA DE NOTA",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "12",
+    "nomePerfil": "USUARIO",
+    "nomeSistema": "Portal ANCORA"
+  },
+  {
+    "idPerfil": "14",
+    "nomePerfil": "SISTEMAS",
+    "nomeSistema": "Benner API"
+  },
+  {
+    "idPerfil": "16",
+    "nomePerfil": "USUARIO",
+    "nomeSistema": "Comunicações"
+  },
+  {
+    "idPerfil": "17",
+    "nomePerfil": "CENTRAL_EVENTOS",
+    "nomeSistema": "Comunicações"
+  },
+  {
+    "idPerfil": "18",
+    "nomePerfil": "ADMINISTRADORES",
+    "nomeSistema": "Comunicações"
+  },
+  {
+    "idPerfil": "19",
+    "nomePerfil": "ESTATISTICAS",
+    "nomeSistema": "Comunicações"
+  },
+  {
+    "idPerfil": "20",
+    "nomePerfil": "SISTEMA EXTERNO",
+    "nomeSistema": "NDD API"
+  },
+  {
+    "idPerfil": "21",
+    "nomePerfil": "SISTEMA EXTERNO",
+    "nomeSistema": "Email Producer"
+  },
+  {
+    "idPerfil": "22",
+    "nomePerfil": "SISTEMA EXTERNO",
+    "nomeSistema": "NFE API"
+  },
+  {
+    "idPerfil": "23",
+    "nomePerfil": "CONSULTA",
+    "nomeSistema": "Integrador ANCORA"
+  },
+  {
+    "idPerfil": "24",
+    "nomePerfil": "CONSULTAR_CLASSIFICACAO_FRANQUIA",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "25",
+    "nomePerfil": "FINANCEIRO_CONTABIL",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "26",
+    "nomePerfil": "FRANQUIAS",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "27",
+    "nomePerfil": "CENTRO_DISTRIBUICAO",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "28",
+    "nomePerfil": "USUARIO_LOJISTA",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "29",
+    "nomePerfil": "GESTAO_COLABORADORES",
+    "nomeSistema": "SSO"
+  },
+  {
+    "idPerfil": "30",
+    "nomePerfil": "GESTAO_COLABORADORES",
+    "nomeSistema": "Portal ANCORA"
+  },
+  {
+    "idPerfil": "31",
+    "nomePerfil": "GESTAO_COLABORADORES_ADMIN",
+    "nomeSistema": "SSO"
+  },
+  {
+    "idPerfil": "15",
+    "nomePerfil": "ADMINISTRADOR",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "34",
+    "nomePerfil": "SISTEMA EXTERNO",
+    "nomeSistema": "Email Producer"
+  },
+  {
+    "idPerfil": "35",
+    "nomePerfil": "SISTEMA EXTERNO",
+    "nomeSistema": "NFE API"
+  },
+  {
+    "idPerfil": "36",
+    "nomePerfil": "SISTEMAS_EXTERNOS",
+    "nomeSistema": "SSO"
+  },
+  {
+    "idPerfil": "37",
+    "nomePerfil": "ACESSO_ADMIN_SSO",
+    "nomeSistema": "SSO"
+  },
+  {
+    "idPerfil": "38",
+    "nomePerfil": "ACESSO_PORTAL",
+    "nomeSistema": "SSO"
+  },
+  {
+    "idPerfil": "39",
+    "nomePerfil": "ADMINISTRADORES",
+    "nomeSistema": "Admin SSO"
+  },
+  {
+    "idPerfil": "40",
+    "nomePerfil": "FRANQUEADO",
+    "nomeSistema": "Integrador ANCORA"
+  },
+  {
+    "idPerfil": "41",
+    "nomePerfil": "LOJISTA",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "42",
+    "nomePerfil": "COMPRADOR",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "43",
+    "nomePerfil": "BALCÃO",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "44",
+    "nomePerfil": "FINANCEIRO",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "45",
+    "nomePerfil": "GARANTIA",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "46",
+    "nomePerfil": "ENTRADA DE NOTA",
+    "nomeSistema": "Portal de Compras"
+  },
+  {
+    "idPerfil": "47",
+    "nomePerfil": "USUARIO",
+    "nomeSistema": "Portal ANCORA"
+  },
+  {
+    "idPerfil": "49",
+    "nomePerfil": "SISTEMAS",
+    "nomeSistema": "Benner API"
+  },
+  {
+    "idPerfil": "50",
+    "nomePerfil": "ADMINISTRADOR",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "51",
+    "nomePerfil": "USUARIO",
+    "nomeSistema": "Comunicações"
+  },
+  {
+    "idPerfil": "52",
+    "nomePerfil": "CENTRAL_EVENTOS",
+    "nomeSistema": "Comunicações"
+  },
+  {
+    "idPerfil": "53",
+    "nomePerfil": "ADMINISTRADORES",
+    "nomeSistema": "Comunicações"
+  },
+  {
+    "idPerfil": "54",
+    "nomePerfil": "ESTATISTICAS",
+    "nomeSistema": "Comunicações"
+  },
+  {
+    "idPerfil": "55",
+    "nomePerfil": "SISTEMA EXTERNO",
+    "nomeSistema": "NDD API"
+  },
+  {
+    "idPerfil": "56",
+    "nomePerfil": "SISTEMA EXTERNO",
+    "nomeSistema": "Email Producer"
+  },
+  {
+    "idPerfil": "57",
+    "nomePerfil": "SISTEMA EXTERNO",
+    "nomeSistema": "NFE API"
+  },
+  {
+    "idPerfil": "58",
+    "nomePerfil": "CONSULTA",
+    "nomeSistema": "Integrador ANCORA"
+  },
+  {
+    "idPerfil": "59",
+    "nomePerfil": "CONSULTAR_CLASSIFICACAO_FRANQUIA",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "60",
+    "nomePerfil": "FINANCEIRO_CONTABIL",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "61",
+    "nomePerfil": "FRANQUIAS",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "62",
+    "nomePerfil": "CENTRO_DISTRIBUICAO",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "63",
+    "nomePerfil": "USUARIO_LOJISTA",
+    "nomeSistema": "Boas Práticas Admin"
+  },
+  {
+    "idPerfil": "64",
+    "nomePerfil": "GESTAO_COLABORADORES",
+    "nomeSistema": "SSO"
+  },
+  {
+    "idPerfil": "65",
+    "nomePerfil": "GESTAO_COLABORADORES",
+    "nomeSistema": "Portal ANCORA"
+  },
+  {
+    "idPerfil": "66",
+    "nomePerfil": "GESTAO_COLABORADORES_ADMIN",
+    "nomeSistema": "SSO"
+  },
+  {
+    "idPerfil": "68",
+    "nomePerfil": "CADASTRO_PRODUTOS_FRANQUIAS",
+    "nomeSistema": "Integrador Aprimora"
+  },
+  {
+    "idPerfil": "69",
+    "nomePerfil": "CADASTRO_PRODUTOS_FRANQUIAS",
+    "nomeSistema": "Integrador ANCORA"
+  },
+  {
+    "idPerfil": "70",
+    "nomePerfil": "GESTOR_CERTIFICADOS",
+    "nomeSistema": "Minhas Franquias"
+  },
+  {
+    "idPerfil": "33",
+    "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+    "nomeSistema": "Minhas Franquias"
+  },
+  {
+    "idPerfil": "71",
+    "nomePerfil": "BROKER_NFE",
+    "nomeSistema": "Minhas Franquias"
+  },
+  {
+    "idPerfil": "72",
+    "nomePerfil": "CATALOGO_PRODUTOS",
+    "nomeSistema": "Catálogo de Produtos"
+  }
+]

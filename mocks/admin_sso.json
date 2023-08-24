@@ -1,0 +1,652 @@
+[
+  {
+    "idApiKey": "1",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "47eaf30",
+    "consumidor": "Admin SSO",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "2",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "fb50911",
+    "consumidor": "Integrador NFE",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "3",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "4e10866",
+    "consumidor": "12.345.678/0001-99",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "4",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "b8e432a",
+    "consumidor": "Portal ANCORA",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "5",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "90678c5",
+    "consumidor": "Benner API",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "6",
+    "idSistema": "7",
+    "nomeSistema": "Benner API",
+    "prefixo": "b118c0e",
+    "consumidor": "Integrador WMS",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "7",
+    "idSistema": "7",
+    "nomeSistema": "Benner API",
+    "prefixo": "79b2f19",
+    "consumidor": "Boas Práticas Admin",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "8",
+    "idSistema": "10",
+    "nomeSistema": "Comunicações",
+    "prefixo": "cc9c0e3",
+    "consumidor": "Portal ANCORA",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "9",
+    "idSistema": "11",
+    "nomeSistema": "NDD API",
+    "prefixo": "d9e35bb",
+    "consumidor": "Loja do Franqueado",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "10",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "41162bb",
+    "consumidor": "NDD API",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "11",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "3087a8e",
+    "consumidor": "Comunicações",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "12",
+    "idSistema": "10",
+    "nomeSistema": "Comunicações",
+    "prefixo": "8d1d090",
+    "consumidor": "Boas Práticas Admin",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "13",
+    "idSistema": "12",
+    "nomeSistema": "Email Producer",
+    "prefixo": "73e3ece",
+    "consumidor": "SSO",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "14",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "dbbf0f9",
+    "consumidor": "Email Producer",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "15",
+    "idSistema": "13",
+    "nomeSistema": "NFE API",
+    "prefixo": "b8fb755",
+    "consumidor": "Interceptador NDD",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "16",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "29ee7b4",
+    "consumidor": "NFE API",
+    "dataCriacao": "19/06/2023 17:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "17",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "68e4f3f",
+    "consumidor": "Boas Práticas Admin",
+    "dataCriacao": "19/06/2023 17:12",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "18",
+    "idSistema": "9",
+    "nomeSistema": "Boas Práticas Admin",
+    "prefixo": "0dc851b",
+    "consumidor": "Portal ANCORA",
+    "dataCriacao": "19/06/2023 17:12",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "19",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "cfc19c1",
+    "consumidor": "Boas Práticas Admin",
+    "dataCriacao": "19/06/2023 17:12",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "20",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "805039a",
+    "consumidor": "Portal ANCORA",
+    "dataCriacao": "19/06/2023 17:12",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "21",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "bf64504",
+    "consumidor": "Admin SSO",
+    "dataCriacao": "19/06/2023 17:12",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "83",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "aa36abc",
+    "consumidor": "25.187.746/0001-87",
+    "dataCriacao": "05/07/2023 12:33",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "87",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "ef8c61f",
+    "consumidor": "Integrador Ancora",
+    "dataCriacao": "06/07/2023 10:16",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "88",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "179c936",
+    "consumidor": "Minhas Franquias",
+    "dataCriacao": "06/07/2023 16:43",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "90",
+    "idSistema": "4",
+    "nomeSistema": "Portal de Compras",
+    "prefixo": "c06cfe1",
+    "consumidor": "Boas Práticas Admin",
+    "dataCriacao": "08/08/2023 20:11",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "91",
+    "idSistema": "14",
+    "nomeSistema": "Minhas Franquias",
+    "prefixo": "60c4f3f",
+    "consumidor": "broker_nfe",
+    "dataCriacao": "09/08/2023 18:06",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "92",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "662add3",
+    "consumidor": "41.974.031/0001-20",
+    "dataCriacao": "14/08/2023 12:41",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "93",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "04db465",
+    "consumidor": "25.187.746/0001-87",
+    "dataCriacao": "14/08/2023 17:49",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "94",
+    "idSistema": "7",
+    "nomeSistema": "Benner API",
+    "prefixo": "a7f1b25",
+    "consumidor": "25.187.746/0001-87",
+    "dataCriacao": "14/08/2023 18:17",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "95",
+    "idSistema": "5",
+    "nomeSistema": "Portal ANCORA",
+    "prefixo": "07da217",
+    "consumidor": "25.187.746/0001-87",
+    "dataCriacao": "15/08/2023 17:56",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "96",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "8d13d25",
+    "consumidor": "Integrador ANCORA",
+    "dataCriacao": "15/08/2023 18:21",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "97",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "c935827",
+    "consumidor": "asdasdasdasdasd",
+    "dataCriacao": "15/08/2023 18:21",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "98",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "5e0a1d2",
+    "consumidor": "35.774.611/0001-71",
+    "dataCriacao": "16/08/2023 12:49",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "99",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "d78ffed",
+    "consumidor": "Integrador ANCORA",
+    "dataCriacao": "16/08/2023 12:49",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "100",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "28efcf4",
+    "consumidor": "teste",
+    "dataCriacao": "16/08/2023 12:49",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "101",
+    "idSistema": "14",
+    "nomeSistema": "Minhas Franquias",
+    "prefixo": "effd62b",
+    "consumidor": "Guilherme",
+    "dataCriacao": "16/08/2023 21:46",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "102",
+    "idSistema": "14",
+    "nomeSistema": "Minhas Franquias",
+    "prefixo": "c7d6d19",
+    "consumidor": "Teste Acesso Postman",
+    "dataCriacao": "17/08/2023 15:27",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "103",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "d87ec46",
+    "consumidor": "76.763.630/0001-80",
+    "dataCriacao": "18/08/2023 19:27",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "104",
+    "idSistema": "2",
+    "nomeSistema": "Admin SSO",
+    "prefixo": "8aa2304",
+    "consumidor": "76.763.630/0001-80",
+    "dataCriacao": "18/08/2023 19:34",
+    "status": "I",
+    "grupos": null
+  },
+  {
+    "idApiKey": "105",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "6a0b072",
+    "consumidor": "83.230.896/0001-22",
+    "dataCriacao": "21/08/2023 19:10",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "106",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "9f063bc",
+    "consumidor": "35.774.611/0001-71",
+    "dataCriacao": "21/08/2023 19:12",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "107",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "3762cbf",
+    "consumidor": "12.688.228/0001-03",
+    "dataCriacao": "21/08/2023 19:14",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "108",
+    "idSistema": "2",
+    "nomeSistema": "Admin SSO",
+    "prefixo": "a467ce8",
+    "consumidor": "22.222.222/2222-22",
+    "dataCriacao": "21/08/2023 19:18",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "109",
+    "idSistema": "2",
+    "nomeSistema": "Admin SSO",
+    "prefixo": "d0aa196",
+    "consumidor": "41.974.031/0001-20",
+    "dataCriacao": "21/08/2023 19:19",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "110",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "52eccbe",
+    "consumidor": "07.761.743/0001-23",
+    "dataCriacao": "21/08/2023 19:20",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "111",
+    "idSistema": "1",
+    "nomeSistema": "SSO",
+    "prefixo": "f716f03",
+    "consumidor": "22.222.222/2222-22",
+    "dataCriacao": "21/08/2023 19:21",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "112",
+    "idSistema": "14",
+    "nomeSistema": "Minhas Franquias",
+    "prefixo": "2d5fe4e",
+    "consumidor": "22.222.222/2222-22",
+    "dataCriacao": "21/08/2023 19:47",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "113",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "a7b4d28",
+    "consumidor": "41.974.031/0001-20",
+    "dataCriacao": "21/08/2023 20:01",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "114",
+    "idSistema": "3",
+    "nomeSistema": "Integrador ANCORA",
+    "prefixo": "72630ec",
+    "consumidor": "00.685.703/0001-09",
+    "dataCriacao": "21/08/2023 20:04",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "115",
+    "idSistema": "1",
+    "nomeSistema": "Sistema A",
+    "prefixo": "72630ed",
+    "consumidor": "00.685.703/0001-09",
+    "dataCriacao": "21/08/2023 20:05",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "116",
+    "idSistema": "2",
+    "nomeSistema": "Sistema B",
+    "prefixo": "72630ee",
+    "consumidor": "00.685.703/0001-09",
+    "dataCriacao": "21/08/2023 20:06",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "117",
+    "idSistema": "3",
+    "nomeSistema": "Sistema C",
+    "prefixo": "72630ef",
+    "consumidor": "01.234.567/0001-12",
+    "dataCriacao": "22/08/2023 09:15",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "118",
+    "idSistema": "4",
+    "nomeSistema": "Sistema D",
+    "prefixo": "72630eg",
+    "consumidor": "99.876.543/0001-21",
+    "dataCriacao": "23/08/2023 14:30",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "119",
+    "idSistema": "5",
+    "nomeSistema": "Sistema E",
+    "prefixo": "72630eh",
+    "consumidor": "55.555.555/0001-01",
+    "dataCriacao": "24/08/2023 11:20",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "120",
+    "idSistema": "6",
+    "nomeSistema": "Sistema F",
+    "prefixo": "72630ei",
+    "consumidor": "12.345.678/0001-34",
+    "dataCriacao": "25/08/2023 16:45",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "121",
+    "idSistema": "7",
+    "nomeSistema": "Sistema G",
+    "prefixo": "72630ej",
+    "consumidor": "88.888.888/0001-07",
+    "dataCriacao": "26/08/2023 09:55",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "122",
+    "idSistema": "8",
+    "nomeSistema": "Sistema H",
+    "prefixo": "72630ek",
+    "consumidor": "77.777.777/0001-12",
+    "dataCriacao": "27/08/2023 14:15",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "123",
+    "idSistema": "9",
+    "nomeSistema": "Sistema I",
+    "prefixo": "72630el",
+    "consumidor": "66.666.666/0001-23",
+    "dataCriacao": "28/08/2023 12:30",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "124",
+    "idSistema": "10",
+    "nomeSistema": "Sistema J",
+    "prefixo": "72630em",
+    "consumidor": "44.444.444/0001-45",
+    "dataCriacao": "29/08/2023 09:45",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "125",
+    "idSistema": "11",
+    "nomeSistema": "Sistema K",
+    "prefixo": "72630en",
+    "consumidor": "33.333.333/0001-56",
+    "dataCriacao": "30/08/2023 15:20",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "126",
+    "idSistema": "12",
+    "nomeSistema": "Sistema L",
+    "prefixo": "72630eo",
+    "consumidor": "22.222.222/0001-67",
+    "dataCriacao": "31/08/2023 10:10",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "127",
+    "idSistema": "13",
+    "nomeSistema": "Sistema M",
+    "prefixo": "72630ep",
+    "consumidor": "11.111.111/0001-78",
+    "dataCriacao": "01/09/2023 16:55",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "128",
+    "idSistema": "14",
+    "nomeSistema": "Sistema N",
+    "prefixo": "72630eq",
+    "consumidor": "00.000.001/0001-89",
+    "dataCriacao": "02/09/2023 08:40",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "129",
+    "idSistema": "15",
+    "nomeSistema": "Sistema O",
+    "prefixo": "72630er",
+    "consumidor": "99.999.999/0001-90",
+    "dataCriacao": "03/09/2023 14:25",
+    "status": "A",
+    "grupos": null
+  },
+  {
+    "idApiKey": "130",
+    "idSistema": "16",
+    "nomeSistema": "Sistema P",
+    "prefixo": "72630es",
+    "consumidor": "88.888.888/0001-01",
+    "dataCriacao": "04/09/2023 11:10",
+    "status": "A",
+    "grupos": null
+  }
+]
