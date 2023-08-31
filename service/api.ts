@@ -1,10 +1,6 @@
 import axios from "axios";
 import { useAppStore } from "@/store/app";
-import UserMock from "@/mocks/usuario.json";
-import ApiKeysMock from "@/mocks/api_keys.json";
-import SystemMock from "@/mocks/sistema.json";
-import UsersMock from "@/mocks/usuarios.json";
-import PerfilMock from "@/mocks/perfil.json";
+
 const callApi = (
   method: string,
   endpoint: string,
@@ -59,95 +55,32 @@ export const getUsersByFilter = (params: any) => {
   return callApi("GET", "/users/filter", { params });
 };
 
-export const getUser = (_params: any) => {
-  return new Promise((resolve) => {
-    useAppStore().setLoading(true);
-    const timing = setTimeout(() => {
-      useAppStore().setLoading(false);
-      clearTimeout(timing);
-      resolve({
-        ...UserMock,
-      });
-    }, 300);
-  });
+// ANCORA
+
+export const getUser = (params: any) => {
+  return callApi("GET", "/portal/api/usuario", { params });
 };
 
 export const getUsers = (params: any) => {
-  return new Promise((resolve) => {
-    useAppStore().setLoading(true);
-    const timing = setTimeout(() => {
-      useAppStore().setLoading(false);
-      clearTimeout(timing);
-      resolve({
-        total: UsersMock.length,
-        pages: Math.ceil(UsersMock.length / 10),
-        actual: params.actual,
-        limit: params.limit,
-        data: UsersMock.slice(
-          (params.actual - 1) * params.limit,
-          params.actual * params.limit,
-        ),
-      });
-    }, 300);
-  });
+  return callApi("GET", "/portal/api/usuarios", { params });
 };
 
 export const getApiKeys = (params: any) => {
-  return new Promise((resolve) => {
-    useAppStore().setLoading(true);
-    const timing = setTimeout(() => {
-      useAppStore().setLoading(false);
-      clearTimeout(timing);
-      resolve({
-        total: ApiKeysMock.length,
-        pages: Math.ceil(ApiKeysMock.length / 10),
-        actual: params.actual,
-        limit: params.limit,
-        data: ApiKeysMock.slice(
-          (params.actual - 1) * params.limit,
-          params.actual * params.limit,
-        ),
-      });
-    }, 300);
-  });
+  return callApi("GET", "/portal/api/apikey", { params });
 };
 
 export const getPermissionGroups = (params: any) => {
-  return new Promise((resolve) => {
-    useAppStore().setLoading(true);
-    const timing = setTimeout(() => {
-      useAppStore().setLoading(false);
-      clearTimeout(timing);
-      resolve({
-        total: PerfilMock.length,
-        pages: Math.ceil(PerfilMock.length / 10),
-        actual: params.actual,
-        limit: params.limit,
-        data: PerfilMock.slice(
-          (params.actual - 1) * params.limit,
-          params.actual * params.limit,
-        ),
-      });
-    }, 300);
-  });
+  return callApi("GET", "/portal/api/perfil", { params });
+};
+
+export const postPermissionGroup = (body: any) => {
+  return callApi("POST", "/portal/api/perfil", { body });
 };
 
 export const getSystems = (params: any) => {
-  return new Promise((resolve) => {
-    useAppStore().setLoading(true);
-    const timing = setTimeout(() => {
-      useAppStore().setLoading(false);
-      clearTimeout(timing);
-      resolve({
-        total: SystemMock.length,
-        pages: Math.ceil(SystemMock.length / 10),
-        actual: params.actual,
-        limit: params.limit,
-        data: SystemMock.slice(
-          (params.actual - 1) * params.limit,
-          params.actual * params.limit,
-        ),
-      });
-    }, 300);
-  });
+  return callApi("GET", "/portal/api/sistema", { params });
+};
+
+export const postSystem = (body: any) => {
+  return callApi("POST", "/portal/api/sistema", { body });
 };

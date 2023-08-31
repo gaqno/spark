@@ -175,6 +175,14 @@ export const useFormatBreadcrumbs = () => {
         icon: "mdi-account-tie",
       };
     }
+    if (name === "my_account") {
+      return {
+        name: "Minha conta",
+        view: name,
+        father: "",
+        icon: "mdi-account",
+      };
+    }
     return {
       name,
       view: name,

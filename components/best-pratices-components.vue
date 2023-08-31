@@ -28,12 +28,12 @@
           <div class="flex flex-row items-center gap-x-2">
             <span class="flex flex-col">
               <label>Busque por nome</label>
-              <input type="text" class="input-bordered input" placeholder="Busque">
+              <input type="text" class="input input-bordered" placeholder="Busque">
             </span>
 
             <span class="flex flex-col">
               <label>Mostrando</label>
-              <select v-model="pagination.limit" class="input-bordered input w-40" @change="fetchApiKeys">
+              <select v-model="pagination.limit" class="input input-bordered w-40" @change="fetchApiKeys">
                 <option value="10">
                   10 por página
                 </option>
@@ -85,7 +85,7 @@ const fetchApiKeys = () => {
           actual: res.actual,
           limit: res.limit,
         };
-        data.value = res.data.map(i => ({
+        data.value = res.map(i => ({
           ...i,
           consumidor: i.consumidor,
           dataCriacao: i.dataCriacao,

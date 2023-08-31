@@ -8,9 +8,9 @@
     >
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
-      <div class="navbar w-full bg-base-100">
+      <div class="navbar w-full bg-base-200">
         <div class="ml-2 flex-none">
-          <label for="my-drawer-3" class="btn-ghost btn" @click="handleView">
+          <label for="my-drawer-3" class="btn btn-ghost" @click="handleView">
             <img class="max-h-12 w-auto" src="@/static/img/logo.png">
           </label>
           <span class="text-xl">
@@ -22,12 +22,12 @@
         <div class="ml-auto flex-none lg:block">
           <ul class="menu menu-horizontal">
             <header>
-              <div class="mx-2 flex max-w-full items-center sm:justify-between sm:gap-4">
-                <div class="flex flex-1 items-center justify-between gap-8 sm:justify-end">
-                  <div class="w-full">
+              <div class="mx-2 flex max-w-full sm:justify-between sm:gap-4">
+                <div class="flex items-center justify-between gap-4 sm:justify-end">
+                  <div class="flex w-full items-center">
                     <div class="dropdown-end dropdown">
                       <label tabindex="0" class="m-1">
-                        <button class="block shrink-0 rounded-lg bg-white p-2.5 text-slate-600 shadow-sm hover:bg-slate-200 hover:text-slate-700">
+                        <button class="btn btn-ghost">
                           <span class="sr-only">
                             Projetos
                           </span>
@@ -36,16 +36,16 @@
                       </label>
                       <ul tabindex="0" class="dropdown-content menu rounded-box z-[1] w-52 bg-base-100 p-2 shadow">
                         <li class="text-xs">
-                          <input class="input-ghost input w-48" placeholder="Buscar por">
+                          <input class="input input-ghost w-48" placeholder="Buscar por">
                         </li>
                       </ul>
                     </div>
 
                     <div class="dropdown-end dropdown mx-4">
                       <label tabindex="0" class="m-1">
-                        <button class="block shrink-0 rounded-lg bg-white p-2.5 text-slate-600 shadow-sm hover:bg-slate-200 hover:text-slate-700">
+                        <button class="btn btn-ghost">
                           <span class="sr-only">
-                            Projetos
+                            Notificações
                           </span>
                           <Icon name="mdi:bell-outline" size="1.2em" />
                         </button>
@@ -74,11 +74,11 @@
                           >
 
                           <p class="ms-2 hidden text-left text-xs sm:block">
-                            <strong class="block font-medium text-primary">
+                            <strong class="block font-medium ">
                               Gabriel Aquino
                             </strong>
 
-                            <span class="text-primary">
+                            <span class="">
                               gabriel.aquino@outlook.com.br
                             </span>
                           </p>
@@ -88,21 +88,9 @@
                       </label>
                       <ul tabindex="0" :class="['dropdown-content menu rounded-box z-[1] w-52 bg-base-100 p-2 shadow']">
                         <li>
-                          <a class="whitespace-nowrap text-xs">
+                          <a class="whitespace-nowrap text-xs" @click="app.$patch({ route: 'my_account' })">
                             <Icon name="mdi:information" size="1.5em" />
                             Minhas informações
-                          </a>
-                        </li>
-                        <li>
-                          <a class="whitespace-nowrap text-xs">
-                            <Icon name="fluent:people-team-24-regular" size="1.5em" />
-                            Trocar de equipe
-                          </a>
-                        </li>
-                        <li>
-                          <a class="whitespace-nowrap text-xs">
-                            <Icon name="octicon:request-changes" size="1.5em" />
-                            Solicitar documento
                           </a>
                         </li>
                         <li>

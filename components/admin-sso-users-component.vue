@@ -16,8 +16,8 @@
           { label: 'Status', field: 'status', sortable: false, details: false, type: 'boolean' },
           { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
         ]"
-        :data="data"
-        :description="`Você possui ${AdminSsoUsersMock.length} usuários cadastrados.`"
+        :data="users"
+        :description="`Você possui ${users.length} usuários cadastrados.`"
         :pagination="pagination"
         @prev="handlePagination('prev')"
         @next="handlePagination('next')"
@@ -27,12 +27,12 @@
           <div class="flex flex-row items-center gap-x-2">
             <span class="flex flex-col">
               <label>Busque por nome</label>
-              <input type="text" class="input-bordered input" placeholder="Busque">
+              <input type="text" class="input input-bordered" placeholder="Busque">
             </span>
 
             <span class="flex flex-col">
               <label>Mostrando</label>
-              <select v-model="pagination.limit" class="input-bordered input w-40" @change="fetchUsers">
+              <select v-model="pagination.limit" class="input input-bordered w-40" @change="fetchUsers">
                 <option value="10">
                   10 por página
                 </option>
@@ -58,52 +58,38 @@
 </template>
 
 <script setup>
-import AdminSsoUsersMock from "@/mocks/usuarios.json";
 import { useAppStore } from "@/store/app";
-import { getUsers } from "@/service/api";
+import { getUsers } from "~/service/api";
 
 const app = useAppStore();
-const data = ref([]);
+const users = ref([]);
 const pagination = ref({
+  actual: 1,
+  q: "",
+  limit: 10,
   total: 0,
   pages: 0,
-  actual: 1,
-  limit: 10,
 });
 
 const fetchUsers = () => {
-  return new Promise((resolve, reject) => {
-    getUsers({
-      actual: pagination.value.actual,
-      limit: pagination.value.limit,
-    })
-      .then((res) => {
-        pagination.value = {
-          total: res.total,
-          pages: res.pages,
-          actual: res.actual,
-          limit: res.limit,
+  getUsers({
+    _start: (pagination.value.actual - 1) * pagination.value.limit,
+    _end: pagination.value.actual * pagination.value.limit,
+    q: pagination.value.q || null,
+  })
+    .then((res) => {
+      pagination.value.total = parseInt(res.length);
+      pagination.value.pages = 5;
+      users.value = res.map((user) => {
+        return {
+          ...user,
+          status: user.status === "A",
         };
-        data.value = res.data.map(i => ({
-          ...i,
-          consumidor: i.consumidor,
-          dataCriacao: i.dataCriacao,
-          grupos: i.grupos,
-          idApiKey: i.idApiKey,
-          idSistema: i.idSistema,
-          prefixo: i.prefixo,
-          status: i.status,
-        }));
-        resolve(res);
-      })
-      .catch((err) => {
-        reject(err);
       });
-  });
+    });
 };
 
 const handlePagination = (action, callback) => {
-  data.value = [];
   if (action === "next") {
     pagination.value.actual++;
     fetchUsers();
@@ -117,26 +103,38 @@ const handlePagination = (action, callback) => {
     fetchUsers();
   }
   if (action === "limit") {
+    pagination.value.limit = callback;
     fetchUsers();
   }
 };
 
 const handleSlide = (template, _value) => {
-  if (template === "edit") {
-    app.setSlide({
-      show: true,
-      template: "edit",
-      data: { ..._value },
-    });
-  }
+  getUsers({ idUsuario: _value.idUsuario })
+    .then((res) => {
+      if (template === "edit") {
+        app.setSlide({
+          show: true,
+          template: "edit",
+          title: "Editar usuário",
+          data: { ..._value, ...res[0] },
+        });
+      }
 
-  if (template === "filters") {
-    app.setSlide({
-      show: true,
-      template: "edit",
-      data: { ..._value },
+      if (template === "filters") {
+        app.setSlide({
+          show: true,
+          template: "edit",
+          title: "Filtros usuário",
+          data: { ..._value, ...res[0] },
+        });
+      }
+    }).catch(() => {
+      app.setToast({
+        show: true,
+        content: "Erro ao buscar usuário",
+        title: "Erro",
+      });
     });
-  }
 };
 
 const handleModal = (template, _value) => {
@@ -152,8 +150,7 @@ const handleModal = (template, _value) => {
 };
 
 onMounted(() => {
-  Promise.all([
-    fetchUsers(),
-  ]);
+  fetchUsers();
 });
+
 </script>

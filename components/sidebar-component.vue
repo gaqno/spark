@@ -8,7 +8,7 @@
     >
 
     <div class="drawer-content">
-      <div class="ml-6 flex flex-row">
+      <div class="ml-6 flex w-full flex-row">
         <label
           for="my-drawer"
           class="drawer-button py-3 pl-2"
@@ -16,7 +16,7 @@
         >
           <Icon
             name="line-md:menu-fold-right"
-            class="cursor-pointer rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-slate-900 shadow-sm ring-slate-300 hover:bg-slate-50"
+            :class="[!app.darkMode ? 'text-slate-900 hover:bg-slate-50' : '', 'cursor-pointer rounded-md px-2.5 py-1.5 text-sm font-semibold shadow-sm']"
             size="2.5em"
           />
         </label>
@@ -37,7 +37,7 @@
               <button
                 v-if="app.sidebar.small"
                 data-tip="Abrir"
-                class="btn-ghost tooltip tooltip-right btn"
+                class="btn tooltip tooltip-right btn-ghost"
                 @click.prevent="app.toggleSidebarSmall"
               >
                 <Icon name="line-md:chevron-double-right" size="1.5em" />
@@ -45,7 +45,7 @@
               <button
                 v-else
                 data-tip="Encolher"
-                class="btn-ghost tooltip tooltip-right btn"
+                class="btn tooltip tooltip-right btn-ghost"
                 @click.prevent="app.toggleSidebarSmall"
               >
                 <Icon name="line-md:chevron-double-left" size="1.5em" />
@@ -53,18 +53,18 @@
               <button
                 v-if="!app.darkMode"
                 data-tip="Modo escuro"
-                class="btn-ghost tooltip tooltip-right btn"
+                class="btn tooltip tooltip-right btn-ghost"
                 @click.prevent="app.toggleDarkMode"
               >
-                <Icon name="line-md:moon-filled-to-sunny-filled-loop-transition" size="1.5em" />
+                <Icon name="line-md:moon-filled-alt-to-sunny-filled-loop-transition" size="1.5em" />
               </button>
               <button
                 v-else
                 data-tip="Modo claro"
-                class="btn-ghost tooltip tooltip-right btn"
+                class="btn tooltip tooltip-right btn-ghost"
                 @click.prevent="app.toggleDarkMode"
               >
-                <Icon name="line-md:moon-rising-filled-alt-loop" size="1.5em" />
+                <Icon name="line-md:sunny-outline-to-moon-loop-transition" size="1.5em" />
               </button>
             </section>
 
@@ -72,7 +72,7 @@
             <nav>
               <ul role="list" class="-mx-2 mt-2 space-y-4">
                 <li v-for="item in filteredViews()" :key="item.name">
-                  <div class="dropdown-right dropdown-hover dropdown min-w-full">
+                  <div class="dropdown dropdown-right dropdown-hover min-w-full">
                     <label
                       tabindex="0"
                       class="mx-2.5 flex px-4 text-white/50 hover:text-white active:bg-slate-200/50"
@@ -144,28 +144,28 @@ const views = ref({
       notifications: 0,
       child: [
         {
-          name: "Chaves de API",
-          icon: "mdi:key-outline",
-          screen: "admin_sso_keys",
-          notifications: 2,
-        },
-        {
-          name: "Usuários",
-          icon: "mdi:account-multiple-outline",
-          screen: "admin_sso_users",
-          notifications: 2,
-        },
-        {
           name: "Grupos de permissão",
           icon: "mdi:account-group-outline",
           screen: "admin_sso_groups",
           notifications: 4,
         },
         {
+          name: "Chaves de API",
+          icon: "mdi:key-outline",
+          screen: "admin_sso_keys",
+          notifications: 2,
+        },
+        {
           name: "Sistemas",
           icon: "mdi:application-settings-outline",
           screen: "admin_sso_systems",
           notifications: 1,
+        },
+        {
+          name: "Usuários",
+          icon: "mdi:account-multiple-outline",
+          screen: "admin_sso_users",
+          notifications: 2,
         },
       ],
     },

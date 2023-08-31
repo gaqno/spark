@@ -18,19 +18,32 @@ interface User {
 
 export const useClientStore = defineStore("client", {
   state: () => ({
-    user: {} as User,
+    id: "",
+    login: "",
+    nome: "",
+    roles: [],
+    sistemas: [] as User["sistemas"],
+    empresas: [] as User["empresas"],
   }),
   getters: {
     getUserSistemas (): User["sistemas"] {
-      return this.user.sistemas;
+      return this.sistemas;
+    },
+    getUserRoles (): User["roles"] {
+      return this.roles;
+    },
+    getUserEmpresas (): User["empresas"] {
+      return this.empresas;
     },
   },
   actions: {
     setUser (user: any) {
-      this.user = user;
-    },
-    getUser () {
-      return this.user;
+      this.id = user.id;
+      this.login = user.login;
+      this.nome = user.nome;
+      this.roles = user.roles;
+      this.sistemas = user.sistemas;
+      this.empresas = user.empresas;
     },
   },
 });

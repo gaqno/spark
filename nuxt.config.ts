@@ -2,16 +2,33 @@ import { defineNuxtConfig } from "nuxt/config";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "pt-br",
+      },
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+    },
+  },
   modules: [
-    // Simple usage
     "@vueuse/nuxt",
     "@pinia/nuxt",
+    "@nuxt/image",
     "@nuxtjs/eslint-module",
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/fontaine",
     "nuxt-icon",
-    "nuxt-delay-hydration",
     "nuxt-swiper",
   ],
+  nitro: {
+    compressPublicAssets: true,
+  },
+  image: {
+    cloudinary: {
+      baseURL: "https://app.hmg.redeancora.com.br/portal/imagens/",
+    },
+  },
   ssr: false,
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
   components: true,

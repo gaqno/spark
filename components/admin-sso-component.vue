@@ -41,16 +41,54 @@
         </div>
 
         <section>
-          <div class="container mx-auto mb-[5vh] mt-8 grid grid-cols-1 gap-8 px-8 lg:grid-cols-2">
-            <div class="card card-compact w-96 bg-white shadow-xl">
+          <div class="container mb-[5vh] mt-8 grid grid-cols-1 gap-8 px-8 lg:grid-cols-2">
+            <div :class="[app.darkMode && 'border', 'card card-compact w-full shadow-xl']">
               <div class="card-body">
-                <figure>
-                  <Bar id="products" :data="productsData" :options="chartOptions" />
-                </figure>
-                <h2 class="card-title mt-2 text-primary">
+                <h2 :class="[!app.darkMode ? 'text-primary' : 'text-secondary' , 'card-title mt-2']">
                   Grupos de permissões
                 </h2>
                 <p>Acompanhe os grupos de permissões</p>
+
+                <div class="flex justify-between gap-x-2">
+                  <article class="flex w-full items-end justify-between rounded-lg border border-slate-100 p-6">
+                    <div>
+                      <p class="text-sm text-slate-500">
+                        Total de grupos
+                      </p>
+
+                      <p class="text-2xl font-medium text-slate-900">
+                        {{ permissionGroups.length }}
+                      </p>
+                    </div>
+
+                    <div class="inline-flex gap-2 rounded bg-green-100 p-1 text-green-600">
+                      <Icon name="material-symbols:show-chart" />
+                      <span class="text-xs font-medium">
+                        {{ permissionGroups.length }}
+                      </span>
+                    </div>
+                  </article>
+
+                  <article class="flex w-full items-end justify-between rounded-lg border border-slate-100 p-6">
+                    <div>
+                      <p class="text-sm text-slate-500">
+                        Total de sistemas com permissões
+                      </p>
+
+                      <p class="text-2xl font-medium text-slate-900">
+                        {{ permissionGroups.length }}
+                      </p>
+                    </div>
+
+                    <div class="inline-flex gap-2 rounded bg-green-100 p-1 text-green-600">
+                      <Icon name="material-symbols:show-chart" />
+                      <span class="text-xs font-medium">
+                        {{ permissionGroups.length }}
+                      </span>
+                    </div>
+                  </article>
+                </div>
+
                 <div class="card-actions justify-end">
                   <button class="btn bg-primary text-white" @click.prevent="app.$patch({ route: 'admin_sso_groups' })">
                     Detalhes
@@ -59,15 +97,15 @@
               </div>
             </div>
 
-            <div class="card card-compact w-96 bg-white shadow-xl">
+            <div :class="[app.darkMode && 'border', 'card card-compact w-full shadow-xl']">
               <div class="card-body">
-                <figure>
-                  <Line id="financing" :data="financingData" :options="chartOptions" />
-                </figure>
-                <h2 class="card-title mt-2 text-primary">
+                <h2 :class="[!app.darkMode ? 'text-primary' : 'text-secondary' , 'card-title mt-2']">
                   Chaves de API
                 </h2>
                 <p>Acompanhe as chaves de API</p>
+                <figure>
+                  <!-- <Line id="apiKeys" :data="apiKeysChart" :options="chartOptions" /> -->
+                </figure>
                 <div class="card-actions justify-end">
                   <button class="btn bg-primary text-white" @click.prevent="app.$patch({ route: 'admin_sso_keys' })">
                     Detalhes
@@ -76,15 +114,15 @@
               </div>
             </div>
 
-            <div class="card card-compact w-96 bg-white shadow-xl">
+            <div :class="[app.darkMode && 'border', 'card card-compact w-full shadow-xl']">
               <div class="card-body">
-                <figure>
-                  <Doughnut id="storage" :data="storageData" :options="chartOptions" />
-                </figure>
-                <h2 class="card-title mt-2 text-primary">
+                <h2 :class="[!app.darkMode ? 'text-primary' : 'text-secondary' , 'card-title mt-2']">
                   Sistemas
                 </h2>
-                <p>Acompanhe os sistemas</p>
+                <span>Acompanhe os sistemas</span>
+                <figure>
+                  <!-- <Line id="systems" :data="systemChart" :options="chartOptions" /> -->
+                </figure>
                 <div class="card-actions justify-end">
                   <button class="btn bg-primary text-white" @click.prevent="app.$patch({ route: 'admin_sso_systems' })">
                     Detalhes
@@ -93,15 +131,15 @@
               </div>
             </div>
 
-            <div class="card card-compact w-96 bg-white shadow-xl">
+            <div :class="[app.darkMode && 'border', 'card card-compact w-full shadow-xl']">
               <div class="card-body">
-                <figure>
-                  <Bubble id="teams" :data="teamsData" :options="chartOptions" />
-                </figure>
-                <h2 class="card-title mt-2 text-primary">
+                <h2 :class="[!app.darkMode ? 'text-primary' : 'text-secondary' , 'card-title mt-2']">
                   Usuários
                 </h2>
-                <p>Acompanhe os usuários</p>
+                <span>Acompanhe os usuários</span>
+                <figure>
+                  <!-- <Bubble id="users" :data="usersChart" :options="chartOptions" /> -->
+                </figure>
                 <div class="card-actions justify-end">
                   <button class="btn bg-primary text-white" @click.prevent="app.$patch({ route: 'admin_sso_users' })">
                     Detalhes
@@ -112,314 +150,77 @@
           </div>
         </section>
       </section>
+
+      <AdminSsoKeysComponent
+        v-else-if="app.route === 'admin_sso_keys'"
+        @change-view="($event) => emits('change-view', $event)"
+      />
+
+      <AdminSsoUsersComponent
+        v-else-if="app.route === 'admin_sso_users'"
+        @change-view="($event) => emits('change-view', $event)"
+      />
+
+      <AdminSsoSystemsComponent
+        v-else-if="app.route === 'admin_sso_systems'"
+        @change-view="($event) => emits('change-view', $event)"
+      />
+
+      <AdminSsoGroupsComponent
+        v-else-if="app.route === 'admin_sso_groups'"
+        @change-view="($event) => emits('change-view', $event)"
+      />
     </slot>
   </Transition>
 </template>
 
 <script setup>
 import { Chart as ChartJS, Title, Tooltip, ArcElement, PointElement, Legend, BarElement, CategoryScale, LinearScale, LineElement } from "chart.js";
-import { Bar, Line, Bubble, Doughnut } from "vue-chartjs";
 import { useAppStore } from "@/store/app";
-import { getAllProducts, getUsers } from "@/service/api";
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, ArcElement, CategoryScale, PointElement, LinearScale, LineElement);
 
-const DEMONSTRATE_REF = false;
-
 const app = useAppStore();
+const emits = defineEmits("change-view");
 
-const currentReportView = ref("graphs");
-const chartOptions = {
-  responsive: true,
-  maintainAspectRatio: false,
-};
-const pagination = ref({});
-const products = ref([]);
-const users = ref([]);
-
-const productsData = ref({
-  labels: [],
-  datasets: [],
+const pagination = ref({
+  total: 10,
+  limit: 10,
+  actual: 1,
+  pages: 0,
 });
 
-const financingData = ref({
-  labels: [],
-  datasets: [],
-});
+const systems = ref([]);
+const permissionGroups = ref([]);
 
-const storageData = ref({
-  labels: [],
-  datasets: [],
-});
-
-const teamsData = ref({
-  labels: [],
-  datasets: [],
-});
-
-const usersData = ref({
-  labels: [],
-  datasets: [],
-});
-
-const fetchProducts = () => {
-  return new Promise((resolve, reject) => {
-    getAllProducts()
-      .then((res) => {
-        pagination.value = {
-          total: res.total,
-          limit: res.limit,
-          page: 1,
-          pages: Math.ceil(res.total / res.limit),
-        };
-        products.value = res.products.map(i => ({
-          ...i,
-          price: i.price.toLocaleString("pt-br", { style: "currency", currency: "BRL" }),
-        }));
-
-        const categoryStocks = {};
-        for (const product of products.value) {
-          const category = product.category;
-          const stock = product.stock;
-          categoryStocks[category] = (categoryStocks[category] || 0) + stock;
-        }
-
-        const productArr = newData("Em estoque");
-        const financingArr = newData("Maior nota");
-        const storageArr = newData("Armazenamento");
-        const teamsArr = newData("Equipes");
-
-        for (const product of products.value) {
-          productArr.labels.push(product.title);
-          productArr.datasets[0].data.push(product.stock);
-
-          financingArr.labels.push(product.title);
-          financingArr.datasets[0].data.push(product.rating);
-        }
-
-        storageArr.labels = Object.keys(categoryStocks);
-        storageArr.datasets[0].data = Object.values(categoryStocks);
-
-        teamsArr.labels = Object.keys(categoryStocks);
-        teamsArr.datasets[0].data = Object.values(categoryStocks);
-
-        productsData.value = productArr;
-        financingData.value = financingArr;
-        storageData.value = storageArr;
-        teamsData.value = randomData("bubble");
-
-        resolve(res.data);
-      })
-      .catch((err) => {
-        reject(err);
-      });
-  });
-};
-
-const fetchUsers = () => {
-  return new Promise(() => {
-    getUsers()
-      .then((res) => {
-        users.value = res.users.map(i => ({
-          ...i,
-          address: i.address,
-          age: i.age,
-          bank: i.bank,
-          birthDate: i.birthDate,
-          bloodGroup: i.bloodGroup,
-          company: i.company,
-          domain: i.domain,
-          email: i.email,
-        }));
-
-        const usersArr = newData("Idade");
-        for (const user of users.value) {
-          usersArr.labels.push(`${user.firstName} ${user.lastName}`);
-          usersArr.datasets[0].data.push(user.age);
-        }
-        usersData.value = usersArr;
-      });
-  });
-};
-
-const getRandomInt = () => {
-  return Math.floor(Math.random() * (50 - 5 + 1)) + 5;
-};
-
-const getRandomXYR = () => {
-  const maxX = 300;
-  const maxY = 500;
-  const maxR = 50;
-
-  const _x = Math.floor(Math.random() * maxX);
-  const _y = Math.floor(Math.random() * maxY);
-  const _r = Math.floor(Math.random() * maxR);
-
-  return { x: _x, y: _y, r: _r };
-};
-
-const getRandomHEX = () => {
-  const letters = "0123456789ABCDEF";
-  let color = "#";
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-};
-
-const randomData = (type) => {
-  if (type === "bar") {
-    return {
-      labels: ["Camiseta", "Calça", "Tênis", "Boné", "Meia", "Cinto"],
-      datasets: [
-        {
-          label: "Vendas",
-          backgroundColor: [
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-          ],
-          data: [
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-          ],
-        },
-      ],
-    };
-  }
-
-  if (type === "line") {
-    return {
-      labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"],
-      datasets: [
-        {
-          label: "Vendas",
-          backgroundColor: [
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-          ],
-          data: [
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-          ],
-        },
-      ],
-    };
-  }
-
-  if (type === "doughnut") {
-    return {
-      labels: ["Camiseta", "Calça", "Tênis", "Boné", "Meia", "Cinto"],
-      datasets: [
-        {
-          label: "Vendas",
-          backgroundColor: [
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-          ],
-          data: [
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-            getRandomInt(),
-          ],
-        },
-      ],
-    };
-  }
-
-  if (type === "bubble") {
-    return {
-      labels: ["Camiseta", "Calça", "Tênis", "Boné", "Meia", "Cinto"],
-      datasets: [
-        {
-          label: "Vendas",
-          backgroundColor: [
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-            getRandomHEX(),
-          ],
-          data: [
-            getRandomXYR(),
-            getRandomXYR(),
-            getRandomXYR(),
-            getRandomXYR(),
-            getRandomXYR(),
-            getRandomXYR(),
-          ],
-        },
-      ],
-    };
-  }
-};
-
-// const handleSlide = (value) => {
-//   app.setSlide({
-//     show: true,
-//     template: "filters",
-//     data: {
-//       type: value
-//     }
-//   })
-// }
-
-const newData = (type) => {
-  const obj = {
-    labels: [],
-    datasets: [
-      {
-        label: type,
-        backgroundColor: getRandomHEX,
-        data: [],
-      },
-    ],
-  };
-  return obj;
-};
-
-const DEMONSTRATE = () => {
-  if (currentReportView.value === "graphs") {
-    setInterval(() => {
-      productsData.value = randomData("bar");
-      financingData.value = randomData("line");
-      storageData.value = randomData("doughnut");
-      teamsData.value = randomData("bubble");
-    }, 3000);
-  } else {
-    clearInterval();
-  }
-};
-
-onMounted(() => {
-  Promise.all([
-    fetchProducts(),
-    fetchUsers(),
-  ]);
-
-  if (DEMONSTRATE_REF) { DEMONSTRATE(); }
-});
+// const handlePagination = (action, callback) => {
+//   if (action === "next") {
+//     pagination.value.actual++;
+//     if (app.route === "admin_sso_keys") { fetchApiKeys(); }
+//     if (app.route === "admin_sso_users") { fetchUsers(); }
+//     if (app.route === "admin_sso_systems") { fetchSystems(); }
+//     if (app.route === "admin_sso_groups") { fetchPermissionGroups(); }
+//   }
+//   if (action === "prev") {
+//     pagination.value.actual--;
+//     if (app.route === "admin_sso_keys") { fetchApiKeys(); }
+//     if (app.route === "admin_sso_users") { fetchUsers(); }
+//     if (app.route === "admin_sso_systems") { fetchSystems(); }
+//     if (app.route === "admin_sso_groups") { fetchPermissionGroups(); }
+//   }
+//   if (action === "page") {
+//     pagination.value.actual = callback;
+//     if (app.route === "admin_sso_keys") { fetchApiKeys(); }
+//     if (app.route === "admin_sso_users") { fetchUsers(); }
+//     if (app.route === "admin_sso_systems") { fetchSystems(); }
+//     if (app.route === "admin_sso_groups") { fetchPermissionGroups(); }
+//   }
+//   if (action === "limit") {
+//     pagination.value.limit = callback;
+//     if (app.route === "admin_sso_keys") { fetchApiKeys(); }
+//     if (app.route === "admin_sso_users") { fetchUsers(); }
+//     if (app.route === "admin_sso_systems") { fetchSystems(); }
+//     if (app.route === "admin_sso_groups") { fetchPermissionGroups(); }
+//   }
+// };
 </script>

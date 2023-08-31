@@ -19,7 +19,7 @@ module.exports = {
     require("tailwind-scrollbar"),
   ],
   daisyui: {
-    themes: true,
+    themes: ["light", "dark"],
     base: true,
     styled: true,
     utils: true,

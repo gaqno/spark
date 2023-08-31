@@ -3,7 +3,7 @@
     <div>
       <ModalComponent v-if="app.modal.show" />
       <LoadingComponent v-if="app.loading" />
-      <NuxtPage />
+      <NuxtPage :data-theme="app.darkMode ? 'dark' : 'light'" />
     </div>
   </NuxtLayout>
 </template>

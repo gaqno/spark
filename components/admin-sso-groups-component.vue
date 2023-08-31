@@ -13,8 +13,8 @@
         { label: 'Sistema', field: 'nomeSistema', sortable: false, details: false, type: 'string' },
         { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
       ]"
-      :data="data"
-      :description="`Você possui ${data.length} grupos de permissões cadastrados.`"
+      :data="permissionGroups"
+      :description="`Você possui ${permissionGroups.length} grupos de permissões cadastrados.`"
       :pagination="pagination"
       @prev="handlePagination('prev')"
       @next="handlePagination('next')"
@@ -24,12 +24,18 @@
         <div class="flex flex-row items-center gap-x-2">
           <span class="flex flex-col">
             <label>Busque por nome</label>
-            <input type="text" class="input-bordered input" placeholder="Busque">
+            <input
+              v-model="pagination.q"
+              type="text"
+              class="input input-bordered"
+              placeholder="Busque"
+              @keyup.enter="fetchPermissionGroups"
+            >
           </span>
 
           <span class="flex flex-col">
             <label>Mostrando</label>
-            <select v-model="pagination.limit" class="input-bordered input w-40" @change="fetchGruposPermissao">
+            <select v-model="pagination.limit" class="input input-bordered w-40" @change="fetchPermissionGroups">
               <option value="10">
                 10 por página
               </option>
@@ -55,78 +61,83 @@
 
 <script setup>
 import { useAppStore } from "@/store/app";
-import { getPermissionGroups } from "@/service/api";
+import { getPermissionGroups, getSystems } from "~/service/api";
 
 const app = useAppStore();
-const data = ref([]);
+const permissionGroups = ref([]);
+
 const pagination = ref({
+  actual: 1,
+  q: "",
+  limit: 10,
   total: 0,
   pages: 0,
-  actual: 1,
-  limit: 10,
 });
 
-const fetchGruposPermissao = () => {
+const fetchPermissionGroups = () => {
   return new Promise((resolve, reject) => {
     getPermissionGroups({
-      actual: pagination.value.actual,
-      limit: pagination.value.limit,
+      _start: (pagination.value.actual - 1) * pagination.value.limit,
+      _end: pagination.value.actual * pagination.value.limit,
+      q: pagination.value.q || null,
     })
       .then((res) => {
-        pagination.value = {
-          total: res.total,
-          pages: res.pages,
-          actual: res.actual,
-          limit: res.limit,
-        };
-        data.value = res.data.map(i => ({
+        pagination.value.total = parseInt(res.length);
+        pagination.value.pages = 5;
+        permissionGroups.value = res.map(i => ({
           idPerfil: i.idPerfil,
           nomePerfil: i.nomePerfil,
           nomeSistema: i.nomeSistema,
         }));
         resolve(res);
-      })
-      .catch((err) => {
+      }).catch((err) => {
         reject(err);
       });
   });
 };
 
 const handlePagination = (action, callback) => {
-  data.value = [];
   if (action === "next") {
     pagination.value.actual++;
-    fetchGruposPermissao();
+    fetchPermissionGroups();
   }
   if (action === "prev") {
     pagination.value.actual--;
-    fetchGruposPermissao();
+    fetchPermissionGroups();
   }
   if (action === "page") {
     pagination.value.actual = callback;
-    fetchGruposPermissao();
+    fetchPermissionGroups();
   }
   if (action === "limit") {
-    fetchGruposPermissao();
+    pagination.value.limit = callback;
+    fetchPermissionGroups();
   }
 };
 
 const handleSlide = (template, _value) => {
-  if (template === "edit") {
-    app.setSlide({
-      show: true,
-      template: "edit",
-      data: { ..._value },
-    });
-  }
+  getSystems({ idSistema: _value.idPerfil })
+    .then((res) => {
+      if (template === "edit") {
+        app.setSlide({
+          show: true,
+          template: "edit",
+          title: "Editar grupo de permissões",
+          data: { ..._value, ...res[0] },
+        });
+      }
 
-  if (template === "filters") {
-    app.setSlide({
-      show: true,
-      template: "edit",
-      data: { ..._value },
+      if (template === "filters") {
+        app.setSlide({
+          show: true,
+          template: "edit",
+          title: "Filtros grupo de permissões",
+          data: { ..._value, ...res[0] },
+        });
+      }
+    }).catch((err) => {
+      console.log(err);
     });
-  }
 };
 
 const handleModal = (template, _value) => {
@@ -142,8 +153,6 @@ const handleModal = (template, _value) => {
 };
 
 onMounted(() => {
-  Promise.all([
-    fetchGruposPermissao(),
-  ]);
+  fetchPermissionGroups();
 });
 </script>

@@ -23,6 +23,7 @@ interface AppState {
   slide: {
     show: boolean;
     template: string;
+    title: string;
     data: Record<string, any>;
   };
 }
@@ -53,6 +54,7 @@ export const useAppStore = defineStore("app", {
     slide: {
       show: false,
       template: "",
+      title: "",
       data: {},
     },
   } as AppState),
@@ -71,7 +73,7 @@ export const useAppStore = defineStore("app", {
     setModal (modal: { show: boolean; title: string; content: string, template: string, data: Record<string, any> }) {
       this.modal = modal;
     },
-    setSlide (slide: { show: boolean; template: string; data: Record<string, any> }) {
+    setSlide (slide: { show: boolean; template: string; title: string; data: Record<string, any> }) {
       this.slide = slide;
     },
     setToast (toast: { show: boolean; title: string; content: string }) {

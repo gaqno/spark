@@ -1,58 +1,51 @@
 <template>
   <section class="mx-auto mb-[10em] flex flex-col items-center p-4">
-    <CarrouselComponent
-      :slides="[
-        { path: 'https://app.hmg.redeancora.com.br/portal/imagens/banner-web-slide_01.png' },
-        { path: 'https://app.hmg.redeancora.com.br/portal/imagens/banner-web-slide_02.png' },
-        { path: 'https://app.hmg.redeancora.com.br/portal/imagens/banner-web-slide_03.png' },
-      ]"
-    />
+    <div class="mx-auto max-w-screen-xl py-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 ">
+        <div class="relative overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+          <CarrouselComponent
+            :slides="[
+              { path: 'https://app.hmg.redeancora.com.br/portal/imagens/banner-web-slide_01.png' },
+              { path: 'https://app.hmg.redeancora.com.br/portal/imagens/banner-web-slide_02.png' },
+              { path: 'https://app.hmg.redeancora.com.br/portal/imagens/banner-web-slide_03.png' },
+            ]"
+          />
+        </div>
 
-    <div class="stats stats-vertical mt-4 w-full bg-white shadow lg:stats-horizontal">
-      <div class="stat">
-        <div class="stat-title text-secondary">
-          Total de vendas
-        </div>
-        <div class="stat-value text-primary">
-          31K
-        </div>
-        <div class="stat-desc text-slate-400">
-          01/Jan - {{ new Date().toLocaleDateString() }}
-        </div>
-      </div>
+        <div class="mx-4 lg:py-24">
+          <h2 class="text-3xl font-bold sm:text-4xl">
+            Bem vindo!
+          </h2>
 
-      <div class="stat">
-        <div class="stat-title text-secondary">
-          Funcionários
-        </div>
-        <div class="stat-value text-primary">
-          4,200
-        </div>
-        <div class="stat-desc text-slate-400">
-          ↗︎ 400 (22%)
-        </div>
-      </div>
+          <p>
+            {{ client.nome }}, você está logado como
+            <span class="badge">
+              {{ client.roles[0] || 'Nenhuma permissão' }}
+            </span>
+          </p>
+          <p class="mt-4">
+            <span>
+              Vinculado a empresa
+              <span v-for="company in client.empresas" :key="`${company.nome}_home`" class="badge">
+                {{ company.nome }}
+              </span>
+            </span>
+          </p>
 
-      <div class="stat">
-        <div class="stat-title text-secondary">
-          Total de funcionários
-        </div>
-        <div class="stat-value text-primary">
-          1,200
-        </div>
-        <div class="stat-desc text-slate-400">
-          ↘︎ 90 (14%)
+          <a href="#" class="mt-8 inline-block rounded bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
+            Ver eventos
+          </a>
         </div>
       </div>
     </div>
 
     <div class="grid w-full grid-cols-1 gap-2 md:grid-cols-2">
       <a v-for="card in cards" :key="card.label" class="relative col-span-1 mt-4 block cursor-pointer gap-4 overflow-hidden rounded-lg border border-slate-100 ">
-        <section class="p-4 hover:bg-slate-200 sm:p-6 lg:p-8" @click.prevent="onChangeView(card.view)">
+        <section :class="[!app.darkMode ? 'bg-white hover:bg-slate-200' : 'bg-slate-800 text-white hover:bg-slate-900', 'p-4 sm:p-6 lg:p-8']" @click.prevent="onChangeView(card.view)">
           <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
           <div class="sm:flex sm:justify-between sm:gap-4">
             <div>
-              <h3 class="text-lg font-bold text-primary sm:text-xl">
+              <h3 class="text-lg font-bold sm:text-xl">
                 {{ card.label }}
               </h3>
             </div>
@@ -66,7 +59,7 @@
           </div>
 
           <div class="mt-4">
-            <p class="max-w-[40ch] text-sm text-black">
+            <p class="max-w-[40ch] text-sm">
               {{ card.subtitle }}
             </p>
           </div>
@@ -77,7 +70,12 @@
 </template>
 
 <script setup lang="ts">
+import { useClientStore } from "@/store/client";
+import { useAppStore } from "@/store/app";
+
+const app = useAppStore();
 const emit = defineEmits(["change-view"]);
+const client = useClientStore();
 
 const onChangeView = (view: string) =>
   emit("change-view", view);

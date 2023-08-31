@@ -3,7 +3,7 @@
     <div class="flex h-full flex-col p-8">
       <TableComponent
         template="stock"
-        title="Usuários"
+        title="Sistemas"
         :action="handleSlide"
         :actions="[
           { label: 'Editar', icon: 'mdi:square-edit-outline', template: 'edit', action: handleSlide },
@@ -17,8 +17,8 @@
           { label: 'Status', field: 'status', sortable: false, details: false, type: 'boolean' },
           { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
         ]"
-        :data="data"
-        :description="`Você possui ${AdminSsoMock.length} usuários cadastrados.`"
+        :data="systems"
+        :description="`Você possui ${systems.length} sistemas cadastrados.`"
         :pagination="pagination"
         @prev="handlePagination('prev')"
         @next="handlePagination('next')"
@@ -28,12 +28,12 @@
           <div class="flex flex-row items-center gap-x-2">
             <span class="flex flex-col">
               <label>Busque por nome</label>
-              <input type="text" class="input-bordered input" placeholder="Busque">
+              <input type="text" class="input input-bordered" placeholder="Busque">
             </span>
 
             <span class="flex flex-col">
               <label>Mostrando</label>
-              <select v-model="pagination.limit" class="input-bordered input w-40" @change="fetchSystems">
+              <select v-model="pagination.limit" class="input input-bordered w-40" @change="fetchSystems">
                 <option value="10">
                   10 por página
                 </option>
@@ -59,15 +59,15 @@
 </template>
 
 <script setup>
-import AdminSsoMock from "@/mocks/admin_sso.json";
 import { useAppStore } from "@/store/app";
-import { getSystems } from "@/service/api";
+import { getSystems } from "~/service/api";
 
 const app = useAppStore();
-const data = ref([]);
+const systems = ref([]);
 const pagination = ref({
   total: 0,
   pages: 0,
+  q: "",
   actual: 1,
   limit: 10,
 });
@@ -75,36 +75,41 @@ const pagination = ref({
 const fetchSystems = () => {
   return new Promise((resolve, reject) => {
     getSystems({
-      actual: pagination.value.actual,
-      limit: pagination.value.limit,
-    })
-      .then((res) => {
-        pagination.value = {
-          total: res.total,
-          pages: res.pages,
-          actual: res.actual,
-          limit: res.limit,
-        };
-        data.value = res.data.map(i => ({
-          ...i,
-          consumidor: i.consumidor,
-          dataCriacao: i.dataCriacao,
-          grupos: i.grupos,
-          idApiKey: i.idApiKey,
-          idSistema: i.idSistema,
-          prefixo: i.prefixo,
-          status: i.status,
-        }));
-        resolve(res);
-      })
-      .catch((err) => {
-        reject(err);
-      });
+      _start: (pagination.value.actual - 1) * pagination.value.limit,
+      _end: pagination.value.actual * pagination.value.limit,
+      q: pagination.value.q || null,
+    }).then((res) => {
+      pagination.value.total = parseInt(res.length);
+      pagination.value.pages = 5;
+      systems.value = res.map(i => ({
+        ...i,
+        consumidor: i.consumidor,
+        dataCriacao: i.dataCriacao,
+        grupos: i.grupos,
+        idApiKey: i.idApiKey,
+        idSistema: i.idSistema,
+        prefixo: i.prefixo,
+        status: i.status,
+      }));
+
+      // const obj = {
+      //   labels: systems.value.map(i => i.nomeSistema).filter((v, i, a) => a.indexOf(v) === i && v),
+      //   datasets: [
+      //     {
+      //       backgroundColor: getRandomHEX,
+      //       data: systems.value.map(i => i.nomePerfil),
+      //     },
+      //   ],
+      // };
+      // systemChart.value = obj;
+      resolve(res);
+    }).catch((err) => {
+      reject(err);
+    });
   });
 };
 
 const handlePagination = (action, callback) => {
-  data.value = [];
   if (action === "next") {
     pagination.value.actual++;
     fetchSystems();
@@ -118,6 +123,7 @@ const handlePagination = (action, callback) => {
     fetchSystems();
   }
   if (action === "limit") {
+    pagination.value.limit = callback;
     fetchSystems();
   }
 };
@@ -153,8 +159,6 @@ const handleModal = (template, _value) => {
 };
 
 onMounted(() => {
-  Promise.all([
-    fetchSystems(),
-  ]);
+  fetchSystems();
 });
 </script>

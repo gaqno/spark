@@ -10,11 +10,6 @@ declare module 'pinia' {
   }
 }
 
-declare module 'vue-csv-import' {
-  import { VueCsvImport } from 'vue-csv-import'
-  export { VueCsvImport }
-}
-
 declare module "*.vue" {
   import Vue from 'vue'
   export default Vue

@@ -390,16 +390,45 @@ yarn dev
 ```sh
 yarn test
 ```
-
 ---
-
-
 ## 🗺 Roadmap
-
-> - [X] `ℹ️  Task 1: Implement initial UI`
-> - [x] `ℹ️  Task 2: Implement initial role permission mock`
-> - [ ] `ℹ️  Task 3: Implement AdminSSO mock`
-
+> - [X] `ℹ️  Implement initial UI`
+> - [ ] `ℹ️  Implement backend connection`
+             [X] `Implement API caller using Axios.`
+             [X] `Implement ENV logic.`
+             [ ] `Login Flow.`
+             [ ] `Auth Token.`
+> - [ ] `ℹ️  Implement localStorage && sessionStorage cache`
+> - [X] `ℹ️  Implement Reactive Stores`
+             [X] `@/store/app.ts`
+                [X] `Initial state`
+                [X] `Getters`
+                [X] `Setters`
+             [X] `@/store/client.ts`
+                [X] `Initial state`
+                [X] `Getters`
+                [X] `Setters
+> - [X] `ℹ️  Implement TableComponent`
+             [X] `Improved logic to prevent templates.`
+             [X] `Pagination`
+             [X] `Slide filters`
+             [ ] `Query Search`
+> - [X] `ℹ️  Implement initial role sidebar permission mock`
+> - [X] `ℹ️  Implement AdminSSO - ApiKeys component`
+             [ ] `ℹ️  Implement edit on Slide.`
+> - [X] `ℹ️  Implement AdminSSO - Users component`
+             [ ] `ℹ️  Implement edit on Slide.`
+> - [X] `ℹ️  Implement AdminSSO - Permission Groups component`
+             [ ] `ℹ️  Implement edit on Slide.`
+> - [X] `ℹ️  Implement AdminSSO - Systems component`
+             [ ] `ℹ️  Implement edit on Slide.`
+> - [ ] `ℹ️  Implement ShopPortal component`
+> - [ ] `ℹ️  Implement BestPracticies component`
+> - [ ] `ℹ️  Implement Comunication component`
+> - [ ] `ℹ️  Implement MyFranchies component`
+> - [ ] `ℹ️  Implement PowerBI component`
+> - [ ] `ℹ️  Implement ProductCatalog component`
+> - [ ] `ℹ️  Implement Employees component`
 
 ---
 

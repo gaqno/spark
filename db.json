@@ -1,0 +1,820 @@
+{
+  "sistema": [
+    {
+      "idSistema": "1",
+      "nome": "SSO",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "2",
+      "nome": "Admin SSO",
+      "url": "https://app.hmg.redeancora.com.br/admin",
+      "descricao": null,
+      "status": "A",
+      "icone": "gear",
+      "permissoes": null
+    },
+    {
+      "idSistema": "3",
+      "nome": "Integrador ANCORA",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "4",
+      "nome": "Portal de Compras",
+      "url": "https://app.hmg.redeancora.com.br/b2b",
+      "descricao": null,
+      "status": "A",
+      "icone": "cart",
+      "permissoes": null
+    },
+    {
+      "idSistema": "5",
+      "nome": "Portal ANCORA",
+      "url": "https://app.hmg.redeancora.com.br/portal",
+      "descricao": null,
+      "status": "A",
+      "icone": "house",
+      "permissoes": null
+    },
+    {
+      "idSistema": "7",
+      "nome": "Benner API",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "8",
+      "nome": "Integrador WMS",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "9",
+      "nome": "Boas Práticas Admin",
+      "url": "https://app.hmg.redeancora.com.br/boas-praticas-admin",
+      "descricao": null,
+      "status": "A",
+      "icone": "bookmark-check",
+      "permissoes": null
+    },
+    {
+      "idSistema": "10",
+      "nome": "Comunicações",
+      "url": "https://app.hmg.redeancora.com.br/comunicacoes",
+      "descricao": null,
+      "status": "A",
+      "icone": "megaphone",
+      "permissoes": null
+    },
+    {
+      "idSistema": "11",
+      "nome": "NDD API",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "12",
+      "nome": "Email Producer",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "13",
+      "nome": "NFE API",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "14",
+      "nome": "Minhas Franquias",
+      "url": "https://app.hmg.redeancora.com.br/minhas-franquias",
+      "descricao": null,
+      "status": "A",
+      "icone": "shop-window",
+      "permissoes": null
+    },
+    {
+      "idSistema": "22",
+      "nome": "Integrador NFE",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "25",
+      "nome": "Integrador Aprimora",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "34",
+      "nome": "Catálogo de Produtos",
+      "url": "https://catalogo.redeancora.com.br/",
+      "descricao": "Catálogo de Produtos da Rede ANCORA",
+      "status": "A",
+      "icone": "tools",
+      "permissoes": null
+    }
+  ],
+  "usuario": {
+    "id": "28",
+    "login": "gabriel.aquino@redeancora.com.br",
+    "nome": "Gabriel Aquino",
+    "roles": [
+      "ADMINISTRADORES"
+    ],
+    "sistemas": [
+      {
+        "id": "2",
+        "nome": "Admin SSO",
+        "url": "https://app.hmg.redeancora.com.br/admin",
+        "icone": "gear"
+      },
+      {
+        "id": "4",
+        "nome": "Portal de Compras",
+        "url": "https://app.hmg.redeancora.com.br/b2b",
+        "icone": "cart"
+      },
+      {
+        "id": "5",
+        "nome": "Portal ANCORA",
+        "url": "https://app.hmg.redeancora.com.br/portal",
+        "icone": "house"
+      },
+      {
+        "id": "9",
+        "nome": "Boas Práticas Admin",
+        "url": "https://app.hmg.redeancora.com.br/boas-praticas-admin",
+        "icone": "bookmark-check"
+      },
+      {
+        "id": "10",
+        "nome": "Comunicações",
+        "url": "https://app.hmg.redeancora.com.br/comunicacoes",
+        "icone": "megaphone"
+      },
+      {
+        "id": "14",
+        "nome": "Minhas Franquias",
+        "url": "https://app.hmg.redeancora.com.br/minhas-franquias",
+        "icone": "shop-window"
+      },
+      {
+        "id": "34",
+        "nome": "Catálogo de Produtos",
+        "url": "https://catalogo.redeancora.com.br/",
+        "icone": "tools"
+      }
+    ],
+    "empresas": [
+      {
+        "id": "1",
+        "cnpj": "25187746000187",
+        "nome": "Rede ANCORA - Nacional"
+      }
+    ]
+  },
+  "usuarios": [
+    {
+      "idUsuario": "1",
+      "idExterno": "null",
+      "nome": "Administrador",
+      "login": "admin",
+      "status": "A",
+      "empresas": [
+        {
+        "idEmpresa": "1",
+        "cnpj": "25187746000187",
+        "nome": "Rede ANCORA - Nacional",
+        "idGrupo": "4"
+      }
+    ],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "2",
+      "idExterno": "33202",
+      "nome": "Antonio Henrique Carelli Netto",
+      "login": "antonio.carelli@redeancora.com.br",
+      "status": "A",
+      "empresas": [
+        {
+          "idEmpresa": "1",
+          "cnpj": "25187746000187",
+          "nome": "Rede ANCORA - Nacional",
+          "idGrupo": "4"
+        }
+      ],
+      "idGrupo": [[
+          "4",
+          "39",
+          "50",
+          "15",
+          "27",
+          "62",
+          "24",
+          "59",
+          "25",
+          "60",
+          "61",
+          "26",
+          "28",
+          "63",
+          "72",
+          "18",
+          "53",
+          "17",
+          "52",
+          "54",
+          "19",
+          "51",
+          "16",
+          "71",
+          "33",
+          "70",
+          "30",
+          "65",
+          "12",
+          "47",
+          "8",
+          "43",
+          "7",
+          "42",
+          "46",
+          "11",
+          "9",
+          "44",
+          "10",
+          "45",
+          "41",
+          "6"
+        ]]
+    },
+    {
+      "idUsuario": "3",
+      "idExterno": "42474",
+      "nome": "Guilherme Viana",
+      "login": "guilherme.viana@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "4",
+      "idExterno": "34630",
+      "nome": "Jonatas de Moraes Junior",
+      "login": "jonatas.moraes@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "5",
+      "idExterno": "42486",
+      "nome": "Rafael Busuth",
+      "login": "rafael.busuth@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "6",
+      "idExterno": "34940",
+      "nome": "Denis Colli Spalenza",
+      "login": "denis.spalenza@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "7",
+      "idExterno": "34632",
+      "nome": "Rubia Gomes",
+      "login": "rubia.gomes@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "8",
+      "idExterno": "42492",
+      "nome": "Luis Marin",
+      "login": "luis.marin@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "9",
+      "idExterno": "34636",
+      "nome": "Antonio Neto",
+      "login": "antonio.neto@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "10",
+      "idExterno": "42484",
+      "nome": "Rodrigo Nobrega da Silva",
+      "login": "rodrigo.nobrega@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "11",
+      "idExterno": "34634",
+      "nome": "Leonardo Gutierrez",
+      "login": "leonardo.gutierrez@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "12",
+      "idExterno": "42482",
+      "nome": "Thiago Lima",
+      "login": "thiago.lima@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "13",
+      "idExterno": "42488",
+      "nome": "Thais Alves",
+      "login": "thais.alves@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "14",
+      "idExterno": "34924",
+      "nome": "José Augusto",
+      "login": "gestor@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "15",
+      "idExterno": "null",
+      "nome": "Colaborador de Teste",
+      "login": "colaborador1@gmail.com",
+      "status": "N",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "16",
+      "idExterno": "null",
+      "nome": "Gabriel Aquino",
+      "login": "gabriel.aquino@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    }
+  ],
+  "perfil": [
+    {
+      "idPerfil": "1",
+      "nomePerfil": "SISTEMAS_EXTERNOS",
+      "nomeSistema": "SSO"
+    },
+    {
+      "idPerfil": "2",
+      "nomePerfil": "ACESSO_ADMIN_SSO",
+      "nomeSistema": "SSO"
+    },
+    {
+      "idPerfil": "3",
+      "nomePerfil": "ACESSO_PORTAL",
+      "nomeSistema": "SSO"
+    },
+    {
+      "idPerfil": "4",
+      "nomePerfil": "ADMINISTRADORES",
+      "nomeSistema": "Admin SSO"
+    },
+    {
+      "idPerfil": "5",
+      "nomePerfil": "FRANQUEADO",
+      "nomeSistema": "Integrador ANCORA"
+    },
+    {
+      "idPerfil": "6",
+      "nomePerfil": "LOJISTA",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "7",
+      "nomePerfil": "COMPRADOR",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "8",
+      "nomePerfil": "BALCÃO",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "9",
+      "nomePerfil": "FINANCEIRO",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "10",
+      "nomePerfil": "GARANTIA",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "11",
+      "nomePerfil": "ENTRADA DE NOTA",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "12",
+      "nomePerfil": "USUARIO",
+      "nomeSistema": "Portal ANCORA"
+    },
+    {
+      "idPerfil": "14",
+      "nomePerfil": "SISTEMAS",
+      "nomeSistema": "Benner API"
+    },
+    {
+      "idPerfil": "15",
+      "nomePerfil": "ADMINISTRADOR",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "16",
+      "nomePerfil": "USUARIO",
+      "nomeSistema": "Comunicações"
+    },
+    {
+      "idPerfil": "17",
+      "nomePerfil": "CENTRAL_EVENTOS",
+      "nomeSistema": "Comunicações"
+    },
+    {
+      "idPerfil": "18",
+      "nomePerfil": "ADMINISTRADORES",
+      "nomeSistema": "Comunicações"
+    },
+    {
+      "idPerfil": "19",
+      "nomePerfil": "ESTATISTICAS",
+      "nomeSistema": "Comunicações"
+    },
+    {
+      "idPerfil": "20",
+      "nomePerfil": "SISTEMA EXTERNO",
+      "nomeSistema": "NDD API"
+    },
+    {
+      "idPerfil": "21",
+      "nomePerfil": "SISTEMA EXTERNO",
+      "nomeSistema": "Email Producer"
+    },
+    {
+      "idPerfil": "22",
+      "nomePerfil": "SISTEMA EXTERNO",
+      "nomeSistema": "NFE API"
+    },
+    {
+      "idPerfil": "23",
+      "nomePerfil": "CONSULTA",
+      "nomeSistema": "Integrador ANCORA"
+    },
+    {
+      "idPerfil": "24",
+      "nomePerfil": "CONSULTAR_CLASSIFICACAO_FRANQUIA",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "25",
+      "nomePerfil": "FINANCEIRO_CONTABIL",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "26",
+      "nomePerfil": "FRANQUIAS",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "27",
+      "nomePerfil": "CENTRO_DISTRIBUICAO",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "28",
+      "nomePerfil": "USUARIO_LOJISTA",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "29",
+      "nomePerfil": "GESTAO_COLABORADORES",
+      "nomeSistema": "SSO"
+    },
+    {
+      "idPerfil": "30",
+      "nomePerfil": "GESTAO_COLABORADORES",
+      "nomeSistema": "Portal ANCORA"
+    },
+    {
+      "idPerfil": "31",
+      "nomePerfil": "GESTAO_COLABORADORES_ADMIN",
+      "nomeSistema": "SSO"
+    },
+    {
+      "idPerfil": "32",
+      "nomePerfil": "GESTOR_CERTIFICADOS",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "33",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "34",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "35",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "36",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "37",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "38",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "39",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    }
+  ],
+  "apikey": [
+    {
+      "idApiKey": "1",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "47eaf30",
+      "consumidor": "Admin SSO",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "2",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "fb50911",
+      "consumidor": "Integrador NFE",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "3",
+      "idSistema": "3",
+      "nomeSistema": "Integrador ANCORA",
+      "prefixo": "4e10866",
+      "consumidor": "25.187.746/0001-87",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "4",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "b8e432a",
+      "consumidor": "Portal ANCORA",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "5",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "90678c5",
+      "consumidor": "Benner API",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "6",
+      "idSistema": "7",
+      "nomeSistema": "Benner API",
+      "prefixo": "b118c0e",
+      "consumidor": "Teste",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "7",
+      "idSistema": "7",
+      "nomeSistema": "Benner API",
+      "prefixo": "79b2f19",
+      "consumidor": "Boas Práticas Admin",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "8",
+      "idSistema": "10",
+      "nomeSistema": "Comunicações",
+      "prefixo": "cc9c0e3",
+      "consumidor": "Portal ANCORA",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "9",
+      "idSistema": "11",
+      "nomeSistema": "NDD API",
+      "prefixo": "d9e35bb",
+      "consumidor": "Loja do Franqueado",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "10",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "41162bb",
+      "consumidor": "NDD API",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "11",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "3087a8e",
+      "consumidor": "Comunicações",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "12",
+      "idSistema": "10",
+      "nomeSistema": "Comunicações",
+      "prefixo": "8d1d090",
+      "consumidor": "Boas Práticas Admin",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "13",
+      "idSistema": "12",
+      "nomeSistema": "Email Producer",
+      "prefixo": "73e3ece",
+      "consumidor": "SSO",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "14",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "dbbf0f9",
+      "consumidor": "Email Producer",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "15",
+      "idSistema": "13",
+      "nomeSistema": "NFE API",
+      "prefixo": "b8fb755",
+      "consumidor": "Interceptador NDD",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "16",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "29ee7b4",
+      "consumidor": "NFE API",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "17",
+      "idSistema": "3",
+      "nomeSistema": "Integrador ANCORA",
+      "prefixo": "68e4f3f",
+      "consumidor": "Boas Práticas Admin",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "18",
+      "idSistema": "9",
+      "nomeSistema": "Boas Práticas Admin",
+      "prefixo": "0dc851b",
+      "consumidor": "Portal ANCORA",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "19",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "cfc19c1",
+      "consumidor": "Boas Práticas Admin",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "20",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "805039a",
+      "consumidor": "Portal ANCORA",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "21",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "bf64504",
+      "consumidor": "Admin SSO",
+      "dataCriacao": "22/08/2023 09:28:08",
+      "status": "A"
+    },
+    {
+      "idApiKey": "22",
+      "idSistema": "1",
+      "nomeSistema": "SSO",
+      "prefixo": "179c936",
+      "consumidor": "Minhas Franquias",
+      "dataCriacao": "22/08/2023 09:28:08",
+      "status": "A"
+    },
+    {
+      "idApiKey": "23",
+      "idSistema": "14",
+      "nomeSistema": "Minhas Franquias",
+      "prefixo": "2ec4d69",
+      "consumidor": "ACIONAMENTO MANUAL",
+      "dataCriacao": "20/07/2023 08:45:03",
+      "status": "A"
+    },
+    {
+      "idApiKey": "24",
+      "idSistema": "2",
+      "nomeSistema": "Admin SSO",
+      "prefixo": "ad365c5",
+      "consumidor": "Loja do Franqueado",
+      "dataCriacao": "22/08/2023 10:14:17",
+      "status": "A"
+    }
+  ]
+}

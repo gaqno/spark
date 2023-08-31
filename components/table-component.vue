@@ -1,7 +1,7 @@
 <!-- eslint-disable tailwindcss/no-custom-classname -->
 <template>
   <section>
-    <div class="rounded bg-white px-4 py-8 sm:px-6 lg:px-8">
+    <div class="rounded border border-slate-100/60 px-4 py-8 sm:px-6 lg:px-8">
       <div class="sm:flex sm:items-center">
         <div class="sm:flex-auto">
           <h1 class="text-gray-900 text-base font-semibold leading-6">
@@ -30,7 +30,7 @@
       />
 
       <div v-else class="mt-8 flow-root">
-        <div class="scrollbar-thumb-gray-300 scrollbar-track-gray-100 -mx-4  -my-2 max-h-[50vh] overflow-x-auto scrollbar scrollbar-thin sm:-mx-6 lg:-mx-8">
+        <div class="scrollbar-thumb-gray-300 scrollbar-track-gray-100 -mx-4 -my-2 max-h-[60vh] overflow-x-auto scrollbar scrollbar-thin sm:-mx-6 lg:-mx-8">
           <div class="inline-block min-h-[48vh] min-w-full py-2 align-middle sm:px-6 lg:px-8">
             <table class="divide-gray-300  min-w-full divide-y rounded">
               <thead>
@@ -54,12 +54,12 @@
               </thead>
 
               <tbody class="divide-gray-200 divide-y ">
-                <tr v-for="tr, i in props.data" :key="`tr_${i}`" class="hover:bg-slate-100">
+                <tr v-for="tr, i in props.data" :key="`tr_${i}`" :class="!app.darkMode ? 'hover:bg-slate-100' : 'hover:bg-slate-600'">
                   <td
                     v-for="td, j in props.columns"
                     :key="`td_${j}`"
                     :class="[
-                      'text-gray-900 m-2 whitespace-nowrap rounded pl-4 pr-3 text-sm font-medium hover:bg-slate-200/50',
+                      'text-gray-900 m-2 whitespace-nowrap rounded pl-4 pr-3 text-sm font-medium',
                       // td.type === 'icon' ? 'flex items-center' : '',
                       // td.type === 'group_info' ? 'flex items-center' : '',
                       // td.type === 'boolean' ? 'flex items-center' : '',
@@ -177,8 +177,8 @@
                     </span>
 
                     <div v-if="td.type === 'actions'">
-                      <div :class="[i === 0 ? 'dropdown-end' : 'dropdown-top dropdown-end', 'dropdown']">
-                        <label tabindex="0" class="btn-ghost btn">
+                      <div :class="[i === 0 ? 'dropdown-end' : 'dropdown-end dropdown-top', 'dropdown']">
+                        <label tabindex="0" class="btn btn-ghost">
                           <Icon name="mdi:dots-horizontal" class="x-2 h-5 w-5" />
                         </label>
                         <ul tabindex="0" class="dropdown-content menu rounded-box z-[1] w-auto bg-white p-2 shadow">
@@ -198,15 +198,13 @@
                   </td>
                 </tr>
               </tbody>
-
-              <tfoot></tfoot>
             </table>
           </div>
         </div>
 
         <nav
-          v-if="props.pagination.actual !== 0 && props.pagination.limit < props.pagination.total"
-          :class="[!app.darkMode ? 'border-gray-200 bg-white' : 'border-sky-600 bg-slate-600', 'flex justify-between pt-8']"
+          v-if="props.pagination.actual !== 0"
+          :class="[!app.darkMode ? 'border-gray-200 bg-white' : 'border-sky-600 bg-slate-700', 'my-4 flex justify-between rounded p-2']"
           aria-label="Pagination"
         >
           <div :class="[!app.darkMode ? 'text-gray-700' : '', 'hidden sm:block']">
@@ -229,7 +227,7 @@
           </div>
           <div class="mt-auto flex flex-1 justify-between gap-x-4 sm:justify-end">
             <button
-              class="btn-ghost btn"
+              class="btn btn-ghost"
               @click="emits('page', 1)"
             >
               <Icon name="mdi:chevron-double-left" size="2em" />
@@ -237,7 +235,7 @@
 
             <button
               :disabled="props.pagination.actual === 1"
-              class="btn-ghost btn"
+              class="btn btn-ghost"
               @click="emits('prev')"
             >
               <Icon name="mdi:chevron-left" size="2em" />
@@ -245,7 +243,7 @@
             <button
               v-for="page in getVisiblePages"
               :key="`page_${page}`"
-              class="btn-ghost btn"
+              class="btn btn-ghost"
               :class="{ 'bg-black text-white': page === props.pagination.actual }"
               @click="emits('page', page)"
             >
@@ -255,15 +253,14 @@
             </button>
 
             <button
-              v-if="props.pagination.actual < props.pagination.pages"
               :disabled="props.pagination.actual === props.pagination.pages"
-              class="btn-ghost btn"
+              class="btn btn-ghost"
               @click="emits('next')"
             >
               <Icon name="mdi:chevron-right" size="2em" />
             </button>
             <button
-              class="btn-ghost btn"
+              class="btn btn-ghost"
               @click="emits('page', props.pagination.pages)"
             >
               <Icon name="mdi:chevron-double-right" size="2em" />

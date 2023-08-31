@@ -1,0 +1,4 @@
+{
+  "/:tunnel/api/:category": "/:tunnel/api/:category",
+  "/:tunnel/api/:category/:filter": "/:tunnel/api/:category/:filter"
+}
