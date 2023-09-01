@@ -57,14 +57,14 @@
                       </p>
 
                       <p class="text-2xl font-medium text-slate-900">
-                        {{ permissionGroups.length }}
+                        1
                       </p>
                     </div>
 
                     <div class="inline-flex gap-2 rounded bg-green-100 p-1 text-green-600">
                       <Icon name="material-symbols:show-chart" />
                       <span class="text-xs font-medium">
-                        {{ permissionGroups.length }}
+                        2
                       </span>
                     </div>
                   </article>
@@ -76,14 +76,14 @@
                       </p>
 
                       <p class="text-2xl font-medium text-slate-900">
-                        {{ permissionGroups.length }}
+                        3
                       </p>
                     </div>
 
                     <div class="inline-flex gap-2 rounded bg-green-100 p-1 text-green-600">
                       <Icon name="material-symbols:show-chart" />
                       <span class="text-xs font-medium">
-                        {{ permissionGroups.length }}
+                        5
                       </span>
                     </div>
                   </article>
@@ -183,44 +183,4 @@ ChartJS.register(Title, Tooltip, Legend, BarElement, ArcElement, CategoryScale, 
 const app = useAppStore();
 const emits = defineEmits("change-view");
 
-const pagination = ref({
-  total: 10,
-  limit: 10,
-  actual: 1,
-  pages: 0,
-});
-
-const systems = ref([]);
-const permissionGroups = ref([]);
-
-// const handlePagination = (action, callback) => {
-//   if (action === "next") {
-//     pagination.value.actual++;
-//     if (app.route === "admin_sso_keys") { fetchApiKeys(); }
-//     if (app.route === "admin_sso_users") { fetchUsers(); }
-//     if (app.route === "admin_sso_systems") { fetchSystems(); }
-//     if (app.route === "admin_sso_groups") { fetchPermissionGroups(); }
-//   }
-//   if (action === "prev") {
-//     pagination.value.actual--;
-//     if (app.route === "admin_sso_keys") { fetchApiKeys(); }
-//     if (app.route === "admin_sso_users") { fetchUsers(); }
-//     if (app.route === "admin_sso_systems") { fetchSystems(); }
-//     if (app.route === "admin_sso_groups") { fetchPermissionGroups(); }
-//   }
-//   if (action === "page") {
-//     pagination.value.actual = callback;
-//     if (app.route === "admin_sso_keys") { fetchApiKeys(); }
-//     if (app.route === "admin_sso_users") { fetchUsers(); }
-//     if (app.route === "admin_sso_systems") { fetchSystems(); }
-//     if (app.route === "admin_sso_groups") { fetchPermissionGroups(); }
-//   }
-//   if (action === "limit") {
-//     pagination.value.limit = callback;
-//     if (app.route === "admin_sso_keys") { fetchApiKeys(); }
-//     if (app.route === "admin_sso_users") { fetchUsers(); }
-//     if (app.route === "admin_sso_systems") { fetchSystems(); }
-//     if (app.route === "admin_sso_groups") { fetchPermissionGroups(); }
-//   }
-// };
 </script>

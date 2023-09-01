@@ -82,14 +82,12 @@ const fetchSystems = () => {
       pagination.value.total = parseInt(res.length);
       pagination.value.pages = 5;
       systems.value = res.map(i => ({
-        ...i,
-        consumidor: i.consumidor,
-        dataCriacao: i.dataCriacao,
-        grupos: i.grupos,
-        idApiKey: i.idApiKey,
-        idSistema: i.idSistema,
-        prefixo: i.prefixo,
+        descricao: i.descricao,
+        icone: i.icone,
+        nome: i.nome,
+        permissoes: i.permissoes,
         status: i.status,
+        url: i.url,
       }));
 
       // const obj = {
@@ -132,6 +130,7 @@ const handleSlide = (template, _value) => {
   if (template === "edit") {
     app.setSlide({
       show: true,
+      title: "Editar sistema",
       template: "edit",
       data: { ..._value },
     });
@@ -140,6 +139,7 @@ const handleSlide = (template, _value) => {
   if (template === "filters") {
     app.setSlide({
       show: true,
+      title: "Filtros sistema",
       template: "edit",
       data: { ..._value },
     });

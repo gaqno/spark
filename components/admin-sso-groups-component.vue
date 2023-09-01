@@ -65,7 +65,7 @@ import { getPermissionGroups, getSystems } from "~/service/api";
 
 const app = useAppStore();
 const permissionGroups = ref([]);
-
+const systems = ref([]);
 const pagination = ref({
   actual: 1,
   q: "",
@@ -96,6 +96,22 @@ const fetchPermissionGroups = () => {
   });
 };
 
+const fetchSystems = () => {
+  return new Promise((resolve, reject) => {
+    getSystems()
+      .then((res) => {
+        systems.value = res.map(i => ({
+          ...i,
+          idSistema: i.idSistema,
+          nomeSistema: i.nomeSistema,
+        }));
+        resolve(res);
+      }).catch((err) => {
+        reject(err);
+      });
+  });
+};
+
 const handlePagination = (action, callback) => {
   if (action === "next") {
     pagination.value.actual++;
@@ -116,14 +132,21 @@ const handlePagination = (action, callback) => {
 };
 
 const handleSlide = (template, _value) => {
-  getSystems({ idSistema: _value.idPerfil })
+  getPermissionGroups({ idPerfil: _value.idPerfil })
     .then((res) => {
       if (template === "edit") {
+        app.toggleSlide();
+        console.log(res[0].permissoes);
         app.setSlide({
           show: true,
           template: "edit",
           title: "Editar grupo de permissões",
-          data: { ..._value, ...res[0] },
+          data: {
+            ..._value,
+            ...systems.value.find(i => i.nome === _value.nomeSistema),
+            permissoes: res[0].permissoes,
+            sistemas: systems.value,
+          },
         });
       }
 
@@ -135,8 +158,6 @@ const handleSlide = (template, _value) => {
           data: { ..._value, ...res[0] },
         });
       }
-    }).catch((err) => {
-      console.log(err);
     });
 };
 
@@ -153,6 +174,9 @@ const handleModal = (template, _value) => {
 };
 
 onMounted(() => {
-  fetchPermissionGroups();
+  Promise.all([
+    fetchPermissionGroups(),
+    fetchSystems(),
+  ]);
 });
 </script>

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useAppStore } from "@/store/app";
-import { EmpresaResponse } from "types/response/EmpresaResponse";
+import { EmpresaResponse } from "@/types/response/EmpresaResponse";
 
 const callApi = (method: string, endpoint: string, data?: any, loading?: string) => {
   const config = useRuntimeConfig();

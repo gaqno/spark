@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useAppStore } from "@/store/app";
-import { ApiKeyResponse } from "types/response/ApiKeyResponse";
-import { ApiKeyRequest } from "types/request/ApiKeyRequest";
-import { CriarApiKeyResponse } from "types/response/CriarApiKeyResponse";
+import { ApiKeyResponse } from "@/types/response/ApiKeyResponse";
+import { ApiKeyRequest } from "@/types/request/ApiKeyRequest";
+import { CriarApiKeyResponse } from "@/types/response/CriarApiKeyResponse";
 
 const callApi = (method: string, endpoint: string, data?: any, loading?: string) => {
   const config = useRuntimeConfig();

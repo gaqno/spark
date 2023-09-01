@@ -67,11 +67,13 @@
 <script setup>
 import { Chart as ChartJS, Title, Tooltip, ArcElement, PointElement, Legend, BarElement, CategoryScale, LinearScale, LineElement } from "chart.js";
 import { useAppStore } from "@/store/app";
-import { getApiKeys } from "~/service/api";
+import { getApiKeys, getCompanies, getPermissionGroups, getSystems } from "~/service/api";
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, ArcElement, CategoryScale, PointElement, LinearScale, LineElement);
 const app = useAppStore();
 const apiKeys = ref([]);
+const systems = ref([]);
+const companies = ref([]);
 const pagination = ref({
   total: 0,
   pages: 0,
@@ -119,6 +121,42 @@ const fetchApiKeys = () => {
   });
 };
 
+const fetchCompanies = () => {
+  return new Promise((resolve, reject) => {
+    getCompanies()
+      .then((res) => {
+        companies.value = res.map(i => ({
+          ...i,
+        }));
+        resolve(res);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
+};
+
+const fetchSystems = () => {
+  return new Promise((resolve, reject) => {
+    getSystems()
+      .then((res) => {
+        systems.value = res.map(i => ({
+          descricao: i.descricao,
+          icone: i.icone,
+          idSistema: i.idSistema,
+          nome: i.nome,
+          permissoes: i.permissoes,
+          status: i.status,
+          url: i.url,
+        }));
+        resolve(res);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
+};
+
 const handlePagination = (action, callback) => {
   if (action === "next") {
     pagination.value.actual++;
@@ -140,19 +178,27 @@ const handlePagination = (action, callback) => {
 
 const handleSlide = (template, _value) => {
   if (template === "edit") {
-    app.setSlide({
-      show: true,
-      template: "edit",
-      data: { ..._value },
-    });
-  }
-
-  if (template === "filters") {
-    app.setSlide({
-      show: true,
-      template: "edit",
-      data: { ..._value },
-    });
+    getApiKeys({ idApiKey: _value.idApiKey })
+      .then((apikey) => {
+        getPermissionGroups({ nomeSistema: apikey[0].nomeSistema })
+          .then((group) => {
+            app.setSlide({
+              show: true,
+              title: "Editar chave de API",
+              template: "edit",
+              data: {
+                ..._value,
+                grupos: apikey[0].grupos || [],
+                sistemas: systems.value,
+                empresas: companies.value,
+                gruposArr: group,
+              },
+            });
+          })
+          .catch((err) => {
+            console.log({ err });
+          });
+      });
   }
 };
 
@@ -169,6 +215,10 @@ const handleModal = (template, _value) => {
 };
 
 onMounted(() => {
-  fetchApiKeys();
+  Promise.all([
+    fetchApiKeys(),
+    fetchCompanies(),
+    fetchSystems(),
+  ]);
 });
 </script>

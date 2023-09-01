@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useAppStore } from "@/store/app";
-import { PerfilAcessoResponse } from "types/response/PerfilAcessoResponse";
-import { PerfilAcessoConfirmacaoResponse } from "types/response/PerfilAcessoConfirmacaoResponse";
+import { PerfilAcessoResponse } from "@/types/response/PerfilAcessoResponse";
+import { PerfilAcessoConfirmacaoResponse } from "@/types/response/PerfilAcessoConfirmacaoResponse";
 
 const callApi = (method: string, endpoint: string, data?: any, loading?: string) => {
   const config = useRuntimeConfig();

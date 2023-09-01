@@ -85,6 +85,7 @@ export const useAppStore = defineStore("app", {
     toggleSlide () {
       this.slide.show = false;
       this.slide.template = "";
+      this.slide.title = "";
       this.slide.data = {};
     },
     toggleSidebarSmall () {

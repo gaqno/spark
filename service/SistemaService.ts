@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useAppStore } from "@/store/app";
-import { SistemaResponse } from "types/response/SistemaResponse";
-import { SistemaRequest } from "types/request/SistemaRequest";
+import { SistemaResponse } from "@/types/response/SistemaResponse";
+import { SistemaRequest } from "@/types/request/SistemaRequest";
 
 const callApi = (method: string, endpoint: string, data?: any, loading?: string) => {
   const config = useRuntimeConfig();

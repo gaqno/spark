@@ -126,6 +126,7 @@ const handleSlide = (template, _value) => {
   if (template === "edit") {
     app.setSlide({
       show: true,
+      title: "Editar boas práticas",
       template: "edit",
       data: { ..._value },
     });
@@ -134,6 +135,7 @@ const handleSlide = (template, _value) => {
   if (template === "filters") {
     app.setSlide({
       show: true,
+      title: "Filtros boas práticas",
       template: "edit",
       data: { ..._value },
     });

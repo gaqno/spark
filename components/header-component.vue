@@ -5,6 +5,7 @@
       v-model="app.slide.show"
       type="checkbox"
       class="drawer-toggle"
+      @click="app.toggleSlide"
     >
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
@@ -36,7 +37,7 @@
                       </label>
                       <ul tabindex="0" class="dropdown-content menu rounded-box z-[1] w-52 bg-base-100 p-2 shadow">
                         <li class="text-xs">
-                          <input class="input input-ghost w-48" placeholder="Buscar por">
+                          <input class="input input-bordered w-48" placeholder="Buscar por">
                         </li>
                       </ul>
                     </div>
@@ -130,6 +131,7 @@ const app = useAppStore();
 const handleView = () => {
   app.setSlide({
     show: false,
+    title: "Sobre nós",
     template: "about_us",
     data: {},
   });

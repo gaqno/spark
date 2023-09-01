@@ -84,3 +84,7 @@ export const getSystems = (params: any) => {
 export const postSystem = (body: any) => {
   return callApi("POST", "/portal/api/sistema", { body });
 };
+
+export const getCompanies = (params: any) => {
+  return callApi("GET", "/portal/api/empresas", { params });
+};

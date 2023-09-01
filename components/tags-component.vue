@@ -18,7 +18,7 @@
 
     <datalist v-if="options" :id="id">
       <option v-for="option in availableOptions" :key="option" :value="option">
-        {{ option }}
+        {{ option.nome }} - {{ option.descricao }}
       </option>
     </datalist>
 
@@ -29,7 +29,7 @@
         class="tag"
         :class="{ duplicate: tag === duplicate }"
       >
-        {{ tag }}
+        {{ tag.nome }}
         <button class="delete" @click="removeTag(index)">
           x
         </button>
