@@ -1,5 +1,62 @@
 <template>
   <div class="flex h-full flex-col px-8">
+    <div class="flex justify-between gap-x-6 py-4">
+      <div class="my-auto flex flex-row gap-x-4">
+        <article class="rounded-lg border border-slate-100 bg-white p-6">
+          <div>
+            <p class="truncate text-sm text-slate-500">
+              Total de grupos de permissões
+            </p>
+
+            <p class="text-2xl font-medium text-slate-900">
+              {{ permissionGroups.length }}
+            </p>
+          </div>
+
+          <div class="mt-1 flex gap-1 text-green-600">
+            <Icon name="material-symbols:show-chart" class="h-4 w-4" />
+
+            <p class="flex gap-2 text-xs">
+              <span class="font-medium">
+                67.81%
+              </span>
+
+              <span class="truncate text-slate-500">
+                Maior que mês passado
+              </span>
+            </p>
+          </div>
+        </article>
+
+        <article class="rounded-lg border border-slate-100 bg-white p-6">
+          <div>
+            <p class="truncate text-sm text-slate-500">
+              Total de grupos de sistemas
+            </p>
+
+            <p class="text-2xl font-medium text-slate-900">
+              {{ systems.length }}
+            </p>
+          </div>
+
+          <div class="mt-1 flex gap-1 text-red-600">
+            <Icon name="material-symbols:show-chart" class="h-4 w-4 rotate-180" />
+
+            <p class="flex gap-2 text-xs">
+              <span class="font-medium">
+                67.81%
+              </span>
+              <span class="truncate text-slate-500">
+                Maior que mês passado
+              </span>
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-w-lg" />
+    </div>
+
     <TableComponent
       template="stock"
       title="Grupos de permissões"
@@ -60,10 +117,24 @@
 </template>
 
 <script setup>
+import { Bar } from "vue-chartjs";
+import { Chart as ChartJS, Title, Tooltip, ArcElement, PointElement, Legend, BarElement, CategoryScale, LinearScale, LineElement } from "chart.js";
 import { useAppStore } from "@/store/app";
 import { getPermissionGroups, getSystems } from "~/service/api";
 
+ChartJS.register(Title, Tooltip, Legend, BarElement, ArcElement, CategoryScale, PointElement, LinearScale, LineElement);
+
 definePageMeta({ title: "Grupos de permissões" });
+
+const props = defineProps({
+  chartData: {
+    type: Object,
+    default: () => ({
+      data: {},
+      options: {},
+    }),
+  },
+});
 
 const app = useAppStore();
 const permissionGroups = ref([]);

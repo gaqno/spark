@@ -92,7 +92,7 @@
                     <ul
                       v-if="item.child && item.child.length > 0"
                       tabindex="0"
-                      class="dropdown-content menu rounded-box z-[1] -ml-2.5 w-auto bg-slate-700 p-2 shadow"
+                      class="dropdown-content menu rounded-box z-[1] -ml-2.5 hidden w-auto bg-slate-700 p-2 shadow md:flex"
                     >
                       <li v-for="child in item.child" :key="child.name" class="flex w-auto flex-row gap-y-4">
                         <div class="w-full text-white/50 hover:text-white" @click.prevent="props.action(child.screen)">

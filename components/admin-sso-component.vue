@@ -41,7 +41,7 @@
         </div>
 
         <section>
-          <div class="container mb-[5vh] mt-8 grid grid-cols-1 gap-8 px-8 lg:grid-cols-2">
+          <div class="mb-[5vh] mt-8 grid grid-cols-1 items-center gap-8 px-8 lg:grid-cols-2">
             <div :class="[app.darkMode && 'border', 'card card-compact w-full shadow-xl']">
               <div class="card-body">
                 <h2 :class="[!app.darkMode ? 'text-primary' : 'text-secondary' , 'card-title mt-2']">
@@ -50,41 +50,29 @@
                 <p>Acompanhe os grupos de permissões</p>
 
                 <div class="flex justify-between gap-x-2">
-                  <article class="flex w-full items-end justify-between rounded-lg border border-slate-100 p-6">
-                    <div>
-                      <p class="text-sm text-slate-500">
-                        Total de grupos
-                      </p>
+                  <article class="flex w-full items-center justify-center rounded-lg border border-slate-100 p-6">
+                    <div class="flex w-full flex-col">
+                      <div>
+                        <p class="text-sm text-slate-500">
+                          Total de grupos de permissões
+                        </p>
 
-                      <p class="text-2xl font-medium text-slate-900">
-                        1
-                      </p>
-                    </div>
+                        <span class="flex flex-row">
+                          <p class="text-2xl font-medium text-slate-900">
+                            27
+                          </p>
 
-                    <div class="inline-flex gap-2 rounded bg-green-100 p-1 text-green-600">
-                      <Icon name="material-symbols:show-chart" />
-                      <span class="text-xs font-medium">
-                        2
-                      </span>
-                    </div>
-                  </article>
-
-                  <article class="flex w-full items-end justify-between rounded-lg border border-slate-100 p-6">
-                    <div>
-                      <p class="text-sm text-slate-500">
-                        Total de sistemas com permissões
-                      </p>
-
-                      <p class="text-2xl font-medium text-slate-900">
-                        3
-                      </p>
-                    </div>
-
-                    <div class="inline-flex gap-2 rounded bg-green-100 p-1 text-green-600">
-                      <Icon name="material-symbols:show-chart" />
-                      <span class="text-xs font-medium">
-                        5
-                      </span>
+                          <div class="inline-flex items-center gap-2 rounded bg-green-100 p-1 text-green-600">
+                            <Icon name="material-symbols:show-chart" />
+                            <span class="text-xs font-medium">
+                              7
+                            </span>
+                          </div>
+                        </span>
+                      </div>
+                      <figure>
+                        <Line id="apiKeys" :data="permissionGroupsChartData" :options="optionsChart" />
+                      </figure>
                     </div>
                   </article>
                 </div>
@@ -103,9 +91,31 @@
                   Chaves de API
                 </h2>
                 <p>Acompanhe as chaves de API</p>
-                <figure>
-                  <!-- <Line id="apiKeys" :data="apiKeysChart" :options="chartOptions" /> -->
-                </figure>
+                <article class="flex w-full items-center justify-center rounded-lg border border-slate-100 p-6">
+                  <div class="flex flex-col">
+                    <div>
+                      <p class="text-sm text-slate-500">
+                        Total de chaves de API
+                      </p>
+
+                      <span class="flex flex-row">
+                        <p class="text-2xl font-medium text-slate-900">
+                          1
+                        </p>
+
+                        <div class="inline-flex items-center gap-2 rounded bg-green-100 p-1 text-green-600">
+                          <Icon name="material-symbols:show-chart" />
+                          <span class="text-xs font-medium">
+                            2
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                    <figure>
+                      <Line id="apiKeys" :data="apiKeysChartData" :options="optionsChart" />
+                    </figure>
+                  </div>
+                </article>
                 <div class="card-actions justify-end">
                   <button class="btn bg-primary text-white" @click.prevent="app.$patch({ route: 'admin_sso_keys' })">
                     Detalhes
@@ -120,9 +130,31 @@
                   Sistemas
                 </h2>
                 <span>Acompanhe os sistemas</span>
-                <figure>
-                  <!-- <Line id="systems" :data="systemChart" :options="chartOptions" /> -->
-                </figure>
+                <article class="flex w-full items-center justify-center rounded-lg border border-slate-100 p-6">
+                  <div class="flex flex-col">
+                    <div>
+                      <p class="text-sm text-slate-500">
+                        Total de Sistemas
+                      </p>
+
+                      <span class="flex flex-row">
+                        <p class="text-2xl font-medium text-slate-900">
+                          34
+                        </p>
+
+                        <div class="inline-flex items-center gap-2 rounded bg-green-100 p-1 text-green-600">
+                          <Icon name="material-symbols:show-chart" />
+                          <span class="text-xs font-medium">
+                            2
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                    <figure>
+                      <Line id="apiKeys" :data="systemsChartData" :options="optionsChart" />
+                    </figure>
+                  </div>
+                </article>
                 <div class="card-actions justify-end">
                   <button class="btn bg-primary text-white" @click.prevent="app.$patch({ route: 'admin_sso_systems' })">
                     Detalhes
@@ -137,9 +169,31 @@
                   Usuários
                 </h2>
                 <span>Acompanhe os usuários</span>
-                <figure>
-                  <!-- <Bubble id="users" :data="usersChart" :options="chartOptions" /> -->
-                </figure>
+                <article class="flex w-full items-center justify-center rounded-lg border border-slate-100 p-6">
+                  <div class="flex flex-col">
+                    <div>
+                      <p class="text-sm text-slate-500">
+                        Total de grupos
+                      </p>
+
+                      <span class="flex flex-row">
+                        <p class="text-2xl font-medium text-slate-900">
+                          1
+                        </p>
+
+                        <div class="inline-flex items-center gap-2 rounded bg-green-100 p-1 text-green-600">
+                          <Icon name="material-symbols:show-chart" />
+                          <span class="text-xs font-medium">
+                            2
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                    <figure>
+                      <Line id="apiKeys" :data="usersChartData" :options="optionsChart" />
+                    </figure>
+                  </div>
+                </article>
                 <div class="card-actions justify-end">
                   <button class="btn bg-primary text-white" @click.prevent="app.$patch({ route: 'admin_sso_users' })">
                     Detalhes
@@ -151,23 +205,39 @@
         </section>
       </section>
 
-      <AdminSsoKeysComponent
-        v-else-if="app.route === 'admin_sso_keys'"
+      <AdminSsoGroupsComponent
+        v-else-if="app.route === 'admin_sso_groups'"
+        :chart-data="{
+          data: permissionGroupsChartData,
+          options: chartOptions,
+        }"
         @change-view="($event) => emits('change-view', $event)"
       />
 
-      <AdminSsoUsersComponent
-        v-else-if="app.route === 'admin_sso_users'"
+      <AdminSsoKeysComponent
+        v-else-if="app.route === 'admin_sso_keys'"
+        :chart-data="{
+          data: apiKeysChartData,
+          options: chartOptions,
+        }"
         @change-view="($event) => emits('change-view', $event)"
       />
 
       <AdminSsoSystemsComponent
         v-else-if="app.route === 'admin_sso_systems'"
+        :chart-data="{
+          data: systemsChartData,
+          options: chartOptions,
+        }"
         @change-view="($event) => emits('change-view', $event)"
       />
 
-      <AdminSsoGroupsComponent
-        v-else-if="app.route === 'admin_sso_groups'"
+      <AdminSsoUsersComponent
+        v-else-if="app.route === 'admin_sso_users'"
+        :chart-data="{
+          data: usersChartData,
+          options: chartOptions,
+        }"
         @change-view="($event) => emits('change-view', $event)"
       />
     </slot>
@@ -176,6 +246,7 @@
 
 <script setup>
 import { Chart as ChartJS, Title, Tooltip, ArcElement, PointElement, Legend, BarElement, CategoryScale, LinearScale, LineElement } from "chart.js";
+import { Doughnut, Line } from "vue-chartjs";
 import { useAppStore } from "@/store/app";
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, ArcElement, CategoryScale, PointElement, LinearScale, LineElement);
@@ -184,5 +255,117 @@ definePageMeta({ title: "Admin SSO" });
 
 const app = useAppStore();
 const emits = defineEmits("change-view");
+
+const chartOptions = {
+  responsive: true,
+  maintainAspectRatio: false,
+};
+
+const dataChart = {
+  labels: ["a", "b", "x", "y"],
+  datasets: [
+    {
+      label: "z",
+      backgroundColor: ["#41B883", "#E46651", "#00D8FF", "#DD1B16"],
+      data: [40, 20, 80, 10],
+    },
+  ],
+};
+
+const permissionGroupsChartData = {
+  labels: [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ],
+  datasets: [
+    {
+      label: "Criação de grupos",
+      backgroundColor: "#003a5d",
+      data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
+    },
+  ],
+};
+
+const apiKeysChartData = {
+  labels: [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ],
+  datasets: [
+    {
+      label: "Criação de chaves de API",
+      backgroundColor: "#003a5d",
+      data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
+    },
+  ],
+};
+
+const systemsChartData = {
+  labels: [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ],
+  datasets: [
+    {
+      label: "Criação de sistemas",
+      backgroundColor: "#003a5d",
+      data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
+    },
+  ],
+};
+
+const usersChartData = {
+  labels: [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ],
+  datasets: [
+    {
+      label: "Criação de usuários",
+      backgroundColor: "#003a5d",
+      data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
+    },
+  ],
+};
 
 </script>

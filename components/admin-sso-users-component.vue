@@ -1,6 +1,63 @@
 <template>
   <div>
     <div class="flex h-full flex-col px-8">
+      <div class="flex justify-between gap-x-6 py-4">
+        <div class="my-auto flex flex-row gap-x-4">
+          <article class="rounded-lg border border-slate-100 bg-white p-6">
+            <div>
+              <p class="truncate text-sm text-slate-500">
+                Total de usuários
+              </p>
+
+              <p class="text-2xl font-medium text-slate-900">
+                {{ users.length }}
+              </p>
+            </div>
+
+            <div class="mt-1 flex gap-1 text-green-600">
+              <Icon name="material-symbols:show-chart" class="h-4 w-4" />
+
+              <p class="flex gap-2 text-xs">
+                <span class="font-medium">
+                  x.y%
+                </span>
+
+                <span class="truncate text-slate-500">
+                  Maior que mês passado
+                </span>
+              </p>
+            </div>
+          </article>
+
+          <article class="rounded-lg border border-slate-100 bg-white p-6">
+            <div>
+              <p class="truncate text-sm text-slate-500">
+                Total de usuários ativos
+              </p>
+
+              <p class="text-2xl font-medium text-slate-900">
+                {{ usersActive.length }}
+              </p>
+            </div>
+
+            <div class="mt-1 flex gap-1 text-red-600">
+              <Icon name="material-symbols:show-chart" class="h-4 w-4 rotate-180" />
+
+              <p class="flex gap-2 text-xs">
+                <span class="font-medium">
+                  x.y%
+                </span>
+                <span class="truncate text-slate-500">
+                  Maior que mês passado
+                </span>
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-w-lg" />
+      </div>
+
       <TableComponent
         template="stock"
         title="Usuários"
@@ -58,8 +115,21 @@
 </template>
 
 <script setup>
+import { Bar } from "vue-chartjs";
+import { Chart as ChartJS, Title, Tooltip, ArcElement, PointElement, Legend, BarElement, CategoryScale, LinearScale, LineElement } from "chart.js";
 import { useAppStore } from "@/store/app";
 import { getUsers } from "~/service/api";
+ChartJS.register(Title, Tooltip, Legend, BarElement, ArcElement, CategoryScale, PointElement, LinearScale, LineElement);
+
+const props = defineProps({
+  chartData: {
+    type: Object,
+    default: () => ({
+      data: {},
+      options: {},
+    }),
+  },
+});
 
 const app = useAppStore();
 const users = ref([]);
@@ -69,6 +139,10 @@ const pagination = ref({
   limit: 10,
   total: 0,
   pages: 0,
+});
+
+const usersActive = computed(() => {
+  return users.value.filter(user => user.status);
 });
 
 const fetchUsers = () => {

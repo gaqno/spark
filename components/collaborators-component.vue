@@ -1,5 +1,62 @@
 <template>
   <div class="flex h-full flex-col px-8">
+    <div class="flex justify-between gap-x-6 py-4">
+      <div class="my-auto flex flex-row gap-x-4">
+        <article class="rounded-lg border border-slate-100 bg-white p-6">
+          <div>
+            <p class="truncate text-sm text-slate-500">
+              Total de colaboradores
+            </p>
+
+            <p class="text-2xl font-medium text-slate-900">
+              {{ collaborators.length }}
+            </p>
+          </div>
+
+          <div class="mt-1 flex gap-1 text-green-600">
+            <Icon name="material-symbols:show-chart" class="h-4 w-4" />
+
+            <p class="flex gap-2 text-xs">
+              <span class="font-medium">
+                67.81%
+              </span>
+
+              <span class="truncate text-slate-500">
+                Maior / mês passado
+              </span>
+            </p>
+          </div>
+        </article>
+
+        <article class="rounded-lg border border-slate-100 bg-white p-6">
+          <div>
+            <p class="truncate text-sm text-slate-500">
+              Total de colaboradores ativos
+            </p>
+
+            <p class="text-2xl font-medium text-slate-900">
+              {{ getTotalCollaboratorsActive }}
+            </p>
+          </div>
+
+          <div class="mt-1 flex gap-1 text-red-600">
+            <Icon name="material-symbols:show-chart" class="h-4 w-4 rotate-180" />
+
+            <p class="flex gap-2 text-xs">
+              <span class="font-medium">
+                67.81%
+              </span>
+              <span class="truncate text-slate-500">
+                Maior / mês passado
+              </span>
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <Bar :data="dataChart" :options="chartOptions" class="max-w-lg" />
+    </div>
+
     <TableComponent
       template="stock"
       title="Colaboradores"
@@ -63,8 +120,43 @@
 </template>
 
 <script setup>
+import { Bar } from "vue-chartjs";
+import { Chart as ChartJS, Title, Tooltip, ArcElement, PointElement, Legend, BarElement, CategoryScale, LinearScale, LineElement } from "chart.js";
 import { useAppStore } from "@/store/app";
 import { getCollaborators, putCollaborator } from "@/service/api";
+ChartJS.register(Title, Tooltip, Legend, BarElement, ArcElement, CategoryScale, PointElement, LinearScale, LineElement);
+
+const dataChart = {
+  labels: [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ],
+  datasets: [
+    {
+      label: "Criação de colaboradores",
+      backgroundColor: "#003a5d",
+      data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
+    },
+  ],
+};
+
+const chartOptions = {
+  responsive: true,
+  maintainAspectRatio: false,
+  legend: {
+    display: false,
+  },
+};
 
 const app = useAppStore();
 const collaborators = ref([]);
@@ -75,6 +167,10 @@ const pagination = ref({
   limit: 10,
   total: 0,
   pages: 0,
+});
+
+const getTotalCollaboratorsActive = computed(() => {
+  return collaborators.value.filter(i => i.status).length;
 });
 
 const fetchCollaborators = () => {
