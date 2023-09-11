@@ -27,10 +27,10 @@ export const useCallAssistant = () => {
         response.value = data;
         responseStream.value.push({ data: data.content, role: "sys" } as never);
       })
-      .catch(() => app.setToast({
+      .catch((error) => app.setToast({
         show: true,
-        title: "Erro ao carregar usuários",
-        content: "Tente novamente",
+        title: "Error",
+        content: error.message,
       }));
   };
 

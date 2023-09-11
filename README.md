@@ -59,12 +59,9 @@
 
 ## 📍 Overview
 
-This project is a SPA.
-The default store has to be save in sessionStorage.
-This project const with a fake api, using json-server.
+This project, ancora_sys, is a Single Page Application (SPA) developed using Vue.js and TypeScript. It uses Vuex for state management, with the default store saved in sessionStorage. The project also includes a fake API implemented with json-server for development and testing purposes.
 
-Need to feed /.env with values.
-You can follow /.env.example
+Before running the project, make sure to set up the environment variables in the .env file. You can refer to the .env.example file for the required variables.
 ---
 
 ## ⚙️ Features
@@ -366,9 +363,9 @@ repo
 ### ✔️ Prerequisites
 
 Before you begin, ensure that you have the following prerequisites installed:
-> - `ℹ️ Requirement 1`
-> - `ℹ️ Requirement 2`
-> - `ℹ️ ...`
+> - Node.js and npm
+> - Git
+> - JSON Server for setting up a fake API
 
 ### 📦 Installation
 
@@ -385,6 +382,23 @@ cd ancora_sys
 3. Install the dependencies:
 ```sh
 npm install
+```
+
+4. Set up the environment variables in the .env file. You can refer to the .env.example file for the required variables.
+
+5. Start the fake API using JSON Server:
+```sh
+json-server --watch db.json --port 3008
+```
+
+6. Run the project in development mode:
+```sh
+npm run dev
+```
+
+Or build the project for production and start the server:
+```sh
+npm run build && node .output/server/index.mjs
 ```
 
 
@@ -431,9 +445,9 @@ npm test
 Contributions are always welcome! Please follow these steps:
 1. Fork the project repository. This creates a copy of the project on your account that you can modify without affecting the original project.
 2. Clone the forked repository to your local machine using a Git client like Git or GitHub Desktop.
-3. Create a new branch with a descriptive name (e.g., `yourJiraTicket@developer` or `UTM25@yourusername`).
+3. Create a new branch with a descriptive name (e.g., `feature@yourusername` or `bugfix@yourusername`).
 ```sh
-git checkout -b UTM25@yourusername
+git checkout -b feature@yourusername
 ```
 4. Make changes to the project's codebase.
 5. Commit your changes to your local branch with a clear commit message that explains the changes you've made.
@@ -442,10 +456,12 @@ git commit -m 'Implemented new feature.'
 ```
 6. Push your changes to your forked repository on GitHub using the following command
 ```sh
-git push origin UTM25@yourusername
+git push origin feature@yourusername
 ```
 7. Create a new pull request to the original project repository. In the pull request, describe the changes you've made and why they're necessary.
 The project maintainers will review your changes and provide feedback or merge them into the main branch.
+
+If you find any bugs or issues, please report them by creating a new issue in the repository.
 
 ---
 
