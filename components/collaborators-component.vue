@@ -2,19 +2,22 @@
   <div class="flex h-full flex-col px-8">
     <TableComponent
       template="stock"
-      title="Grupos de permissões"
+      title="Colaboradores"
       :action="handleSlide"
+      :toggle="toggleActive"
       :actions="[
         { label: 'Editar', icon: 'mdi:square-edit-outline', template: 'edit', action: handleSlide },
-        { label: 'Excluir', icon: 'mdi:trash-can-outline', template: 'delete', action: handleModal },
+        { label: 'Visualizar', icon: 'ic:baseline-remove-red-eye', template: 'view', action: handleModal },
+        { label: 'Redefinir senha', icon: 'solar:lock-password-outline', template: 'delete', action: handleModal },
       ]"
       :columns="[
-        { label: 'Grupo de permissão', field: 'nomePerfil', sortable: false, details: false, type: 'string' },
-        { label: 'Sistema', field: 'nomeSistema', sortable: false, details: false, type: 'string' },
+        { label: 'Nome', field: 'nome', sortable: false, details: false, type: 'string' },
+        { label: 'Login', field: 'login', sortable: false, details: false, type: 'string' },
+        { label: 'Status', field: 'status', sortable: false, details: false, type: 'toggle' },
         { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
       ]"
-      :data="permissionGroups"
-      :description="`Você possui ${permissionGroups.length} grupos de permissões cadastrados.`"
+      :data="collaborators"
+      :description="`Você possui ${collaborators.length} colaboradores cadastrados.`"
       :pagination="pagination"
       @prev="handlePagination('prev')"
       @next="handlePagination('next')"
@@ -29,13 +32,13 @@
               type="text"
               class="input input-bordered"
               placeholder="Busque"
-              @keyup.enter="fetchPermissionGroups"
+              @keyup.enter="fetchCollaborators"
             >
           </span>
 
           <span class="flex flex-col">
             <label>Mostrando</label>
-            <select v-model="pagination.limit" class="input input-bordered w-40" @change="fetchPermissionGroups">
+            <select v-model="pagination.limit" class="input input-bordered w-40" @change="fetchCollaborators">
               <option value="10">
                 10 por página
               </option>
@@ -61,12 +64,10 @@
 
 <script setup>
 import { useAppStore } from "@/store/app";
-import { getPermissionGroups, getSystems } from "~/service/api";
-
-definePageMeta({ title: "Grupos de permissões" });
+import { getCollaborators, putCollaborator } from "@/service/api";
 
 const app = useAppStore();
-const permissionGroups = ref([]);
+const collaborators = ref([]);
 const systems = ref([]);
 const pagination = ref({
   actual: 1,
@@ -76,20 +77,21 @@ const pagination = ref({
   pages: 0,
 });
 
-const fetchPermissionGroups = () => {
+const fetchCollaborators = () => {
   return new Promise((resolve, reject) => {
-    getPermissionGroups({
-      _page: pagination.value.actual,
-      _limit: pagination.value.limit,
+    getCollaborators({
+      _start: (pagination.value.actual - 1) * pagination.value.limit,
+      _end: pagination.value.actual * pagination.value.limit,
       q: pagination.value.q || null,
     })
       .then((res) => {
         pagination.value.total = parseInt(res.length);
         pagination.value.pages = 5;
-        permissionGroups.value = res.map(i => ({
-          idPerfil: i.idPerfil,
-          nomePerfil: i.nomePerfil,
-          nomeSistema: i.nomeSistema,
+        collaborators.value = res.map(i => ({
+          id: i.id,
+          login: i.login,
+          nome: i.nome,
+          status: i.status === "true",
         }));
         resolve(res);
       }).catch((err) => {
@@ -98,17 +100,20 @@ const fetchPermissionGroups = () => {
   });
 };
 
-const fetchSystems = () => {
+const toggleActive = (value, obj) => {
   return new Promise((resolve, reject) => {
-    getSystems()
+    putCollaborator({
+      id: obj.id,
+      nome: obj.nome,
+      login: obj.login,
+      statusDescricao: obj.statusDescricao ?? "",
+      status: value,
+    })
       .then((res) => {
-        systems.value = res.map(i => ({
-          ...i,
-          idSistema: i.idSistema,
-          nomeSistema: i.nomeSistema,
-        }));
+        fetchCollaborators();
         resolve(res);
-      }).catch((err) => {
+      })
+      .catch((err) => {
         reject(err);
       });
   });
@@ -117,32 +122,44 @@ const fetchSystems = () => {
 const handlePagination = (action, callback) => {
   if (action === "next") {
     pagination.value.actual++;
-    fetchPermissionGroups();
+    fetchCollaborators();
   }
   if (action === "prev") {
     pagination.value.actual--;
-    fetchPermissionGroups();
+    fetchCollaborators();
   }
   if (action === "page") {
     pagination.value.actual = callback;
-    fetchPermissionGroups();
+    fetchCollaborators();
   }
   if (action === "limit") {
     pagination.value.limit = callback;
-    fetchPermissionGroups();
+    fetchCollaborators();
   }
 };
 
 const handleSlide = (template, _value) => {
-  getPermissionGroups({ idPerfil: _value.idPerfil })
+  getCollaborators({ idPerfil: _value.idPerfil })
     .then((res) => {
       if (template === "edit") {
-        app.toggleSlide();
-        console.log(res[0].permissoes);
         app.setSlide({
           show: true,
           template: "edit",
-          title: "Editar grupo de permissões",
+          title: "Editar dados do colaborador",
+          data: {
+            ..._value,
+            ...systems.value.find(i => i.nome === _value.nomeSistema),
+            permissoes: res[0].permissoes,
+            sistemas: systems.value,
+          },
+        });
+      }
+
+      if (template === "add") {
+        app.setSlide({
+          show: true,
+          template: "edit",
+          title: "Editar dados do colaborador",
           data: {
             ..._value,
             ...systems.value.find(i => i.nome === _value.nomeSistema),
@@ -177,8 +194,7 @@ const handleModal = (template, _value) => {
 
 onMounted(() => {
   Promise.all([
-    fetchPermissionGroups(),
-    fetchSystems(),
+    fetchCollaborators(),
   ]);
 });
 </script>

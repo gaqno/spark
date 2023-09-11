@@ -30,6 +30,16 @@
                   @change-view="($event) => handleView($event)"
                 />
 
+                <CommunicationsComponent
+                  v-else-if="app.route === 'communications'"
+                  @change-view="($event) => handleView($event)"
+                />
+
+                <CollaboratorsComponent
+                  v-else-if="app.route === 'collaborators'"
+                  @change-view="($event) => handleView($event)"
+                />
+
                 <!-- ASSISTANT -->
                 <ChatComponent
                   v-if="app.route === 'assistant'"

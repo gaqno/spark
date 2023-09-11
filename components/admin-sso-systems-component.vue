@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex h-full flex-col p-8">
+    <div class="flex h-full flex-col px-8">
       <TableComponent
         template="stock"
         title="Sistemas"
@@ -75,8 +75,8 @@ const pagination = ref({
 const fetchSystems = () => {
   return new Promise((resolve, reject) => {
     getSystems({
-      _start: (pagination.value.actual - 1) * pagination.value.limit,
-      _end: pagination.value.actual * pagination.value.limit,
+      _page: pagination.value.actual,
+      _limit: pagination.value.limit,
       q: pagination.value.q || null,
     }).then((res) => {
       pagination.value.total = parseInt(res.length);

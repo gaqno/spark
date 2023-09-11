@@ -159,7 +159,7 @@ export const useFormatBreadcrumbs = () => {
         icon: "mdi-email",
       };
     }
-    if (name === "comunications") {
+    if (name === "communications") {
       return {
         name: "Comunicações",
         view: name,
@@ -181,6 +181,14 @@ export const useFormatBreadcrumbs = () => {
         view: name,
         father: "",
         icon: "mdi-account",
+      };
+    }
+    if (name === "collaborators") {
+      return {
+        name: "Colaboradores",
+        view: name,
+        father: "",
+        icon: "mdi-account-group",
       };
     }
     return {

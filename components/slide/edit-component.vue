@@ -475,6 +475,95 @@
         </button>
       </div>
     </form>
+
+    <form v-if="app.route === 'collaborators'" class="p-4">
+      <div class="space-y-12">
+        <div class="border-b border-slate-700/10 pb-12">
+          <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div class="sm:col-span-4">
+              <label for="icon" class="block text-sm font-medium leading-6 text-slate-900">
+                Nome completo do colaborador
+              </label>
+              <div class="mt-2">
+                <input
+                  id="icon"
+                  v-model="collaboratorsForm.nome"
+                  name="icon"
+                  type="text"
+                  class="block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                >
+              </div>
+            </div>
+
+            <div class="sm:col-span-4">
+              <label for="system" class="block text-sm font-medium leading-6 text-slate-900">
+                CPF
+              </label>
+              <div class="mt-2">
+                <input
+                  id="login"
+                  v-model="collaboratorsForm.cpf"
+                  name="login"
+                  type="text"
+                  placeholder="xxx.xxx.xxx-xx"
+                  class="block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                >
+              </div>
+            </div>
+
+            <div class="sm:col-span-6">
+              <label for="status" class="block text-sm font-medium leading-6 text-slate-900">
+                E-mail
+              </label>
+              <div class="mt-2">
+                <input
+                  id="email"
+                  v-model="collaboratorsForm.email"
+                  name="email"
+                  type="email"
+                  placeholder="user@company.com"
+                  class="block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                >
+              </div>
+            </div>
+
+            <div class="sm:col-span-6">
+              <label for="nickname" class="block text-sm font-medium leading-6 text-slate-900">
+                Selecione qual empresa ele vai atuar
+              </label>
+              <div class="mt-2">
+                <Multiselect
+                  v-model="collaboratorsForm.empresas"
+                  track-by="cnpj"
+                  label="nome"
+                  value-prop="cnpj"
+                  :searchable="true"
+                  :options="client.empresas"
+                >
+                  <template #option="{ option }">
+                    <span class="text-left">
+                      {{ option.cnpj }} - {{ option.nome }}
+                    </span>
+                  </template>
+                </Multiselect>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 flex items-center justify-end gap-x-6">
+        <button type="button" class="text-sm font-semibold leading-6 text-slate-900" @click="app.toggleSlide">
+          Cancelar
+        </button>
+        <button
+          type="submit"
+          class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        >
+          Salvar
+        </button>
+      </div>
+    </form>
   </section>
 </template>
 
@@ -483,9 +572,11 @@ import Multiselect from "@vueform/multiselect";
 import { useAppStore } from "@/store/app";
 import "@vueform/multiselect/themes/default.css";
 import { getSystems } from "~/service/api";
+import { useClientStore } from "~/store/client";
 
 // const emits = defineEmits(["change-view"])
 const app = useAppStore();
+const client = useClientStore();
 const roles = ref([]);
 const ssoFormKeys = ref({
   consumidor: "",
@@ -518,6 +609,15 @@ const ssoFormSystems = ref({
   nome: "",
   permissoes: [],
   status: "",
+});
+
+const collaboratorsForm = ref({
+  cpf: "",
+  email: "",
+  empresas: [],
+  funcoes: [],
+  nome: "",
+  papeis: [],
 });
 
 const handleFormSubmit = (value) => {
@@ -609,6 +709,16 @@ onMounted(() => {
       nome: app.getSlideData.nome,
       permissoes: app.getSlideData.permissoes,
       status: app.getSlideData.status === "A",
+    };
+  }
+  if (app.route === "collaborators") {
+    collaboratorsForm.value = {
+      cpf: app.getSlideData.cpf,
+      email: app.getSlideData.login,
+      empresas: client.empresas,
+      funcoes: app.getSlideData.funcoes,
+      nome: app.getSlideData.nome,
+      papeis: app.getSlideData.papeis,
     };
   }
 });

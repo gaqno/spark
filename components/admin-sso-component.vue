@@ -180,6 +180,8 @@ import { useAppStore } from "@/store/app";
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, ArcElement, CategoryScale, PointElement, LinearScale, LineElement);
 
+definePageMeta({ title: "Admin SSO" });
+
 const app = useAppStore();
 const emits = defineEmits("change-view");
 
