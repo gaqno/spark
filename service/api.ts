@@ -88,3 +88,23 @@ export const postSystem = (body: any) => {
 export const getCompanies = (params: any) => {
   return callApi("GET", "/portal/api/empresas", { params });
 };
+
+export const getCommunications = (params: any) => {
+  return callApi("GET", "/portal/api/central-eventos", { params });
+};
+
+export const getCollaborators = (params: any) => {
+  return callApi("GET", "/portal/api/colaboradores", { params });
+};
+
+export const putCollaborator = (body: any) => {
+  return callApi("PUT", "/portal/api/colaboradores", { body });
+};
+
+export const postCollaborator = (body: any) => {
+  return callApi("POST", `/portal/api/colaboradores/${body.id}`, { body });
+};
+
+export const deleteCollaborator = (body: any) => {
+  return callApi("DELETE", "/portal/api/colaboradores", { body });
+};

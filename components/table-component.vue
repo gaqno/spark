@@ -29,8 +29,8 @@
         :lines="14"
       />
 
-      <div v-else class="mt-8 flow-root">
-        <div class="scrollbar-thumb-gray-300 scrollbar-track-gray-100 -mx-4 -my-2 max-h-[60vh] overflow-x-auto scrollbar scrollbar-thin sm:-mx-6 lg:-mx-8">
+      <div v-else class="mt-2 flow-root">
+        <div class="scrollbar-thumb-gray-300 scrollbar-track-gray-100 -mx-4 max-h-[60vh] overflow-x-auto scrollbar scrollbar-thin sm:-mx-6 lg:-mx-8">
           <div class="inline-block min-h-[48vh] min-w-full py-2 align-middle sm:px-6 lg:px-8">
             <table class="divide-gray-300  min-w-full divide-y rounded">
               <thead>
@@ -39,7 +39,7 @@
                     v-for="th, i in props.columns"
                     :key="`th_${i}`"
                     scope="col"
-                    class="text-gray-900 whitespace-nowrap py-3.5 pl-4 pr-3 text-left text-sm font-semibold sm:pl-0"
+                    class="text-gray-900 whitespace-nowrap py-1 pl-4 pr-3 text-left text-sm font-semibold sm:pl-0"
                     @click="th.sortable ? emits('sort', th.field) : ''"
                   >
                     <button v-if="th.sortable" @click="props.action('filters', { order: { [th.field]: 1 } })">
@@ -154,6 +154,43 @@
                       >
                         Inativo
                       </span>
+                    </div>
+
+                    <div v-if="td.type === 'toggle'">
+                      <div class="flex gap-x-2">
+                        <span
+                          v-if="tr[td.field] === true"
+                          :class="[!app.darkMode
+                            ? 'inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20'
+                            : 'inline-flex items-center rounded-md bg-green-500/10 px-2 py-1 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/20'
+                          ]"
+                        >
+                          Ativo
+                        </span>
+                        <span
+                          v-else
+                          :class="[!app.darkMode
+                            ? 'inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/20'
+                            : 'inline-flex items-center rounded-md bg-red-500/10 px-2 py-1 text-xs font-medium text-red-400 ring-1 ring-inset ring-red-500/20'
+                          ]"
+                        >
+                          Inativo
+                        </span>
+                        <label class="swap">
+                          <input
+                            v-model="tr[td.field]"
+                            type="checkbox"
+                            class="hidden"
+                            @change="props.toggle(String(!tr[td.field]), tr)"
+                          >
+                          <div class="swap-on">
+                            <Icon name="line-md:switch-off-to-switch-transition" size="2em" class="text-black" />
+                          </div>
+                          <div class="swap-off">
+                            <Icon name="line-md:switch-to-switch-off-transition" size="2em" class="text-black" />
+                          </div>
+                        </label>
+                      </div>
                     </div>
 
                     <div v-if="td.type === 'tags'">
@@ -296,6 +333,7 @@ const props = defineProps({
   pagination: { type: Object, required: true, default: () => { } },
   title: { type: String, required: true, default: "" },
   template: { type: String, required: true, default: "" },
+  toggle: { type: Function, required: false, default: () => { } },
 });
 
 const getVisiblePages = computed(() => {

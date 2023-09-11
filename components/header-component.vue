@@ -9,12 +9,12 @@
     >
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
-      <div class="navbar w-full bg-base-200">
+      <div class="navbar w-full bg-primary">
         <div class="ml-2 flex-none">
           <label for="my-drawer-3" class="btn btn-ghost" @click="handleView">
             <img class="max-h-12 w-auto" src="@/static/img/logo.png">
           </label>
-          <span class="text-xl">
+          <span class="text-xl text-white">
             Rede ANCORA
           </span>
           <div class="ml-auto gap-4"></div>
@@ -32,7 +32,7 @@
                           <span class="sr-only">
                             Projetos
                           </span>
-                          <Icon name="mdi:magnify" size="1.5em" />
+                          <Icon name="mdi:magnify" size="1.5em" class="text-white" />
                         </button>
                       </label>
                       <ul tabindex="0" class="dropdown-content menu rounded-box z-[1] w-52 bg-base-100 p-2 shadow">
@@ -48,7 +48,7 @@
                           <span class="sr-only">
                             Notificações
                           </span>
-                          <Icon name="mdi:bell-outline" size="1.2em" />
+                          <Icon name="mdi:bell-outline" size="1.2em" class="text-white" />
                         </button>
                       </label>
                       <ul tabindex="0" class="dropdown-content menu rounded-box z-[1] w-52 bg-base-100 p-2 shadow">
@@ -74,7 +74,7 @@
                             class="h-10 w-10 rounded-full object-cover"
                           >
 
-                          <p class="ms-2 hidden text-left text-xs sm:block">
+                          <p class="ms-2 hidden text-left text-xs text-white sm:block">
                             <strong class="block font-medium ">
                               Gabriel Aquino
                             </strong>
@@ -84,7 +84,7 @@
                             </span>
                           </p>
 
-                          <Icon name="mdi:chevron-down" class="ml-1" size="1em" />
+                          <Icon name="mdi:chevron-down" class="ml-1 text-white" size="1em" />
                         </button>
                       </label>
                       <ul tabindex="0" :class="['dropdown-content menu rounded-box z-[1] w-52 bg-base-100 p-2 shadow']">

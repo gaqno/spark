@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex h-full flex-col p-8">
+    <div class="flex h-full flex-col px-8">
       <TableComponent
         template="stock"
         title="Usuários"

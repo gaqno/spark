@@ -16,7 +16,7 @@
         >
           <Icon
             name="line-md:menu-fold-right"
-            :class="[!app.darkMode ? 'text-slate-900 hover:bg-slate-50' : '', 'cursor-pointer rounded-md px-2.5 py-1.5 text-sm font-semibold shadow-sm']"
+            :class="[!app.darkMode ? 'text-slate-900 hover:bg-slate-50' : 'text-black', 'cursor-pointer rounded-md px-2.5 py-1.5 text-sm font-semibold shadow-sm']"
             size="2.5em"
           />
         </label>
@@ -184,7 +184,7 @@ const views = ref({
     {
       name: "Comunicações",
       icon: "bi:megaphone",
-      screen: "comunications",
+      screen: "communications",
       notifications: 5,
     },
     {
@@ -200,38 +200,6 @@ const views = ref({
       notifications: 0,
     },
     {
-      name: "Relatórios",
-      icon: "mdi:chart-line",
-      screen: "reports",
-      notifications: 7,
-      child: [
-        {
-          name: "Resumo Geral",
-          icon: "mdi:monitor-dashboard",
-          screen: "reports",
-          notifications: 2,
-        },
-        {
-          name: "Produtos",
-          icon: "eos-icons:products",
-          screen: "report_products",
-          notifications: 2,
-        },
-        {
-          name: "Financeiro",
-          icon: "icon-park-outline:financing-one",
-          screen: "report_financing",
-          notifications: 4,
-        },
-        {
-          name: "Estoque",
-          icon: "material-symbols:inventory-2-outline",
-          screen: "report_storage",
-          notifications: 1,
-        },
-      ],
-    },
-    {
       name: "Catálogo de Produtos",
       icon: "codicon:tools",
       screen: "product_catalog",
@@ -240,7 +208,7 @@ const views = ref({
     {
       name: "Gestão de colaboradores",
       icon: "material-symbols:groups-outline",
-      screen: "employees",
+      screen: "collaborators",
       notifications: 5,
     },
     {
@@ -285,7 +253,7 @@ const filteredViews = () => {
       if (item.screen === "contact") {
         return client.user?.roles?.includes("VISUALIZAR_CONTATO") || client.user?.roles?.includes("ADMINISTRADORES");
       }
-      if (item.screen === "comunications") {
+      if (item.screen === "communications") {
         return client.user?.roles?.includes("VISUALIZAR_COMUNICACOES") || client.user?.roles?.includes("ADMINISTRADORES");
       }
       if (item.screen === "employees") {
