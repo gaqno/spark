@@ -72,7 +72,7 @@
             <nav>
               <ul role="list" class="-mx-2 mt-2 space-y-4">
                 <li v-for="item in filteredViews()" :key="item.name">
-                  <div class="dropdown dropdown-right dropdown-hover min-w-full">
+                  <div class="dropdown-right dropdown-hover dropdown min-w-full">
                     <label
                       tabindex="0"
                       class="mx-2.5 flex px-4 text-white/50 hover:text-white active:bg-slate-200/50"
@@ -80,7 +80,7 @@
                     >
                       <a
                         :data-tip="item.name"
-                        :class="[app.sidebar.small ? 'tooltip tooltip-right' : '', 'group w-full cursor-pointer gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-slate-400 hover:bg-slate-800 hover:text-white']"
+                        :class="[app.sidebar.small ? 'tooltip tooltip-right' : '', 'group w-full cursor-pointer gap-x-3 truncate rounded-md p-2 text-sm font-semibold leading-6 text-slate-400 hover:bg-slate-800 hover:text-white']"
                       >
                         <span class="flex space-x-8">
                           <Icon :name="item.icon" size="1.7em" class="text-left" />

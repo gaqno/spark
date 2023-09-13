@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-full flex-col px-8">
-    <div class="flex justify-between gap-x-6 py-4">
-      <div class="my-auto flex flex-row gap-x-4">
+    <div class="flex flex-col justify-between gap-4 py-4 md:flex-row">
+      <div class="my-auto flex flex-col gap-4 md:flex-row">
         <article class="rounded-lg border border-slate-100 bg-white p-6">
           <div>
             <p class="truncate text-sm text-slate-500">
@@ -53,8 +53,7 @@
           </div>
         </article>
       </div>
-
-      <Bar :data="dataChart" :options="chartOptions" class="max-w-lg" />
+      <Bar :data="dataChart" :options="chartOptions" class="max-h-[20vh] max-w-sm" />
     </div>
 
     <TableComponent
@@ -67,27 +66,23 @@
         { label: 'Visualizar', icon: 'ic:baseline-remove-red-eye', template: 'view', action: handleModal },
         { label: 'Redefinir senha', icon: 'solar:lock-password-outline', template: 'delete', action: handleModal },
       ]"
-      :columns="[
-        { label: 'Nome', field: 'nome', sortable: false, details: false, type: 'string' },
-        { label: 'Login', field: 'login', sortable: false, details: false, type: 'string' },
-        { label: 'Status', field: 'status', sortable: false, details: false, type: 'toggle' },
-        { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
-      ]"
+      :columns="columns"
       :data="collaborators"
       :description="`Você possui ${collaborators.length} colaboradores cadastrados.`"
       :pagination="pagination"
       @prev="handlePagination('prev')"
       @next="handlePagination('next')"
+      @sort="handlePagination('sort', $event)"
       @page="handlePagination('page', $event)"
     >
       <template #actions>
-        <div class="flex flex-row items-center gap-x-2">
+        <div class="flex flex-col items-center gap-4 py-8 md:flex-row">
           <span class="flex flex-col">
             <label>Busque por nome</label>
             <input
               v-model="pagination.q"
               type="text"
-              class="input input-bordered"
+              class="input input-bordered input-sm md:w-40"
               placeholder="Busque"
               @keyup.enter="fetchCollaborators"
             >
@@ -95,7 +90,7 @@
 
           <span class="flex flex-col">
             <label>Mostrando</label>
-            <select v-model="pagination.limit" class="input input-bordered w-40" @change="fetchCollaborators">
+            <select v-model="pagination.limit" class="input input-bordered input-sm w-72 text-xs md:w-40" @change="fetchCollaborators">
               <option value="10">
                 10 por página
               </option>
@@ -159,6 +154,14 @@ const chartOptions = {
 };
 
 const app = useAppStore();
+const columns = ref(
+  [
+    { label: "Nome", field: "nome", sortable: false, details: false, type: "group_info" },
+    { label: "Login", field: "login", sortable: false, details: false, type: "string" },
+    { label: "Status", field: "status", sortable: false, details: false, type: "toggle" },
+    { label: "Ações", field: "actions", sortable: false, details: false, type: "actions" },
+  ],
+);
 const collaborators = ref([]);
 const systems = ref([]);
 const pagination = ref({
@@ -167,6 +170,10 @@ const pagination = ref({
   limit: 10,
   total: 0,
   pages: 0,
+  sort: {
+    field: "",
+    order: "",
+  },
 });
 
 const getTotalCollaboratorsActive = computed(() => {
@@ -178,6 +185,8 @@ const fetchCollaborators = () => {
     getCollaborators({
       _start: (pagination.value.actual - 1) * pagination.value.limit,
       _end: pagination.value.actual * pagination.value.limit,
+      _sort: pagination.value.sort.field || null,
+      _order: pagination.value.sort.order || null,
       q: pagination.value.q || null,
     })
       .then((res) => {
@@ -191,25 +200,6 @@ const fetchCollaborators = () => {
         }));
         resolve(res);
       }).catch((err) => {
-        reject(err);
-      });
-  });
-};
-
-const toggleActive = (value, obj) => {
-  return new Promise((resolve, reject) => {
-    putCollaborator({
-      id: obj.id,
-      nome: obj.nome,
-      login: obj.login,
-      statusDescricao: obj.statusDescricao ?? "",
-      status: value,
-    })
-      .then((res) => {
-        fetchCollaborators();
-        resolve(res);
-      })
-      .catch((err) => {
         reject(err);
       });
   });
@@ -230,6 +220,20 @@ const handlePagination = (action, callback) => {
   }
   if (action === "limit") {
     pagination.value.limit = callback;
+    fetchCollaborators();
+  }
+  if (action === "sort") {
+    columns.value.forEach((i) => {
+      if (i.field === callback.field) {
+        i.sortable = !i.sortable;
+        pagination.value.sort = {
+          field: callback.field,
+          order: i.sortable ? "asc" : "desc",
+        };
+      } else {
+        i.sortable = false;
+      }
+    });
     fetchCollaborators();
   }
 };
@@ -286,6 +290,25 @@ const handleModal = (template, _value) => {
       data: { ..._value },
     });
   }
+};
+
+const toggleActive = (value, obj) => {
+  return new Promise((resolve, reject) => {
+    putCollaborator({
+      id: obj.id,
+      nome: obj.nome,
+      login: obj.login,
+      statusDescricao: obj.statusDescricao ?? "",
+      status: value === "true" ? "false" : "true",
+    })
+      .then((res) => {
+        fetchCollaborators();
+        resolve(res);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
 };
 
 onMounted(() => {

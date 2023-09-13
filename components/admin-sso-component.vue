@@ -246,7 +246,7 @@
 
 <script setup>
 import { Chart as ChartJS, Title, Tooltip, ArcElement, PointElement, Legend, BarElement, CategoryScale, LinearScale, LineElement } from "chart.js";
-import { Doughnut, Line } from "vue-chartjs";
+import { Line } from "vue-chartjs";
 import { useAppStore } from "@/store/app";
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, ArcElement, CategoryScale, PointElement, LinearScale, LineElement);
@@ -259,17 +259,6 @@ const emits = defineEmits("change-view");
 const chartOptions = {
   responsive: true,
   maintainAspectRatio: false,
-};
-
-const dataChart = {
-  labels: ["a", "b", "x", "y"],
-  datasets: [
-    {
-      label: "z",
-      backgroundColor: ["#41B883", "#E46651", "#00D8FF", "#DD1B16"],
-      data: [40, 20, 80, 10],
-    },
-  ],
 };
 
 const permissionGroupsChartData = {

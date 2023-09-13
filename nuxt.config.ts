@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     "@nuxtjs/eslint-module",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/fontaine",
+    "@nuxtjs/device",
     "nuxt-icon",
     "nuxt-swiper",
   ],

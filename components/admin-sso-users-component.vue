@@ -55,7 +55,7 @@
           </article>
         </div>
 
-        <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-w-lg" />
+        <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-w-sm" />
       </div>
 
       <TableComponent

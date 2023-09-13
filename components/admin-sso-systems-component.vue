@@ -54,7 +54,7 @@
         </article>
       </div>
 
-      <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-w-lg" />
+      <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-w-sm" />
     </div>
 
     <TableComponent
@@ -84,12 +84,12 @@
         <div class="flex flex-row items-center gap-x-2">
           <span class="flex flex-col">
             <label>Busque por nome</label>
-            <input type="text" class="input input-bordered" placeholder="Busque">
+            <input type="text" class="input input-bordered input-sm" placeholder="Busque">
           </span>
 
           <span class="flex flex-col">
             <label>Mostrando</label>
-            <select v-model="pagination.limit" class="input input-bordered w-40" @change="fetchSystems">
+            <select v-model="pagination.limit" class="input input-bordered input-sm w-40 text-xs" @change="fetchSystems">
               <option value="10">
                 10 por página
               </option>

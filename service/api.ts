@@ -30,8 +30,13 @@ const callApi = (
       useAppStore().setLoading(false);
       return response.data;
     })
-    .catch(() => {
+    .catch((err) => {
       useAppStore().setLoading(false);
+      useAppStore().setToast({
+        show: true,
+        title: "Erro",
+        content: err,
+      });
     });
 };
 
@@ -98,11 +103,11 @@ export const getCollaborators = (params: any) => {
 };
 
 export const putCollaborator = (body: any) => {
-  return callApi("PUT", "/portal/api/colaboradores", { body });
+  return callApi("PUT", `/portal/api/colaboradores/${body.id}`, { body });
 };
 
 export const postCollaborator = (body: any) => {
-  return callApi("POST", `/portal/api/colaboradores/${body.id}`, { body });
+  return callApi("POST", "/portal/api/colaboradores", { body });
 };
 
 export const deleteCollaborator = (body: any) => {

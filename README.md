@@ -381,44 +381,32 @@ cd ancora_sys
 
 3. Install the dependencies:
 ```sh
-npm install
+bun install
 ```
 
 4. Set up the environment variables in the .env file. You can refer to the .env.example file for the required variables.
 
-5. Start the fake API using JSON Server:
+5. Run the project in development mode:
 ```sh
-json-server --watch db.json --port 3008
-```
-
-6. Run the project in development mode:
-```sh
-npm run dev
+bun run dev
 ```
 
 Or build the project for production and start the server:
 ```sh
-npm run build && node .output/server/index.mjs
-```
-
-
-This project is currently under construction and is not connected to any backend. To work properly, please mount JSON-SERVER. 
-### ⚙️ Mounting fake backend
-```sh
-json-server --watch db.json --port 3008
+bun run build && node .output/server/index.mjs
 ```
 
 ### 🎮 Using ancora_sys as production
 
 ```sh
-npm run build && node .output/server/index.mjs
+bun run build && node .output/server/index.mjs
 ~ OR ~
-yarn build && yarn preview
+bun build && bun run preview
 ```
 
 ### 🎮 Using ancora_sys as development
 ```sh
-npm run dev
+bun run dev
 ~ OR ~
 yarn dev 
 ```

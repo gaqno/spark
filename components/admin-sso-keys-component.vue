@@ -1,85 +1,85 @@
 <template>
-  <div class="flex h-full flex-col px-8">
-    <div class="flex justify-between gap-x-6 py-4">
-      <div class="my-auto flex flex-row gap-x-4">
-        <article class="rounded-lg border border-slate-100 bg-white p-6">
-          <div>
-            <p class="truncate text-sm text-slate-500">
-              Total de chaves de API
-            </p>
+  <div class="flex h-full flex-col px-8 pb-20">
+    <div class="flex flex-col items-center justify-between gap-1 py-4 md:flex-row">
+      <article class="w-full rounded-lg border border-slate-100 bg-white px-6 py-10">
+        <div>
+          <p class="truncate text-sm text-slate-500">
+            Total de chaves de API
+          </p>
 
-            <p class="text-2xl font-medium text-slate-900">
-              {{ apiKeys.length }}
-            </p>
-          </div>
+          <p class="text-2xl font-medium text-slate-900">
+            {{ apiKeys.length }}
+          </p>
+        </div>
 
-          <div class="mt-1 flex gap-1 text-green-600">
-            <Icon name="material-symbols:show-chart" class="h-4 w-4" />
+        <div class="mt-1 flex gap-1 text-green-600">
+          <Icon name="material-symbols:show-chart" class="h-4 w-4" />
 
-            <p class="flex gap-2 text-xs">
-              <span class="font-medium">
-                67.81%
-              </span>
+          <p class="flex gap-2 text-xs">
+            <span class="font-medium">
+              67.81%
+            </span>
 
-              <span class="truncate text-slate-500">
-                Maior / mês passado
-              </span>
-            </p>
-          </div>
-        </article>
+            <span class="truncate text-slate-500">
+              Maior / mês passado
+            </span>
+          </p>
+        </div>
+      </article>
 
-        <article class="rounded-lg border border-slate-100 bg-white p-6">
-          <div>
-            <p class="truncate text-sm text-slate-500">
-              Total de consumidores
-            </p>
+      <article class="w-full rounded-lg border border-slate-100 bg-white px-6 py-10">
+        <div>
+          <p class="truncate text-sm text-slate-500">
+            Total de consumidores
+          </p>
 
-            <p class="text-2xl font-medium text-slate-900">
-              {{ getTotalConsumers }}
-            </p>
-          </div>
+          <p class="text-2xl font-medium text-slate-900">
+            {{ getTotalConsumers }}
+          </p>
+        </div>
 
-          <div class="mt-1 flex gap-1 text-red-600">
-            <Icon name="material-symbols:show-chart" class="h-4 w-4 rotate-180" />
+        <div class="mt-1 flex gap-1 text-red-600">
+          <Icon name="material-symbols:show-chart" class="h-4 w-4 rotate-180" />
 
-            <p class="flex gap-2 text-xs">
-              <span class="font-medium">
-                67.81%
-              </span>
-              <span class="truncate text-slate-500">
-                Maior / mês passado
-              </span>
-            </p>
-          </div>
-        </article>
+          <p class="flex gap-2 text-xs">
+            <span class="font-medium">
+              67.81%
+            </span>
+            <span class="truncate text-slate-500">
+              Maior / mês passado
+            </span>
+          </p>
+        </div>
+      </article>
 
-        <article class="rounded-lg border border-slate-100 bg-white p-6">
-          <div>
-            <p class="truncate text-sm text-slate-500">
-              Total chaves ativas
-            </p>
+      <article class="w-full rounded-lg border border-slate-100 bg-white px-6 py-10">
+        <div>
+          <p class="truncate text-sm text-slate-500">
+            Total chaves ativas
+          </p>
 
-            <p class="text-2xl font-medium text-slate-900">
-              {{ getTotalActiveKeys }}
-            </p>
-          </div>
+          <p class="text-2xl font-medium text-slate-900">
+            {{ getTotalActiveKeys }}
+          </p>
+        </div>
 
-          <div class="mt-1 flex gap-1 text-red-600">
-            <Icon name="material-symbols:show-chart" class="h-4 w-4 rotate-180" />
+        <div class="mt-1 flex gap-1 text-red-600">
+          <Icon name="material-symbols:show-chart" class="h-4 w-4 rotate-180" />
 
-            <p class="flex gap-2 text-xs">
-              <span class="font-medium">
-                67.81%
-              </span>
-              <span class="truncate text-slate-500">
-                Maior / mês passado
-              </span>
-            </p>
-          </div>
-        </article>
-      </div>
+          <p class="flex gap-2 text-xs">
+            <span class="font-medium">
+              67.81%
+            </span>
+            <span class="truncate text-slate-500">
+              Maior / mês passado
+            </span>
+          </p>
+        </div>
+      </article>
 
-      <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-w-lg" />
+      <article class="w-full rounded-lg border border-slate-100 bg-white">
+        <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-h-[20vh] max-w-xs" />
+      </article>
     </div>
 
     <TableComponent
@@ -90,29 +90,23 @@
         { label: 'Editar', icon: 'mdi:square-edit-outline', template: 'edit', action: handleSlide },
         { label: 'Excluir', icon: 'mdi:trash-can-outline', template: 'delete', action: handleModal },
       ]"
-      :columns="[
-        { label: 'Sistema', field: 'nomeSistema', sortable: false, details: false, type: 'string' },
-        { label: 'API Key', field: 'prefixo', sortable: false, details: false, type: 'string' },
-        { label: 'Consumidor', field: 'consumidor', sortable: false, details: false, type: 'string' },
-        { label: 'Criada em', field: 'dataCriacao', sortable: false, details: false, type: 'string' },
-        { label: 'Status', field: 'status', sortable: false, details: false, type: 'boolean' },
-        { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
-      ]"
+      :columns="columns"
       :data="apiKeys"
       :description="`Você possui ${apiKeys.length} grupos de permissões cadastrados.`"
       :pagination="pagination"
       @prev="handlePagination('prev')"
       @next="handlePagination('next')"
+      @sort="handlePagination('sort', $event)"
       @page="handlePagination('page', $event)"
     >
       <template #actions>
-        <div class="flex flex-row items-center gap-x-2">
+        <div class="flex flex-col items-center gap-x-2 md:flex-row">
           <span class="flex flex-col">
             <label>Busque por nome</label>
             <input
               v-model="pagination.q"
               type="text"
-              class="input input-bordered"
+              class="input input-bordered input-sm"
               placeholder="Busque"
               @keyup.enter="fetchApiKeys"
             >
@@ -120,7 +114,7 @@
 
           <span class="flex flex-col">
             <label>Mostrando</label>
-            <select v-model="pagination.limit" class="input input-bordered w-40" @change="handlePagination('limit')">
+            <select v-model="pagination.limit" class="input input-bordered input-sm w-40 text-xs" @change="handlePagination('limit')">
               <option value="10">
                 10 por página
               </option>
@@ -172,7 +166,22 @@ const pagination = ref({
   q: "",
   actual: 1,
   limit: 10,
+  sort: {
+    field: "",
+    order: "",
+  },
 });
+
+const columns = ref(
+  [
+    { label: "Sistema", field: "nomeSistema", sortable: false, details: false, type: "string" },
+    { label: "API Key", field: "prefixo", sortable: false, details: false, type: "string" },
+    { label: "Consumidor", field: "consumidor", sortable: false, details: false, type: "string" },
+    { label: "Criada em", field: "dataCriacao", sortable: false, details: false, type: "string" },
+    { label: "Status", field: "status", sortable: false, details: false, type: "toggle" },
+    { label: "Ações", field: "actions", sortable: false, details: false, type: "actions" },
+  ],
+);
 
 const getTotalConsumers = computed(() => {
   return apiKeys.value.map(i => i.consumidor).filter((v, i, a) => a.indexOf(v) === i && v).length;
@@ -187,6 +196,8 @@ const fetchApiKeys = () => {
     getApiKeys({
       _page: pagination.value.actual,
       _limit: pagination.value.limit,
+      _sort: pagination.value.sort.field || null,
+      _order: pagination.value.sort.order || null,
       q: pagination.value.q || null,
     })
       .then((res) => {
@@ -274,6 +285,20 @@ const handlePagination = (action, callback) => {
     pagination.value.limit = callback;
     fetchApiKeys();
   }
+  if (action === "sort") {
+    columns.value.forEach((i) => {
+      if (i.field === callback.field) {
+        i.sortable = !i.sortable;
+        pagination.value.sort = {
+          field: callback.field,
+          order: i.sortable ? "asc" : "desc",
+        };
+      } else {
+        i.sortable = false;
+      }
+    });
+    fetchApiKeys();
+  }
 };
 
 const handleSlide = (template, _value) => {
@@ -296,7 +321,11 @@ const handleSlide = (template, _value) => {
             });
           })
           .catch((err) => {
-            console.log({ err });
+            app.setToast({
+              show: true,
+              content: err.message,
+              title: "Erro",
+            });
           });
       });
   }

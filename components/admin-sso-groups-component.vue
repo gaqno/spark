@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-full flex-col px-8">
-    <div class="flex justify-between gap-x-6 py-4">
-      <div class="my-auto flex flex-row gap-x-4">
+    <div class="flex flex-col justify-between gap-4 py-4 md:flex-row">
+      <div class="my-auto flex  flex-col gap-x-4 md:flex-row">
         <article class="rounded-lg border border-slate-100 bg-white p-6">
           <div>
             <p class="truncate text-sm text-slate-500">
@@ -52,9 +52,11 @@
             </p>
           </div>
         </article>
-      </div>
 
-      <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-w-lg" />
+        <article class="w-full rounded-lg border border-slate-100 bg-white">
+          <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-h-[20vh] max-w-lg" />
+        </article>
+      </div>
     </div>
 
     <TableComponent
@@ -65,16 +67,13 @@
         { label: 'Editar', icon: 'mdi:square-edit-outline', template: 'edit', action: handleSlide },
         { label: 'Excluir', icon: 'mdi:trash-can-outline', template: 'delete', action: handleModal },
       ]"
-      :columns="[
-        { label: 'Grupo de permissão', field: 'nomePerfil', sortable: false, details: false, type: 'string' },
-        { label: 'Sistema', field: 'nomeSistema', sortable: false, details: false, type: 'string' },
-        { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
-      ]"
+      :columns="columns"
       :data="permissionGroups"
       :description="`Você possui ${permissionGroups.length} grupos de permissões cadastrados.`"
       :pagination="pagination"
       @prev="handlePagination('prev')"
       @next="handlePagination('next')"
+      @sort="handlePagination('sort', $event)"
       @page="handlePagination('page', $event)"
     >
       <template #actions>
@@ -84,7 +83,7 @@
             <input
               v-model="pagination.q"
               type="text"
-              class="input input-bordered"
+              class="input input-bordered input-sm"
               placeholder="Busque"
               @keyup.enter="fetchPermissionGroups"
             >
@@ -92,7 +91,7 @@
 
           <span class="flex flex-col">
             <label>Mostrando</label>
-            <select v-model="pagination.limit" class="input input-bordered w-40" @change="fetchPermissionGroups">
+            <select v-model="pagination.limit" class="input input-bordered input-sm w-40 text-xs" @change="fetchPermissionGroups">
               <option value="10">
                 10 por página
               </option>
@@ -145,13 +144,24 @@ const pagination = ref({
   limit: 10,
   total: 0,
   pages: 0,
+  sort: {
+    field: "",
+    order: "",
+  },
 });
+const columns = ref([
+  { label: "Grupo de permissão", field: "nomePerfil", sortable: false, details: false, type: "string" },
+  { label: "Sistema", field: "nomeSistema", sortable: false, details: false, type: "string" },
+  { label: "Ações", field: "actions", sortable: false, details: false, type: "actions" },
+]);
 
 const fetchPermissionGroups = () => {
   return new Promise((resolve, reject) => {
     getPermissionGroups({
       _page: pagination.value.actual,
       _limit: pagination.value.limit,
+      _sort: pagination.value.sort.field || null,
+      _order: pagination.value.sort.order || null,
       q: pagination.value.q || null,
     })
       .then((res) => {
@@ -202,6 +212,20 @@ const handlePagination = (action, callback) => {
     pagination.value.limit = callback;
     fetchPermissionGroups();
   }
+  if (action === "sort") {
+    columns.value.forEach((i) => {
+      if (i.field === callback.field) {
+        i.sortable = !i.sortable;
+        pagination.value.sort = {
+          field: callback.field,
+          order: i.sortable ? "asc" : "desc",
+        };
+      } else {
+        i.sortable = false;
+      }
+    });
+    fetchPermissionGroups();
+  }
 };
 
 const handleSlide = (template, _value) => {
@@ -209,7 +233,6 @@ const handleSlide = (template, _value) => {
     .then((res) => {
       if (template === "edit") {
         app.toggleSlide();
-        console.log(res[0].permissoes);
         app.setSlide({
           show: true,
           template: "edit",
