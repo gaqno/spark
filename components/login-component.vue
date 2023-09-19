@@ -1,9 +1,7 @@
 <template>
   <section class="bg-white">
     <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
-      <main
-        class="flex flex-col items-center justify-center p-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6"
-      >
+      <main class="flex flex-col items-center justify-center p-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
         <div class="mb-auto mr-auto flex">
           <img src="@/static/img/logo.png">
         </div>
@@ -24,9 +22,8 @@
               <h1 class="text-2xl">
                 Faça seu login
               </h1>
-              <p class="text-sm">
-                Tenha acesso a todas
-                as plataformas da Rede ANCORA.
+              <p class="whitespace-nowrap text-sm">
+                Tenha acesso a todas as plataformas da Rede ANCORA.
               </p>
             </div>
 
@@ -75,7 +72,7 @@
             </div>
           </form>
 
-          <button :class="['btn mt-2 flex w-full gap-x-4 bg-primary']" @click.prevent="handleLogin">
+          <button :class="[form.login !== '' && form.senha !== '' ? 'bg-primary' : 'btn-disabled cursor-not-allowed', 'btn mt-4 flex w-full gap-x-4']" @click.prevent="emits('change-view', 'home')">
             <Icon name="material-symbols:login" />
             Entrar
           </button>
@@ -83,30 +80,32 @@
       </main>
 
       <section class="relative hidden h-32 items-end bg-slate-900 lg:col-span-5 lg:flex lg:h-full xl:col-span-6">
-        <img alt="Night" src="@/static/img/login_banner.png" class="absolute inset-0 h-full w-full object-cover">
+        <img alt="Night" src="@/static/img/login_banner.png" class=" absolute inset-0 h-full w-full">
       </section>
     </div>
   </section>
 </template>
 
 <script setup>
-import { login } from "@/service/UsuarioService";
+// import { login } from "@/service/UsuarioService";
+
+const emits = defineEmits(["change-view"]);
 const form = ref({
   login: "",
   senha: "",
 });
 const rememberMe = ref(false);
 
-const handleLogin = () => {
-  return new Promise((resolve, reject) => {
-    login(form.value)
-      .then((data) => {
-        resolve(data);
-      })
-      .catch((error) => {
-        reject(error);
-      });
-  });
-};
+// const handleLogin = () => {
+//   return new Promise((resolve, reject) => {
+//     login(form.value)
+//       .then((data) => {
+//         resolve(data);
+//       })
+//       .catch((error) => {
+//         reject(error);
+//       });
+//   });
+// };
 
 </script>

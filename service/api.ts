@@ -12,7 +12,8 @@ const callApi = (
   endpoint: string,
   data?: any,
 ) => {
-  axios.defaults.baseURL = process.env.BASE_API;
+  const { public: ENV } = useRuntimeConfig();
+  axios.defaults.baseURL = ENV.BASE_API;
   return axios({
     method,
     url: axios.defaults.baseURL + endpoint,
@@ -32,22 +33,6 @@ const callApi = (
 
 export const Login = (body: { login: string; senha: string }) => {
   return callApi("POST", "/portal/api/usuario/login", { body });
-};
-
-export const getAllProducts = (params: any) => {
-  return callApi("GET", "/products", { params });
-};
-
-export const getProductsByFilter = (params: any) => {
-  return callApi("GET", "/products/search", { params });
-};
-
-export const postProduct = (body: any) => {
-  return callApi("POST", "/products", { body });
-};
-
-export const getUsersByFilter = (params: any) => {
-  return callApi("GET", "/users/filter", { params });
 };
 
 // ANCORA

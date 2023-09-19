@@ -20,7 +20,6 @@
           </div>
         </div>
       </div>
-      <span class="divide"></span>
     </div>
   </div>
 </template>

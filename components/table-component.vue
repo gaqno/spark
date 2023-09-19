@@ -395,8 +395,4 @@ const formatInt = (number) => {
   return new Intl.NumberFormat("pt-BR", { style: "decimal" }).format(number);
 };
 
-onMounted(() => {
-  console.log(props);
-});
-
 </script>

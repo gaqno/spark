@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxt/image",
     "@nuxtjs/eslint-module",
+    "@nuxt/devtools",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/fontaine",
     "@nuxtjs/device",

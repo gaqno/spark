@@ -80,7 +80,7 @@
       @page="handlePagination('page', $event)"
     >
       <template #actions>
-        <div class="flex flex-row items-center gap-x-2">
+        <div class="flex flex-col items-center gap-x-2 md:flex-row">
           <span class="flex flex-col">
             <label>Busque por nome</label>
             <input
@@ -94,7 +94,7 @@
 
           <span class="flex flex-col">
             <label>Mostrando</label>
-            <select v-model="pagination.limit" class="input input-bordered input-sm w-40 text-xs" @change="fetchPermissionGroups">
+            <select v-model="pagination.limit" class="input input-bordered input-sm w-40 text-xs" @change="handlePagination('limit')">
               <option value="10">
                 10 por página
               </option>

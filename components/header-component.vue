@@ -26,7 +26,7 @@
               <div class="mx-2 flex max-w-full sm:justify-between sm:gap-4">
                 <div class="flex items-center justify-between gap-4 sm:justify-end">
                   <div class="flex w-full items-center">
-                    <div class="dropdown-end dropdown">
+                    <div class="dropdown dropdown-end">
                       <label tabindex="0" class="m-1">
                         <button class="btn btn-ghost">
                           <span class="sr-only">

@@ -32,7 +32,10 @@
             </span>
           </p>
 
-          <a href="#" class="mt-8 inline-block rounded bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
+          <a
+            class="mt-8 inline-block rounded bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+            @click="emit('change-view', 'communications')"
+          >
             Ver eventos
           </a>
         </div>

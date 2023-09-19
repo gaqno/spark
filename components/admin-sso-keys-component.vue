@@ -196,6 +196,7 @@ const getTotalActiveKeys = computed(() => {
 
 const fetchApiKeys = () => {
   return new Promise((resolve, reject) => {
+    app.setLoading(true);
     getApiKeys({
       _page: pagination.value.actual,
       _limit: pagination.value.limit,
@@ -216,9 +217,11 @@ const fetchApiKeys = () => {
           prefixo: i.prefixo,
           status: i.status === "A",
         }));
+        app.setLoading(false);
         resolve(res);
       })
       .catch((err) => {
+        app.setLoading(false);
         reject(err);
       });
   });

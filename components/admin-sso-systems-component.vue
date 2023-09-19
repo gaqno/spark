@@ -65,14 +65,7 @@
         { label: 'Editar', icon: 'mdi:square-edit-outline', template: 'edit', action: handleSlide },
         { label: 'Excluir', icon: 'mdi:trash-can-outline', template: 'delete', action: handleModal },
       ]"
-      :columns="[
-        { label: 'ID', field: 'idExterno', sortable: false, details: false, type: 'string' },
-        { label: 'Sistema', field: 'nome', sortable: false, details: false, type: 'string' },
-        { label: 'URL', field: 'url', sortable: false, details: false, type: 'string' },
-        { label: 'Descrição', field: 'descricao', sortable: false, details: false, type: 'string' },
-        { label: 'Status', field: 'status', sortable: false, details: false, type: 'boolean' },
-        { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
-      ]"
+      :columns="columns"
       :data="systems"
       :dark-mode="app.darkMode"
       :description="`Você possui ${systems.length} sistemas cadastrados.`"
@@ -81,18 +74,25 @@
       :route="app.route"
       @prev="handlePagination('prev')"
       @next="handlePagination('next')"
+      @sort="handlePagination('sort', $event)"
       @page="handlePagination('page', $event)"
     >
       <template #actions>
         <div class="flex flex-row items-center gap-x-2">
           <span class="flex flex-col">
             <label>Busque por nome</label>
-            <input type="text" class="input input-bordered input-sm" placeholder="Busque">
+            <input
+              v-model="pagination.q"
+              type="text"
+              class="input input-bordered input-sm"
+              placeholder="Busque"
+              @keydown.enter="fetchSystems"
+            >
           </span>
 
           <span class="flex flex-col">
             <label>Mostrando</label>
-            <select v-model="pagination.limit" class="input input-bordered input-sm w-40 text-xs" @change="fetchSystems">
+            <select v-model="pagination.limit" class="input input-bordered input-sm w-40 text-xs" @change="handlePagination('limit')">
               <option value="10">
                 10 por página
               </option>
@@ -136,12 +136,24 @@ const props = defineProps({
 
 const app = useAppStore();
 const systems = ref([]);
+const columns = ref([
+  { label: "ID", field: "idExterno", sortable: false, details: false, type: "string" },
+  { label: "Sistema", field: "nome", sortable: false, details: false, type: "string" },
+  { label: "URL", field: "url", sortable: false, details: false, type: "string" },
+  { label: "Descrição", field: "descricao", sortable: false, details: false, type: "string" },
+  { label: "Status", field: "status", sortable: false, details: false, type: "toggle" },
+  { label: "Ações", field: "actions", sortable: false, details: false, type: "actions" },
+]);
 const pagination = ref({
   total: 0,
   pages: 0,
   q: "",
   actual: 1,
   limit: 10,
+  sort: {
+    field: "idExterno",
+    order: "asc",
+  },
 });
 
 const getTotalSystemsActive = computed(() => {
@@ -153,6 +165,8 @@ const fetchSystems = () => {
     getSystems({
       _page: pagination.value.actual,
       _limit: pagination.value.limit,
+      _sort: pagination.value.sort.field,
+      _order: pagination.value.sort.order,
       q: pagination.value.q || null,
     }).then((res) => {
       pagination.value.total = parseInt(res.length);
@@ -198,6 +212,21 @@ const handlePagination = (action, callback) => {
   }
   if (action === "limit") {
     pagination.value.limit = callback;
+    fetchSystems();
+  }
+
+  if (action === "sort") {
+    columns.value.forEach((i) => {
+      if (i.field === callback.field) {
+        i.sortable = !i.sortable;
+        pagination.value.sort = {
+          field: callback.field,
+          order: i.sortable ? "asc" : "desc",
+        };
+      } else {
+        i.sortable = false;
+      }
+    });
     fetchSystems();
   }
 };

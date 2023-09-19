@@ -72,9 +72,14 @@ const handleView = (view: string) => {
 };
 
 const fetchUser = () => {
+  app.setLoading(true);
   getUser({})
-    .then((res) => { client.setUser(res); })
+    .then((res) => {
+      client.setUser(res);
+      app.setLoading(false);
+    })
     .catch(() => {
+      app.setLoading(false);
       app.setToast({
         show: true,
         title: "Erro ao carregar usuários",

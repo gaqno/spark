@@ -1,4 +1,4 @@
-import { PermissaoResponse } from "./PermissaoResponse"
+import { PermissaoResponse } from "./Permissao";
 
 export interface SistemaResponse {
   idSistema: number;

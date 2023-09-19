@@ -5,7 +5,7 @@ export const useAppStore = defineStore("app", {
     darkMode: false,
     loading: false,
     env: "homolog",
-    route: "home",
+    route: "login",
     language: "pt",
     sidebar: {
       small: false,

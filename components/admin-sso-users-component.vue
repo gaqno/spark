@@ -66,13 +66,7 @@
           { label: 'Editar', icon: 'mdi:square-edit-outline', template: 'edit', action: handleSlide },
           { label: 'Excluir', icon: 'mdi:trash-can-outline', template: 'delete', action: handleModal },
         ]"
-        :columns="[
-          { label: 'ID Externo', field: 'idUsuario', sortable: false, details: false, type: 'string' },
-          { label: 'Nome', field: 'nome', sortable: false, details: false, type: 'string' },
-          { label: 'Login', field: 'login', sortable: false, details: false, type: 'string' },
-          { label: 'Status', field: 'status', sortable: false, details: false, type: 'boolean' },
-          { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
-        ]"
+        :columns="columns"
         :data="users"
         :dark-mode="app.darkMode"
         :description="`Você possui ${users.length} usuários cadastrados.`"
@@ -81,18 +75,25 @@
         :loading="app.loading"
         @prev="handlePagination('prev')"
         @next="handlePagination('next')"
+        @sort="handlePagination('sort', $event)"
         @page="handlePagination('page', $event)"
       >
         <template #actions>
           <div class="flex flex-row items-center gap-x-2">
             <span class="flex flex-col">
               <label>Busque por nome</label>
-              <input type="text" class="input input-bordered" placeholder="Busque">
+              <input
+                v-model="pagination.q"
+                type="text"
+                class="input input-bordered"
+                placeholder="Busque"
+                @keydown.enter="fetchUsers"
+              >
             </span>
 
             <span class="flex flex-col">
               <label>Mostrando</label>
-              <select v-model="pagination.limit" class="input input-bordered w-40" @change="fetchUsers">
+              <select v-model="pagination.limit" class="input input-bordered w-40" @change="handlePagination('limit')">
                 <option value="10">
                   10 por página
                 </option>
@@ -136,12 +137,23 @@ const props = defineProps({
 
 const app = useAppStore();
 const users = ref([]);
+const columns = ref([
+  { label: "ID Externo", field: "idUsuario", sortable: false, details: false, type: "string" },
+  { label: "Nome", field: "nome", sortable: false, details: false, type: "string" },
+  { label: "Login", field: "login", sortable: false, details: false, type: "string" },
+  { label: "Status", field: "status", sortable: false, details: false, type: "toggle" },
+  { label: "Ações", field: "actions", sortable: false, details: false, type: "actions" },
+]);
 const pagination = ref({
   actual: 1,
   q: "",
   limit: 10,
   total: 0,
   pages: 0,
+  sort: {
+    field: "",
+    order: "",
+  },
 });
 
 const usersActive = computed(() => {
@@ -149,21 +161,37 @@ const usersActive = computed(() => {
 });
 
 const fetchUsers = () => {
-  getUsers({
-    _start: (pagination.value.actual - 1) * pagination.value.limit,
-    _end: pagination.value.actual * pagination.value.limit,
-    q: pagination.value.q || null,
-  })
-    .then((res) => {
-      pagination.value.total = parseInt(res.length);
-      pagination.value.pages = 5;
-      users.value = res.map((user) => {
-        return {
-          ...user,
-          status: user.status === "A",
-        };
+  return new Promise((resolve, reject) => {
+    app.setLoading(true);
+    getUsers({
+      _start: (pagination.value.actual - 1) * pagination.value.limit,
+      _end: pagination.value.actual * pagination.value.limit,
+      _sort: pagination.value.sort.field,
+      _order: pagination.value.sort.order,
+      q: pagination.value.q || null,
+    })
+      .then((res) => {
+        pagination.value.total = parseInt(res.length);
+        pagination.value.pages = 5;
+        users.value = res.map((user) => {
+          return {
+            ...user,
+            status: user.status === "A",
+          };
+        });
+        app.setLoading(false);
+        resolve();
+      })
+      .catch((err) => {
+        app.setLoading(false);
+        app.setToast({
+          show: true,
+          title: "Erro ao carregar usuários",
+          content: "Tente novamente",
+        });
+        reject(err);
       });
-    });
+  });
 };
 
 const handlePagination = (action, callback) => {
@@ -181,6 +209,20 @@ const handlePagination = (action, callback) => {
   }
   if (action === "limit") {
     pagination.value.limit = callback;
+    fetchUsers();
+  }
+  if (action === "sort") {
+    columns.value.forEach((i) => {
+      if (i.field === callback.field) {
+        i.sortable = !i.sortable;
+        pagination.value.sort = {
+          field: callback.field,
+          order: i.sortable ? "asc" : "desc",
+        };
+      } else {
+        i.sortable = false;
+      }
+    });
     fetchUsers();
   }
 };
