@@ -1,4 +1,4 @@
-]<template>
+<template>
   <NuxtLayout>
     <div>
       <ModalComponent v-if="app.modal.show" />

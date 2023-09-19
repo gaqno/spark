@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { describe, expect, it, vi } from "vitest";
 import { useChatCompletion } from "../service/openai";
 
@@ -15,27 +16,48 @@ vi.mock("#imports", () => {
 });
 
 describe("useChatCompletion", () => {
-  it("should return a response from OpenAI API", async () => {
-    const question = "What is the meaning of life?";
-    const response = await useChatCompletion(question);
-    expect(response).toBeTruthy();
+  it("should return a response from OpenAI API asking about systems", async () => {
+    try {
+      const question = "Quais sistemas vocês tem?";
+      const response = await useChatCompletion(question);
+      expect(response?.content)
+        .includes(["Seninha"])
+        .includes(["Batman"])
+        .includes(["Superman"]);
+      console.log(response?.content);
+    } catch (error) {
+      console.log({ error });
+      throw error;
+    }
   });
 
-  it("should return a response that is not empty", async () => {
-    const question = "What is the meaning of life?";
-    const response = await useChatCompletion(question);
-    expect(response).not.toBe("");
+  it("should return a response from OpenAI API asking about sizes", async () => {
+    try {
+      const question = "Quais tamanhos vocês tem?";
+      const response = await useChatCompletion(question);
+      expect(response?.content)
+        .includes(["38"])
+        .includes(["39"])
+        .includes(["40"]);
+      console.log(response?.content);
+    } catch (error) {
+      console.log({ error });
+      throw error;
+    }
   });
 
-  it("should return a response that is a string", async () => {
-    const question = "What is the meaning of life?";
-    const response = await useChatCompletion(question);
-    expect(typeof response).toBe("string");
-  });
-
-  it("should return a response that is different from the input question", async () => {
-    const question = "What is the meaning of life?";
-    const response = await useChatCompletion(question);
-    expect(response).not.toBe(question);
+  it("should return a response from OpenAI API asking about prices", async () => {
+    try {
+      const question = "Quais os preços?";
+      const response = await useChatCompletion(question);
+      expect(response?.content)
+        .includes(["29,99"])
+        .includes(["59,99"])
+        .includes(["69,99"]);
+      console.log(response?.content);
+    } catch (error) {
+      console.log({ error });
+      throw error;
+    }
   });
 });

@@ -6,7 +6,7 @@
           Rede ANCORA
         </h2>
 
-        <button class="btn-ghost btn text-white" @click="app.toggleSlide">
+        <button class="btn btn-ghost text-white" @click="app.toggleSlide">
           <Icon name="mdi:close" />
         </button>
       </div>

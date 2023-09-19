@@ -74,8 +74,11 @@
         { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
       ]"
       :data="systems"
+      :dark-mode="app.darkMode"
       :description="`Você possui ${systems.length} sistemas cadastrados.`"
       :pagination="pagination"
+      :loading="app.loading"
+      :route="app.route"
       @prev="handlePagination('prev')"
       @next="handlePagination('next')"
       @page="handlePagination('page', $event)"

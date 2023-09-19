@@ -72,7 +72,7 @@
             <nav>
               <ul role="list" class="-mx-2 mt-2 space-y-4">
                 <li v-for="item in filteredViews()" :key="item.name">
-                  <div class="dropdown-right dropdown-hover dropdown min-w-full">
+                  <div class="dropdown dropdown-right dropdown-hover min-w-full">
                     <label
                       tabindex="0"
                       class="mx-2.5 flex px-4 text-white/50 hover:text-white active:bg-slate-200/50"
@@ -224,40 +224,40 @@ const filteredViews = () => {
   const viewsFiltered = views.value.main.filter((item) => {
     if (client.user) {
       if (item.screen === "home") {
-        return client.user?.roles?.includes("VISUALIZAR_PORTAL") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_PORTAL") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "reports") {
-        return client.user?.roles?.includes("VISUALIZAR_RELATORIOS") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_RELATORIOS") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "best_pratices") {
-        return client.user?.roles?.includes("VISUALIZAR_BOAS_PRATICAS") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_BOAS_PRATICAS") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "admin_sso") {
-        return client.user?.roles?.includes("CRIAR_COLABORADOR") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("CRIAR_COLABORADOR") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "my_franchises") {
-        return client.user?.roles?.includes("VISUALIZAR_FRANQUIAS") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_FRANQUIAS") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "assistant") {
-        return client.user?.roles?.includes("VISUALIZAR_ASSISTENTE") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_ASSISTENTE") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "powerbi") {
-        return client.user?.roles?.includes("VISUALIZAR_BI") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_BI") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "product_catalog") {
-        return client.user?.roles?.includes("VISUALIZAR_CATALOGO") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_CATALOGO") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "shopping_portal") {
-        return client.user?.roles?.includes("VISUALIZAR_PORTAL_COMPRAS") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_PORTAL_COMPRAS") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "contact") {
-        return client.user?.roles?.includes("VISUALIZAR_CONTATO") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_CONTATO") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "communications") {
-        return client.user?.roles?.includes("VISUALIZAR_COMUNICACOES") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_COMUNICACOES") || client.user.roles.includes("ADMINISTRADORES");
       }
       if (item.screen === "employees") {
-        return client.user?.roles?.includes("VISUALIZAR_COLABORADORES") || client.user?.roles?.includes("ADMINISTRADORES");
+        return client.user.roles.includes("VISUALIZAR_COLABORADORES") || client.user.roles.includes("ADMINISTRADORES");
       }
     }
     return true;

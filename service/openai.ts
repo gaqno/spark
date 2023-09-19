@@ -1,12 +1,10 @@
 import { Configuration, OpenAIApi } from "openai";
 
-let previousMessages = "";
-
 const useChatCompletion = async (question: string) => {
-  const { public: ENV } = await useRuntimeConfig();
   const configuration = new Configuration({
-    apiKey: ENV.OPENAI_API_KEY,
+    apiKey: process.env.OPENAI_API_KEY,
   });
+  let previousMessages = "";
   const openai = new OpenAIApi(configuration);
   const context = `
     Você é um assistente virtual em uma loja de calçados. Sua função é ajudar os clientes a encontrar o produto certo e responder às suas perguntas. Você tem acesso a informações sobre os produtos, incluindo nome, marca, modelo, tamanhos disponíveis, quantidade em estoque e preço.

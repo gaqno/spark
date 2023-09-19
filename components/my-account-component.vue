@@ -15,7 +15,7 @@
               Nome
             </label>
             <div class="mt-2">
-              <div class="focus-within:ring-primary-600 flex rounded-md shadow-sm ring-1 ring-inset ring-slate-300 focus-within:ring-2 focus-within:ring-inset sm:max-w-md">
+              <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-slate-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary sm:max-w-md">
                 <input
                   id="username"
                   v-model="client.nome"
@@ -34,7 +34,7 @@
               E-mail
             </label>
             <div class="mt-2">
-              <div class="focus-within:ring-primary-600 flex rounded-md shadow-sm ring-1 ring-inset ring-slate-300 focus-within:ring-2 focus-within:ring-inset sm:max-w-md">
+              <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-slate-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary sm:max-w-md">
                 <input
                   id="username"
                   v-model="client.login"
@@ -83,7 +83,7 @@
                 type="text"
                 name="first-name"
                 autocomplete="given-name"
-                class="focus:ring-primary-600 block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                class="block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
               >
             </div>
           </div>
@@ -98,7 +98,7 @@
                 type="text"
                 name="last-name"
                 autocomplete="family-name"
-                class="focus:ring-primary-600 block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                class="block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
               >
             </div>
           </div>
@@ -113,7 +113,7 @@
                 name="email"
                 type="email"
                 autocomplete="email"
-                class="focus:ring-primary-600 block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                class="block w-full rounded-md border-0 py-1.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
               >
             </div>
           </div>
@@ -127,7 +127,7 @@
       </button>
       <button
         type="submit"
-        class="focus-visible:outline-primary-600 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline hover:bg-primary/50 focus-visible:outline-2 focus-visible:outline-offset-2"
+        class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline hover:bg-primary/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       >
         Salvar
       </button>

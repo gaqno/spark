@@ -27,10 +27,10 @@ export const useCallAssistant = () => {
         response.value = data;
         responseStream.value.push({ data: data.content, role: "sys" } as never);
       })
-      .catch((error) => app.setToast({
+      .catch(() => app.setToast({
         show: true,
         title: "Error",
-        content: error.message,
+        content: "Error",
       }));
   };
 

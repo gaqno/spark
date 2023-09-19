@@ -1,0 +1,6319 @@
+{
+  "usuario": {
+    "id": "28",
+    "login": "gabriel.aquino@redeancora.com.br",
+    "nome": "Gabriel Aquino",
+    "roles": [
+      "VISUALIZAR_PORTAL"
+    ],
+    "sistemas": [
+      {
+        "id": "1",
+        "nome": "SSO",
+        "url": "https://app.hmg.redeancora.com.br/admin",
+        "icone": "gear"
+      },
+      {
+        "id": "2",
+        "nome": "Admin SSO",
+        "url": "https://app.hmg.redeancora.com.br/admin",
+        "icone": "gear"
+      },
+      {
+        "id": "4",
+        "nome": "Portal de Compras",
+        "url": "https://app.hmg.redeancora.com.br/b2b",
+        "icone": "cart"
+      },
+      {
+        "id": "5",
+        "nome": "Portal ANCORA",
+        "url": "https://app.hmg.redeancora.com.br/portal",
+        "icone": "house"
+      },
+      {
+        "id": "9",
+        "nome": "Boas Práticas Admin",
+        "url": "https://app.hmg.redeancora.com.br/boas-praticas-admin",
+        "icone": "bookmark-check"
+      },
+      {
+        "id": "10",
+        "nome": "Comunicações",
+        "url": "https://app.hmg.redeancora.com.br/comunicacoes",
+        "icone": "megaphone"
+      },
+      {
+        "id": "14",
+        "nome": "Minhas Franquias",
+        "url": "https://app.hmg.redeancora.com.br/minhas-franquias",
+        "icone": "shop-window"
+      },
+      {
+        "id": "34",
+        "nome": "Catálogo de Produtos",
+        "url": "https://catalogo.redeancora.com.br/",
+        "icone": "tools"
+      }
+    ],
+    "empresas": [
+      {
+        "id": "1",
+        "cnpj": "25187746000187",
+        "nome": "Rede ANCORA - Nacional"
+      }
+    ]
+  },
+  "usuarios": [
+    {
+      "idUsuario": "1",
+      "idExterno": "null",
+      "nome": "Administrador",
+      "login": "admin",
+      "status": "A",
+      "empresas": [
+        {
+          "idEmpresa": "1",
+          "cnpj": "25187746000187",
+          "nome": "Rede ANCORA - Nacional",
+          "idGrupo": "4"
+        }
+      ],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "2",
+      "idExterno": "33202",
+      "nome": "Antonio Henrique Carelli Netto",
+      "login": "antonio.carelli@redeancora.com.br",
+      "status": "A",
+      "empresas": [
+        {
+          "idEmpresa": "1",
+          "cnpj": "25187746000187",
+          "nome": "Rede ANCORA - Nacional",
+          "idGrupo": "4"
+        }
+      ],
+      "idGrupo": [
+        [
+          "4",
+          "39",
+          "50",
+          "15",
+          "27",
+          "62",
+          "24",
+          "59",
+          "25",
+          "60",
+          "61",
+          "26",
+          "28",
+          "63",
+          "72",
+          "18",
+          "53",
+          "17",
+          "52",
+          "54",
+          "19",
+          "51",
+          "16",
+          "71",
+          "33",
+          "70",
+          "30",
+          "65",
+          "12",
+          "47",
+          "8",
+          "43",
+          "7",
+          "42",
+          "46",
+          "11",
+          "9",
+          "44",
+          "10",
+          "45",
+          "41",
+          "6"
+        ]
+      ]
+    },
+    {
+      "idUsuario": "3",
+      "idExterno": "42474",
+      "nome": "Guilherme Viana",
+      "login": "guilherme.viana@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "4",
+      "idExterno": "34630",
+      "nome": "Jonatas de Moraes Junior",
+      "login": "jonatas.moraes@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "5",
+      "idExterno": "42486",
+      "nome": "Rafael Busuth",
+      "login": "rafael.busuth@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "6",
+      "idExterno": "34940",
+      "nome": "Denis Colli Spalenza",
+      "login": "denis.spalenza@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "7",
+      "idExterno": "34632",
+      "nome": "Rubia Gomes",
+      "login": "rubia.gomes@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "8",
+      "idExterno": "42492",
+      "nome": "Luis Marin",
+      "login": "luis.marin@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "9",
+      "idExterno": "34636",
+      "nome": "Antonio Neto",
+      "login": "antonio.neto@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "10",
+      "idExterno": "42484",
+      "nome": "Rodrigo Nobrega da Silva",
+      "login": "rodrigo.nobrega@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "11",
+      "idExterno": "34634",
+      "nome": "Leonardo Gutierrez",
+      "login": "leonardo.gutierrez@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "12",
+      "idExterno": "42482",
+      "nome": "Thiago Lima",
+      "login": "thiago.lima@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "13",
+      "idExterno": "42488",
+      "nome": "Thais Alves",
+      "login": "thais.alves@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "14",
+      "idExterno": "34924",
+      "nome": "José Augusto",
+      "login": "gestor@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "15",
+      "idExterno": "null",
+      "nome": "Colaborador de Teste",
+      "login": "colaborador1@gmail.com",
+      "status": "N",
+      "empresas": [],
+      "idGrupo": []
+    },
+    {
+      "idUsuario": "16",
+      "idExterno": "null",
+      "nome": "Gabriel Aquino",
+      "login": "gabriel.aquino@redeancora.com.br",
+      "status": "A",
+      "empresas": [],
+      "idGrupo": []
+    }
+  ],
+  "sistema": [
+    {
+      "idSistema": "1",
+      "nome": "SSO",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": [
+        {
+          "nome": "GERAR_API_KEY",
+          "descricao": "Pode gerar novas API Keys"
+        },
+        {
+          "nome": "ACESSAR_API_KEY",
+          "descricao": "Pode consultar dados de API Keys"
+        },
+        {
+          "nome": "CRIAR_SESSAO",
+          "descricao": "Pode fazer login dos usuários"
+        },
+        {
+          "nome": "ACESSAR_SESSAO",
+          "descricao": "Pode acessar dados de sessão dos usuários"
+        },
+        {
+          "nome": "VISUALIZAR_SISTEMAS",
+          "descricao": "Pode recuperar a quais sistemas o usuário tem acesso"
+        },
+        {
+          "nome": "ALTERAR_SENHA",
+          "descricao": "Pode efetuar alteração de senha do usuário"
+        },
+        {
+          "nome": "SOLICITAR_SENHA",
+          "descricao": "Pode solicitar recuperação de senha do usuário"
+        },
+        {
+          "nome": "CONSULTAR_USUARIOS",
+          "descricao": "Pode fazer consultas na base de usuários"
+        },
+        {
+          "nome": "CONSULTAR_COLABORADORES",
+          "descricao": "Pode consultar colaboradores"
+        },
+        {
+          "nome": "CONSULTAR_EMPRESAS",
+          "descricao": "Pode consultar empresas"
+        },
+        {
+          "nome": "CONSULTAR_FUNCOES",
+          "descricao": "Pode consultar funções de colaboradores"
+        },
+        {
+          "nome": "CONSULTAR_PAPEIS",
+          "descricao": "Pode consultar os papéis relacionados a uma função de um colaborador"
+        },
+        {
+          "nome": "CRIAR_COLABORADOR",
+          "descricao": "Pode criar um novo colaborador"
+        },
+        {
+          "nome": "ALTERAR_COLABORADOR",
+          "descricao": "Pode alterar um colaborador"
+        },
+        {
+          "nome": "CRIAR_FUNCAO",
+          "descricao": "Pode consultar colaboradores"
+        },
+        {
+          "nome": "ALTERAR_FUNCAO",
+          "descricao": "Pode consultar empresas"
+        },
+        {
+          "nome": "CRIAR_PAPEL",
+          "descricao": "Pode consultar funções de colaboradores"
+        },
+        {
+          "nome": "ALTERAR_PAPEL",
+          "descricao": "Pode consultar os papéis relacionados a uma função de um colaborador"
+        }
+      ]
+    },
+    {
+      "idSistema": "2",
+      "nome": "Admin SSO",
+      "url": "https://app.hmg.redeancora.com.br/admin",
+      "descricao": null,
+      "status": "A",
+      "icone": "gear",
+      "permissoes": [
+        {
+          "nome": "VISUALIZAR_HOME",
+          "descricao": "Ver a home do admin"
+        },
+        {
+          "nome": "CRIAR_SISTEMA",
+          "descricao": "Criação de novas aplicações"
+        },
+        {
+          "nome": "VISUALIZAR_SISTEMA",
+          "descricao": "Visualizar as aplicações"
+        },
+        {
+          "nome": "CRIAR_PERMISSAO",
+          "descricao": "Criação de novas permissões por aplicação"
+        },
+        {
+          "nome": "VISUALIZAR_PERMISSAO",
+          "descricao": "Visualizar as permissões por aplicação"
+        },
+        {
+          "nome": "CRIAR_APIKEY",
+          "descricao": "Criação de novas API Keys por aplicação"
+        },
+        {
+          "nome": "VISUALIZAR_APIKEY",
+          "descricao": "Visualizar as API Keys por aplicação"
+        },
+        {
+          "nome": "CRIAR_USUARIO",
+          "descricao": "Editar usuarios"
+        },
+        {
+          "nome": "VISUALIZAR_USUARIO",
+          "descricao": "Visualizar os usuários cadastrados"
+        },
+        {
+          "nome": "CRIAR_GRUPO",
+          "descricao": "Criar perfis de acesso"
+        },
+        {
+          "nome": "VISUALIZAR_GRUPO",
+          "descricao": "Visualizar perfis de acesso"
+        },
+        {
+          "nome": "VISUALIZAR_EMPRESA",
+          "descricao": "Visualizar empresas"
+        }
+      ]
+    },
+    {
+      "idSistema": "3",
+      "nome": "Integrador ANCORA",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": [
+        {
+          "nome": "ENVIAR_NFE",
+          "descricao": "Pode enviar NFes para o Integrador"
+        },
+        {
+          "nome": "ENVIAR_COMERCIAL",
+          "descricao": "Pode enviar Relatório Comercial para o Integrador"
+        },
+        {
+          "nome": "ENVIAR_CONTAS_PAGAR",
+          "descricao": "Pode enviar Relatório de Contas a Pagar para o Integrador"
+        },
+        {
+          "nome": "ENVIAR_CONTAS_RECEBER",
+          "descricao": "Pode enviar Relatório de Contas a Receber para o Integrador"
+        },
+        {
+          "nome": "ENVIAR_CONTABIL",
+          "descricao": "Pode enviar Relatório Contábil para o Integrador"
+        },
+        {
+          "nome": "ENVIAR_ESTOQUE",
+          "descricao": "Pode enviar Relatório de Estoque para o Integrador"
+        },
+        {
+          "nome": "ENVIAR_ADMINISTRATIVO",
+          "descricao": "Pode enviar Relatório Administrativo para o Integrador"
+        },
+        {
+          "nome": "CONSULTAR",
+          "descricao": "Pode consultar os dados enviados pelas franquias"
+        },
+        {
+          "nome": "ENVIAR_CADASTRO",
+          "descricao": "Pode enviar cadastro de produtos das franquias"
+        },
+        {
+          "nome": "CANCELAR_CADASTRO",
+          "descricao": "Pode cancelar cadastro de produtos das franquias"
+        },
+        {
+          "nome": "CONSULTAR_CADASTRO",
+          "descricao": "Pode consultar cadastro de produtos das franquias"
+        }
+      ]
+    },
+    {
+      "idSistema": "4",
+      "nome": "Portal de Compras",
+      "url": "https://app.hmg.redeancora.com.br/b2b",
+      "descricao": null,
+      "status": "A",
+      "icone": "cart",
+      "permissoes": [
+        {
+          "nome": "RELATORIO_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de relatórios"
+        },
+        {
+          "nome": "KPI_CALENDARIO_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de calendário/kpis"
+        },
+        {
+          "nome": "MANUAIS_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de manuais"
+        },
+        {
+          "nome": "CATALOGOS_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de catalogos"
+        },
+        {
+          "nome": "GARANTIA_DEVOLUCAO_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de garantia"
+        },
+        {
+          "nome": "GARANTIA_CRIAR_NOVO",
+          "descricao": "Criar nova ordem de Garantia"
+        },
+        {
+          "nome": "NFE_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de notas fiscais"
+        },
+        {
+          "nome": "BOLETOS_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de boletos"
+        },
+        {
+          "nome": "AGENDA_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de agenda de compras"
+        },
+        {
+          "nome": "PEDIDOS_ACESSAR_PAGINA",
+          "descricao": "Acesso à página meus pedidos"
+        },
+        {
+          "nome": "ITEMS_PEDIDOS_ACESSAR_PAGINA",
+          "descricao": "Acesso à página dos items dos meus pedidos"
+        },
+        {
+          "nome": "PEDIDOS_EXPORTACAO",
+          "descricao": "Exportar relatório de pedidos"
+        },
+        {
+          "nome": "ITEMS_PEDIDOS_EXPORTACAO",
+          "descricao": "Exportar relatório de items de pedidos"
+        },
+        {
+          "nome": "BUSCA_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de busca"
+        },
+        {
+          "nome": "BUSCA_OUTROS_CDS",
+          "descricao": "Permissão para buscar em outros CDs"
+        },
+        {
+          "nome": "BUSCA_VER_PRECOS",
+          "descricao": "Permissão para ver preços"
+        },
+        {
+          "nome": "BUSCA_VER_PRECOS_ORIGINAIS",
+          "descricao": "Permissão para ver preços orignais (caso não ativo ve com margem aplicada)"
+        },
+        {
+          "nome": "BUSCA_OUTRAS_MODALIDADES",
+          "descricao": "Permissão para ver modalidades que não são prod"
+        },
+        {
+          "nome": "CARRINHO_VER",
+          "descricao": "Acesso a página do carrinho"
+        },
+        {
+          "nome": "CARRINHO_COMPLETO",
+          "descricao": "Adicionar/Alterar items do carrinho"
+        },
+        {
+          "nome": "FECHAR_PEDIDO",
+          "descricao": "Permissão para fechar pedido"
+        },
+        {
+          "nome": "LOGISTICA_REVERSA_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de logistica reversa"
+        },
+        {
+          "nome": "NOTIFICACOES_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de notificações"
+        },
+        {
+          "nome": "TRANSPORTADORES_ACESSAR_PAGINA",
+          "descricao": "Acesso à página de transportadores"
+        },
+        {
+          "nome": "CLIENTE_ACESSAR_PAGINA",
+          "descricao": "Acesso à páginas de dados do cliente"
+        },
+        {
+          "nome": "CLIENTE_DONO",
+          "descricao": "Pode ver os limites e dados completos do franqueado"
+        },
+        {
+          "nome": "CANCELAR_PEDIDOS",
+          "descricao": "Pode cancelar pedidos que ainda não tiveram nenhuma reserva ou faturamento"
+        }
+      ]
+    },
+    {
+      "idSistema": "5",
+      "nome": "Portal ANCORA",
+      "url": "https://app.hmg.redeancora.com.br/portal",
+      "descricao": null,
+      "status": "A",
+      "icone": "house",
+      "permissoes": [
+        {
+          "nome": "VISUALIZAR_PORTAL",
+          "descricao": "Pode acessar a home do portal"
+        },
+        {
+          "nome": "VISUALIZAR_TROFEU",
+          "descricao": "Acesso ao Trofeu"
+        },
+        {
+          "nome": "CONSULTAR_COLABORADORES",
+          "descricao": "Pode consultar os colaboradores"
+        },
+        {
+          "nome": "CONSULTAR_EMPRESAS",
+          "descricao": "Pode consultar empresas"
+        },
+        {
+          "nome": "CONSULTAR_FUNCOES",
+          "descricao": "Pode consultar as funções de um colaborador"
+        },
+        {
+          "nome": "CONSULTAR_PAPEIS",
+          "descricao": "Pode consultar os papeis relacionados a uma função de um colaborador"
+        },
+        {
+          "nome": "CRIAR_COLABORADOR",
+          "descricao": "Pode criar um novo colaborador"
+        },
+        {
+          "nome": "ALTERAR_COLABORADOR",
+          "descricao": "Pode alterar um colaborador"
+        }
+      ]
+    },
+    {
+      "idSistema": "7",
+      "nome": "Benner API",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": [
+        {
+          "nome": "EXECUTAR",
+          "descricao": "Pode executar consultas no Benner"
+        }
+      ]
+    },
+    {
+      "idSistema": "8",
+      "nome": "Integrador WMS",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "9",
+      "nome": "Boas Práticas Admin",
+      "url": "https://app.hmg.redeancora.com.br/boas-praticas-admin",
+      "descricao": null,
+      "status": "A",
+      "icone": "bookmark-check",
+      "permissoes": [
+        {
+          "nome": "CRIAR_PROCESSAMENTO",
+          "descricao": "Pode criar um novo processamento"
+        },
+        {
+          "nome": "VISUALIZAR_PROCESSAMENTO",
+          "descricao": "Pode visualizar um novo processamento"
+        },
+        {
+          "nome": "CONSULTAR_CLASSIFICACAO_FRANQUIA",
+          "descricao": "Pode visualizar ranking das franquias que tenha acesso"
+        },
+        {
+          "nome": "GERAR_NOVO_REBATE",
+          "descricao": "Acesso ao link Novo Calculo"
+        },
+        {
+          "nome": "CONSULTAR_REBATE",
+          "descricao": "Acesso ao link Consultar"
+        },
+        {
+          "nome": "CONSULTAR_CLASSIFICACAO_FRANQUIAS_CD",
+          "descricao": "Regra para ver somente franquias desse CD - na tela de Classificação de Franquias"
+        },
+        {
+          "nome": "ACESSAR_MIDIAS",
+          "descricao": "Acesso ao menu Midias"
+        },
+        {
+          "nome": "VISUALIZAR_TROFEU",
+          "descricao": "Acesso ao Trofeu"
+        },
+        {
+          "nome": "CONSULTAR_CLASSIFICACAO_FRANQUIAS_TROFEU",
+          "descricao": "Acesso a Classificaçao de franquias pelo Trofeu"
+        },
+        {
+          "nome": "CANCELAR_REBATE",
+          "descricao": "Acesso ao botão Cancelar Rebate"
+        },
+        {
+          "nome": "VISUALIZAR_BOAS_PRATICAS",
+          "descricao": "Visualizar a página inicial de do Boas Práticos"
+        },
+        {
+          "nome": "CONSULTA_CONFIG_ESTRELAS",
+          "descricao": "Consulta as configurações de estrelas"
+        },
+        {
+          "nome": "ALTERA_CONFIG_ESTRELAS",
+          "descricao": "Altera as configurações de estrelas"
+        }
+      ]
+    },
+    {
+      "idSistema": "10",
+      "nome": "Comunicações",
+      "url": "https://app.hmg.redeancora.com.br/comunicacoes",
+      "descricao": null,
+      "status": "A",
+      "icone": "megaphone",
+      "permissoes": [
+        {
+          "nome": "VISUALIZAR_HOME",
+          "descricao": "Ver a home do comunicações"
+        },
+        {
+          "nome": "PARTICIPAR_EVENTO",
+          "descricao": "Participar de um evento"
+        },
+        {
+          "nome": "PESQUISAR_EVENTOS",
+          "descricao": "Listar e pesquisar os eventos cadastrados"
+        },
+        {
+          "nome": "VISUALIZAR_EVENTOS",
+          "descricao": "Visualizar informações de um evento cadastrado"
+        },
+        {
+          "nome": "CRIAR_EVENTOS",
+          "descricao": "Criar novo evento"
+        },
+        {
+          "nome": "EXCLUIR_EVENTOS",
+          "descricao": "Excluir eventos cadastrados"
+        },
+        {
+          "nome": "EDITAR_EVENTOS",
+          "descricao": "Alterar os eventos cadastrados"
+        },
+        {
+          "nome": "DUPLICAR_EVENTOS",
+          "descricao": "Duplicar ou reagendar eventos cadastrados"
+        },
+        {
+          "nome": "ESTATISTICAS_EVENTOS",
+          "descricao": "Dados de estatística dos eventos. (Qtd. eventos, duração dos eventos, tempo partc. usuario, etc"
+        },
+        {
+          "nome": "VISUALIZAR_VIDEOS",
+          "descricao": "Visualizar vídeos da central de eventos"
+        }
+      ]
+    },
+    {
+      "idSistema": "11",
+      "nome": "NDD API",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": [
+        {
+          "nome": "CONSULTAR_NOTAS",
+          "descricao": "Consultar notas fiscais no NDD"
+        }
+      ]
+    },
+    {
+      "idSistema": "12",
+      "nome": "Email Producer",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": [
+        {
+          "nome": "ENVIAR_EMAIL",
+          "descricao": "Realiza envio de emails"
+        }
+      ]
+    },
+    {
+      "idSistema": "13",
+      "nome": "NFE API",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": [
+        {
+          "nome": "CONSULTAR_NFE",
+          "descricao": "Permite consulta as NFEs disponíveis"
+        },
+        {
+          "nome": "EMITIR_NFE",
+          "descricao": "Permite emitir uma nova NFE"
+        },
+        {
+          "nome": "ENVIAR_CERTIFICADO",
+          "descricao": "Permite emitir um novo Certificado Digital"
+        }
+      ]
+    },
+    {
+      "idSistema": "14",
+      "nome": "Minhas Franquias",
+      "url": "https://app.hmg.redeancora.com.br/minhas-franquias",
+      "descricao": null,
+      "status": "A",
+      "icone": "shop-window",
+      "permissoes": [
+        {
+          "nome": "VISUALIZAR_HOME",
+          "descricao": "Pode visualizar a Home do Minhas Franquias"
+        },
+        {
+          "nome": "CONSULTA_FRANQUIAS",
+          "descricao": "Pode consultar as franquias vinculadas ao cadastro do usuario no SSO"
+        },
+        {
+          "nome": "CONSULTA_CERTIFICADOS",
+          "descricao": "Pode consultar certificados de franquias vinculadas ao cadastro do usuario no SSO"
+        },
+        {
+          "nome": "ENVIA_CERTIFICADO",
+          "descricao": "Pode adicionar um novo certificado a uma de suas franquias"
+        },
+        {
+          "nome": "BAIXA_CERTIFICADO",
+          "descricao": "Pode baixar certificados de franquias vinculadas ao cadastro do usuario no SSO"
+        },
+        {
+          "nome": "EXCLUI_CERTIFICADO",
+          "descricao": "Pode excluir o arquivo de certificado de uma franquia"
+        },
+        {
+          "nome": "ATIVA_INATIVA_CERTIFICADO",
+          "descricao": "Pode ativar ou inativar certificados de franquias vinculadas ao cadastro do usuario no SSO"
+        },
+        {
+          "nome": "CARGA_EMPRESAS",
+          "descricao": "Pode executar os procedimentos de carga de empresa do SSO"
+        }
+      ]
+    },
+    {
+      "idSistema": "22",
+      "nome": "Integrador NFE",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": null
+    },
+    {
+      "idSistema": "25",
+      "nome": "Integrador Aprimora",
+      "url": null,
+      "descricao": null,
+      "status": "A",
+      "icone": null,
+      "permissoes": [
+        {
+          "nome": "ENVIAR_CADASTRO",
+          "descricao": "Pode enviar cadastro de produtos das franquias"
+        },
+        {
+          "nome": "CANCELAR_CADASTRO",
+          "descricao": "Pode cancelar cadastro de produtos das franquias"
+        },
+        {
+          "nome": "CONSULTAR_CADASTRO",
+          "descricao": "Pode consultar cadastro de produtos das franquias"
+        }
+      ]
+    },
+    {
+      "idSistema": "34",
+      "nome": "Catálogo de Produtos",
+      "url": "https://catalogo.redeancora.com.br/",
+      "descricao": "Catálogo de Produtos da Rede ANCORA",
+      "status": "A",
+      "icone": "tools",
+      "permissoes": [
+        {
+          "nome": "CATALOGO_PRODUTO",
+          "descricao": "Acesso ao sistema Catalogo de Produtos"
+        }
+      ]
+    }
+  ],
+  "perfil": [
+    {
+      "idPerfil": "1",
+      "nomePerfil": "SISTEMAS_EXTERNOS",
+      "nomeSistema": "SSO"
+    },
+    {
+      "idPerfil": "2",
+      "nomePerfil": "ACESSO_ADMIN_SSO",
+      "nomeSistema": "SSO"
+    },
+    {
+      "idPerfil": "3",
+      "nomePerfil": "ACESSO_PORTAL",
+      "nomeSistema": "SSO"
+    },
+    {
+      "idPerfil": "4",
+      "nomePerfil": "ADMINISTRADORES",
+      "nomeSistema": "Admin SSO",
+      "permissoes": [
+        "CRIAR_APIKEY",
+        "CRIAR_GRUPO",
+        "CRIAR_PERMISSAO",
+        "CRIAR_SISTEMA",
+        "CRIAR_USUARIO",
+        "VISUALIZAR_APIKEY",
+        "VISUALIZAR_EMPRESA",
+        "VISUALIZAR_GRUPO",
+        "VISUALIZAR_HOME",
+        "VISUALIZAR_PERMISSAO",
+        "VISUALIZAR_SISTEMA",
+        "VISUALIZAR_USUARIO"
+      ]
+    },
+    {
+      "idPerfil": "5",
+      "nomePerfil": "FRANQUEADO",
+      "nomeSistema": "Integrador ANCORA"
+    },
+    {
+      "idPerfil": "6",
+      "nomePerfil": "LOJISTA",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "7",
+      "nomePerfil": "COMPRADOR",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "8",
+      "nomePerfil": "BALCÃO",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "9",
+      "nomePerfil": "FINANCEIRO",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "10",
+      "nomePerfil": "GARANTIA",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "11",
+      "nomePerfil": "ENTRADA DE NOTA",
+      "nomeSistema": "Loja do Franqueado"
+    },
+    {
+      "idPerfil": "12",
+      "nomePerfil": "USUARIO",
+      "nomeSistema": "Portal ANCORA"
+    },
+    {
+      "idPerfil": "14",
+      "nomePerfil": "SISTEMAS",
+      "nomeSistema": "Benner API"
+    },
+    {
+      "idPerfil": "15",
+      "nomePerfil": "ADMINISTRADOR",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "16",
+      "nomePerfil": "USUARIO",
+      "nomeSistema": "Comunicações"
+    },
+    {
+      "idPerfil": "17",
+      "nomePerfil": "CENTRAL_EVENTOS",
+      "nomeSistema": "Comunicações"
+    },
+    {
+      "idPerfil": "18",
+      "nomePerfil": "ADMINISTRADORES",
+      "nomeSistema": "Comunicações"
+    },
+    {
+      "idPerfil": "19",
+      "nomePerfil": "ESTATISTICAS",
+      "nomeSistema": "Comunicações"
+    },
+    {
+      "idPerfil": "20",
+      "nomePerfil": "SISTEMA EXTERNO",
+      "nomeSistema": "NDD API"
+    },
+    {
+      "idPerfil": "21",
+      "nomePerfil": "SISTEMA EXTERNO",
+      "nomeSistema": "Email Producer"
+    },
+    {
+      "idPerfil": "22",
+      "nomePerfil": "SISTEMA EXTERNO",
+      "nomeSistema": "NFE API"
+    },
+    {
+      "idPerfil": "23",
+      "nomePerfil": "CONSULTA",
+      "nomeSistema": "Integrador ANCORA"
+    },
+    {
+      "idPerfil": "24",
+      "nomePerfil": "CONSULTAR_CLASSIFICACAO_FRANQUIA",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "25",
+      "nomePerfil": "FINANCEIRO_CONTABIL",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "26",
+      "nomePerfil": "FRANQUIAS",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "27",
+      "nomePerfil": "CENTRO_DISTRIBUICAO",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "28",
+      "nomePerfil": "USUARIO_LOJISTA",
+      "nomeSistema": "Boas Práticas Admin"
+    },
+    {
+      "idPerfil": "29",
+      "nomePerfil": "GESTAO_COLABORADORES",
+      "nomeSistema": "SSO"
+    },
+    {
+      "idPerfil": "30",
+      "nomePerfil": "GESTAO_COLABORADORES",
+      "nomeSistema": "Portal ANCORA"
+    },
+    {
+      "idPerfil": "31",
+      "nomePerfil": "GESTAO_COLABORADORES_ADMIN",
+      "nomeSistema": "SSO"
+    },
+    {
+      "idPerfil": "32",
+      "nomePerfil": "GESTOR_CERTIFICADOS",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "33",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "34",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "35",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "36",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "37",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "38",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    },
+    {
+      "idPerfil": "39",
+      "nomePerfil": "CARREGAMENTO_EMPRESAS_SSO",
+      "nomeSistema": "Minhas Franquias"
+    }
+  ],
+  "apikey": [
+    {
+      "idApiKey": "1",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "47eaf30",
+      "consumidor": "Admin SSO",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "2",
+      "idSistema": "1",
+      "grupos": [
+        "2"
+      ],
+      "nomeSistema": "SSO",
+      "prefixo": "fb50911",
+      "consumidor": "Integrador NFE",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "3",
+      "idSistema": "3",
+      "grupos": [],
+      "nomeSistema": "Integrador ANCORA",
+      "prefixo": "4e10866",
+      "consumidor": "25.187.746/0001-87",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "4",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "b8e432a",
+      "consumidor": "Portal ANCORA",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "5",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "90678c5",
+      "consumidor": "Benner API",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "6",
+      "idSistema": "7",
+      "grupos": [],
+      "nomeSistema": "Benner API",
+      "prefixo": "b118c0e",
+      "consumidor": "Teste",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "7",
+      "idSistema": "7",
+      "grupos": [],
+      "nomeSistema": "Benner API",
+      "prefixo": "79b2f19",
+      "consumidor": "Boas Práticas Admin",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "8",
+      "idSistema": "10",
+      "grupos": [],
+      "nomeSistema": "Comunicações",
+      "prefixo": "cc9c0e3",
+      "consumidor": "Portal ANCORA",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "9",
+      "idSistema": "11",
+      "grupos": [],
+      "nomeSistema": "NDD API",
+      "prefixo": "d9e35bb",
+      "consumidor": "Loja do Franqueado",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "10",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "41162bb",
+      "consumidor": "NDD API",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "11",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "3087a8e",
+      "consumidor": "Comunicações",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "12",
+      "idSistema": "10",
+      "grupos": [],
+      "nomeSistema": "Comunicações",
+      "prefixo": "8d1d090",
+      "consumidor": "Boas Práticas Admin",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "13",
+      "idSistema": "12",
+      "grupos": [],
+      "nomeSistema": "Email Producer",
+      "prefixo": "73e3ece",
+      "consumidor": "SSO",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "14",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "dbbf0f9",
+      "consumidor": "Email Producer",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "15",
+      "idSistema": "13",
+      "grupos": [],
+      "nomeSistema": "NFE API",
+      "prefixo": "b8fb755",
+      "consumidor": "Interceptador NDD",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "16",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "29ee7b4",
+      "consumidor": "NFE API",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "17",
+      "idSistema": "3",
+      "grupos": [],
+      "nomeSistema": "Integrador ANCORA",
+      "prefixo": "68e4f3f",
+      "consumidor": "Boas Práticas Admin",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "18",
+      "idSistema": "9",
+      "grupos": [],
+      "nomeSistema": "Boas Práticas Admin",
+      "prefixo": "0dc851b",
+      "consumidor": "Portal ANCORA",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "19",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "cfc19c1",
+      "consumidor": "Boas Práticas Admin",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "20",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "805039a",
+      "consumidor": "Portal ANCORA",
+      "dataCriacao": "22/08/2023 09:28:07",
+      "status": "A"
+    },
+    {
+      "idApiKey": "21",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "bf64504",
+      "consumidor": "Admin SSO",
+      "dataCriacao": "22/08/2023 09:28:08",
+      "status": "A"
+    },
+    {
+      "idApiKey": "22",
+      "idSistema": "1",
+      "grupos": [],
+      "nomeSistema": "SSO",
+      "prefixo": "179c936",
+      "consumidor": "Minhas Franquias",
+      "dataCriacao": "22/08/2023 09:28:08",
+      "status": "A"
+    },
+    {
+      "idApiKey": "23",
+      "idSistema": "14",
+      "grupos": [],
+      "nomeSistema": "Minhas Franquias",
+      "prefixo": "2ec4d69",
+      "consumidor": "ACIONAMENTO MANUAL",
+      "dataCriacao": "20/07/2023 08:45:03",
+      "status": "A"
+    },
+    {
+      "idApiKey": "24",
+      "idSistema": "2",
+      "grupos": [],
+      "nomeSistema": "Admin SSO",
+      "prefixo": "ad365c5",
+      "consumidor": "Loja do Franqueado",
+      "dataCriacao": "22/08/2023 10:14:17",
+      "status": "A"
+    }
+  ],
+  "empresas": [
+    {
+      "id": "2",
+      "cnpj": "11.111.111/1111-11",
+      "nome": "Empresa do Colaborador 1",
+      "tipo": "3"
+    },
+    {
+      "id": "3",
+      "cnpj": "22.222.222/2222-22",
+      "nome": "Empresa do Colaborador 2",
+      "tipo": "3"
+    },
+    {
+      "id": "7",
+      "cnpj": "41.974.031/0001-20",
+      "nome": "PARALAMA AUTOPECAS LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "8",
+      "cnpj": "41.974.031/0002-01",
+      "nome": "PARALAMA AUTOPECAS LTDA (FILIAL)",
+      "tipo": "1"
+    },
+    {
+      "id": "9",
+      "cnpj": "27.072.180/0003-35",
+      "nome": "CAPEL CACHOEIRO PEÇAS LTDA ME - FILIAL",
+      "tipo": "1"
+    },
+    {
+      "id": "10",
+      "cnpj": "27.072.180/0001-73",
+      "nome": "CAPEL CACHOEIRO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "11",
+      "cnpj": "35.774.611/0001-71",
+      "nome": "PECITA PECAS ITAGUAI LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "12",
+      "cnpj": "35.774.611/0003-33",
+      "nome": "PECITA PECAS ITAGUAI LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "13",
+      "cnpj": "35.774.611/0004-14",
+      "nome": "PECITA PECAS ITAGUAI LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "14",
+      "cnpj": "76.763.630/0001-80",
+      "nome": "AUTO PEÇAS ARAUCÁRIAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "15",
+      "cnpj": "01.029.465/0001-38",
+      "nome": "POINTER AUTO PEÇAS E",
+      "tipo": "1"
+    },
+    {
+      "id": "16",
+      "cnpj": "00.450.517/0001-82",
+      "nome": "SILVA DIAS E BORGES LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "17",
+      "cnpj": "36.753.762/0001-06",
+      "nome": "AUTO REGULADORA IMPALA LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "18",
+      "cnpj": "34.584.092/0001-16",
+      "nome": "EIBEL COM. IMP. EXP.E DIST.DE PECAS E AC.PARA VEICULOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "19",
+      "cnpj": "46.970.643/0001-69",
+      "nome": "AUTOCENTER FORMULA GP LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "20",
+      "cnpj": "12.688.228/0001-03",
+      "nome": "AUTO AGROPECAS CHAVES LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "21",
+      "cnpj": "24.815.811/0001-09",
+      "nome": "AUTO PECAS E SERVIÇOS AGUAS CLARAS LTDA-EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "22",
+      "cnpj": "04.464.486/0001-70",
+      "nome": "CARVALHO DIESEL PEÇAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "23",
+      "cnpj": "11.692.220/0001-40",
+      "nome": "NOBRE CAR PEÇAS E SERVIÇOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "24",
+      "cnpj": "01.613.968/0001-56",
+      "nome": "ANDRADE E BORGES LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "25",
+      "cnpj": "12.619.880/0001-68",
+      "nome": "CAR MAIS AUTO CENTRO LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "26",
+      "cnpj": "05.248.384/0001-80",
+      "nome": "R N DAPPER  ME",
+      "tipo": "1"
+    },
+    {
+      "id": "27",
+      "cnpj": "02.169.097/0001-96",
+      "nome": "SISAN PEÇAS E ACESSÓRIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "28",
+      "cnpj": "11.189.674/0001-00",
+      "nome": "SANDERSON E BORGES PEÇAS E ACESSÓRIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "29",
+      "cnpj": "36.773.091/0001-45",
+      "nome": "UNAPEL UNAI AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "30",
+      "cnpj": "00.471.715/0002-03",
+      "nome": "CENTRO AUTOMOTIVO AUTO SALES",
+      "tipo": "1"
+    },
+    {
+      "id": "31",
+      "cnpj": "00.471.715/0003-94",
+      "nome": "CENTRO AUTOMOTIVO AUTO SALES",
+      "tipo": "1"
+    },
+    {
+      "id": "33",
+      "cnpj": "72.584.287/0001-55",
+      "nome": "D PEÇAS E ACESSÓRIOS PARA VEÍCULOS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "34",
+      "cnpj": "08.744.180/0001-28",
+      "nome": "AUTOMEC DISTRIBUIDORA DE AUTO PEÇAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "36",
+      "cnpj": "24.835.159/0001-94",
+      "nome": "SOMAQ PECAS E SERVICOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "37",
+      "cnpj": "26.104.796/0001-16",
+      "nome": "JAMILTON SILVA BRITO - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "38",
+      "cnpj": "10.996.600/0001-05",
+      "nome": "LCAR PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "39",
+      "cnpj": "45.750.418/0001-54",
+      "nome": "RM AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "40",
+      "cnpj": "32.433.252/0001-09",
+      "nome": "AUTO ELETRICA SOCIAL LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "41",
+      "cnpj": "00.326.821/0001-12",
+      "nome": "PERONI AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "42",
+      "cnpj": "09.637.385/0003-39",
+      "nome": "MULTIMARCAS PEÇAS DIESEL LTDA (GALPÃO)",
+      "tipo": "1"
+    },
+    {
+      "id": "43",
+      "cnpj": "18.015.981/0001-06",
+      "nome": "",
+      "tipo": ""
+    },
+    {
+      "id": "44",
+      "cnpj": "01.379.503/0001-82",
+      "nome": "NUNES AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "45",
+      "cnpj": "09.637.385/0001-77",
+      "nome": "MULTIMARCAS PECAS DIESEL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "46",
+      "cnpj": "09.637.385/0005-09",
+      "nome": "BRASIL PEÇAS (09.637.385/0005-09)",
+      "tipo": "1"
+    },
+    {
+      "id": "47",
+      "cnpj": "09.637.385/0004-10",
+      "nome": "Multimarcas Pecas Diesel LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "48",
+      "cnpj": "12.697.734/0002-31",
+      "nome": "RODRIGUES DA SILVA E MATIAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "49",
+      "cnpj": "02.254.977/0001-60",
+      "nome": "AUTO PECAS NACIONAL LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "50",
+      "cnpj": "02.779.154/0001-59",
+      "nome": "RODAG DISTRIBUIDORA DE AUTO",
+      "tipo": "1"
+    },
+    {
+      "id": "51",
+      "cnpj": "07.285.363/0001-60",
+      "nome": "SANTA LUZIA AUTO PEÇAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "52",
+      "cnpj": "07.285.363/0002-40",
+      "nome": "SANTA LUZIA AUTO PEÇAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "53",
+      "cnpj": "64.435.670/0001-13",
+      "nome": "DIESEL SETE PECAS LTDA - SETE LAGOAS",
+      "tipo": "1"
+    },
+    {
+      "id": "54",
+      "cnpj": "05.071.597/0001-89",
+      "nome": "COMERCIAL GALVANI LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "55",
+      "cnpj": "04.850.242/0001-25",
+      "nome": "GALVANI PEÇAS PARA VEÍCULOS",
+      "tipo": "1"
+    },
+    {
+      "id": "56",
+      "cnpj": "84.892.462/0001-50",
+      "nome": "GOMES AUTOPEÇAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "57",
+      "cnpj": "60.369.576/0001-52",
+      "nome": "HORTOPECAS COMERCIO DE PECAS LTDA. (HORTOPECAS)",
+      "tipo": "1"
+    },
+    {
+      "id": "58",
+      "cnpj": "54.379.359/0001-40",
+      "nome": "AUTO PECAS GISELA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "59",
+      "cnpj": "84.588.417/0001-07",
+      "nome": "SANTOS  E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "60",
+      "cnpj": "85.278.638/0001-41",
+      "nome": "CJ DISTRIBUIDORA DE AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "61",
+      "cnpj": "09.645.582/0001-38",
+      "nome": "LOCKS COMERCIO DE AUTOPEÇAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "62",
+      "cnpj": "83.230.896/0001-22",
+      "nome": "COPEMA DISTRIBUIDORA AUTOMOTIVA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "63",
+      "cnpj": "06.019.618/0001-80",
+      "nome": "AUTOMECRI",
+      "tipo": "1"
+    },
+    {
+      "id": "64",
+      "cnpj": "10.442.894/0001-23",
+      "nome": "FRAI PEÇAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "65",
+      "cnpj": "85.159.887/0001-18",
+      "nome": "FAPEVA COMERCIO E TORNEARIA MECANICA LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "66",
+      "cnpj": "03.978.085/0001-75",
+      "nome": "DISTRIBUIDORA DE AUTOPEÇAS NOVA GERAÇÃO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "67",
+      "cnpj": "85.205.060/0001-01",
+      "nome": "AUTOPEÇAS CELSO LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "68",
+      "cnpj": "78.660.057/0001-04",
+      "nome": "TAZINHO AUTOPEÇAS  LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "69",
+      "cnpj": "81.386.609/0001-42",
+      "nome": "KITS AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "70",
+      "cnpj": "83.029.769/0001-60",
+      "nome": "DIST. DE AUTOPECAS FORDEVILLE LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "71",
+      "cnpj": "09.663.176/0001-06",
+      "nome": "JULIANO JOSE DA SILVA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "72",
+      "cnpj": "04.657.349/0001-51",
+      "nome": "ZENO AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "73",
+      "cnpj": "85.216.422/0001-51",
+      "nome": "SCHAURICH E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "74",
+      "cnpj": "29.793.177/0001-74",
+      "nome": "SUPER PARTS COM. DE PEÇAS E ACESSORIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "75",
+      "cnpj": "12.365.629/0001-14",
+      "nome": "AUTOPEÇAS DPAC EIRELI ME",
+      "tipo": "1"
+    },
+    {
+      "id": "76",
+      "cnpj": "21.310.863/0001-35",
+      "nome": "AMERICA SUL COM. VAR. E ATAC. DE PEÇAS E ACESS. EIRELI - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "77",
+      "cnpj": "85.264.570/0001-41",
+      "nome": "ADALBERTO FLORES ME",
+      "tipo": "1"
+    },
+    {
+      "id": "78",
+      "cnpj": "02.594.566/0001-14",
+      "nome": "HELOISA MARIA KOWALSKI",
+      "tipo": "1"
+    },
+    {
+      "id": "79",
+      "cnpj": "93.688.380/0001-80",
+      "nome": "REGIONAL COM. PEÇAS DIESEL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "80",
+      "cnpj": "94.882.339/0001-02",
+      "nome": "AUTO PEÇAS ALVORADA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "81",
+      "cnpj": "02.111.934/0001-26",
+      "nome": "CARDOSO E STRACK COM AUTO",
+      "tipo": "1"
+    },
+    {
+      "id": "82",
+      "cnpj": "90.171.273/0001-91",
+      "nome": "MANOEL AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "83",
+      "cnpj": "93.988.921/0001-95",
+      "nome": "TURBO AUTO PEÇAS E ACESSORIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "84",
+      "cnpj": "92.280.098/0001-04",
+      "nome": "GIRARDI AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "85",
+      "cnpj": "37.482.299/0001-78",
+      "nome": "LUCIANA M.S.BAPTISTA",
+      "tipo": "1"
+    },
+    {
+      "id": "86",
+      "cnpj": "93.880.722/0001-69",
+      "nome": "POLLO DISTRIB DE PEÇAS AUTOMOTIVAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "87",
+      "cnpj": "00.664.942/0001-74",
+      "nome": "BRONDANI AUTO PEÇAS LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "88",
+      "cnpj": "96.735.329/0001-70",
+      "nome": "AUTO PEÇAS PASSINI LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "89",
+      "cnpj": "68.791.078/0001-05",
+      "nome": "KLEIN AUTO SOM LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "32",
+      "cnpj": "00.471.715/0001-22",
+      "nome": "CENTRO AUTOMOTIVO AUTO SALES",
+      "tipo": "1"
+    },
+    {
+      "id": "1",
+      "cnpj": "25.187.746/0001-87",
+      "nome": "Rede ANCORA - Nacional",
+      "tipo": "3"
+    },
+    {
+      "id": "90",
+      "cnpj": "92.090.596/0001-86",
+      "nome": "BECAR AUTO PECAS LTDA ME.",
+      "tipo": "1"
+    },
+    {
+      "id": "91",
+      "cnpj": "36.224.269/0001-07",
+      "nome": "BRAGA E CHIAPPETA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "92",
+      "cnpj": "36.429.778/0001-68",
+      "nome": "D SALES AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "93",
+      "cnpj": "27.888.734/0001-05",
+      "nome": "AUTO PECAS SETE LAGOAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "94",
+      "cnpj": "33.727.363/0001-82",
+      "nome": "PESTANA AUTO PECAS LTDA-EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "95",
+      "cnpj": "28.258.036/0001-99",
+      "nome": "C BRAGA LUBRIFICACÕES  EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "96",
+      "cnpj": "13.535.839/0001-76",
+      "nome": "MARSILLAC AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "97",
+      "cnpj": "01.047.689/0001-72",
+      "nome": "MANIACAR AUTO PECAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "98",
+      "cnpj": "06.910.397/0001-35",
+      "nome": "MP AUTO PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "99",
+      "cnpj": "33.141.714/0001-79",
+      "nome": "AUTO ACESSORIOS BANGU LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "100",
+      "cnpj": "42.431.155/0001-22",
+      "nome": "PESTANA (42.431.155/0001-22)",
+      "tipo": "1"
+    },
+    {
+      "id": "101",
+      "cnpj": "42.569.665/0001-60",
+      "nome": "REALEZA PECAS E ACESSORIOS PARA FREIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "102",
+      "cnpj": "03.774.774/0001-68",
+      "nome": "SANJAUTO COMERCIAL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "103",
+      "cnpj": "03.561.699/0001-57",
+      "nome": "CASA FERNANDO ILHA PNEUS LTDA-",
+      "tipo": "1"
+    },
+    {
+      "id": "104",
+      "cnpj": "22.696.448/0001-24",
+      "nome": "NOVA RIO DISTRIBUIDORA AUTMOTIVA LTDA ME",
+      "tipo": "1",
+      "grupos": [
+        "39"
+      ]
+    },
+    {
+      "id": "105",
+      "cnpj": "31.263.577/0001-10",
+      "nome": "ALTESE AUTO PECAS LTDA (FIAT)",
+      "tipo": "1"
+    },
+    {
+      "id": "106",
+      "cnpj": "17.213.157/0001-06",
+      "nome": "SOBERANA AUTO PECAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "107",
+      "cnpj": "01.709.513/0001-39",
+      "nome": "IBAD AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "108",
+      "cnpj": "40.272.759/0001-48",
+      "nome": "ALBA DIESEL COMÉRCIO DE PEÇAS LTDA-EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "109",
+      "cnpj": "04.567.445/0001-09",
+      "nome": "IRGOMREIS PECAS E SERVICOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "110",
+      "cnpj": "02.496.207/0001-24",
+      "nome": "PADOMAR COMERCIO DE AUTO",
+      "tipo": "1"
+    },
+    {
+      "id": "111",
+      "cnpj": "81.477.556/0001-75",
+      "nome": "JANAYNA COMÉRCIO DE AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "112",
+      "cnpj": "03.887.250/0001-83",
+      "nome": "SALVADOR E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "113",
+      "cnpj": "10.535.965/0001-32",
+      "nome": "VANZELLA AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "114",
+      "cnpj": "84.833.011/0001-42",
+      "nome": "NEPAL AUTO PEÇAS LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "115",
+      "cnpj": "85.075.281/0001-02",
+      "nome": "ELISABETE WRZESINSKI - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "116",
+      "cnpj": "00.428.234/0001-34",
+      "nome": "IRMÃOS SABKA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "117",
+      "cnpj": "07.349.547/0001-46",
+      "nome": "AUTO PEÇAS SANTOS PERES LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "118",
+      "cnpj": "04.350.249/0001-88",
+      "nome": "FABIO JOSÉ RODRIGUES E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "119",
+      "cnpj": "20.038.451/0001-25",
+      "nome": "CENTRO AUTOMOTIVO NOSSA SENHORA DE FATIMA LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "120",
+      "cnpj": "12.819.676/0001-90",
+      "nome": "EQUIPE MECADIESEL PECAS ME",
+      "tipo": "1"
+    },
+    {
+      "id": "121",
+      "cnpj": "23.800.667/0001-74",
+      "nome": "RIVER AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "122",
+      "cnpj": "11.720.674/0001-87",
+      "nome": "SEM MINEIRAO AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "123",
+      "cnpj": "79.993.069/0001-13",
+      "nome": "BITURUNA AUTO PEÇAS ELÉTRICA E MECÂNICA LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "124",
+      "cnpj": "79.636.817/0001-00",
+      "nome": "VCAPE COMÉRCIO DE PEÇAS PARA VEÍCULOS AUTO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "125",
+      "cnpj": "20.879.821/0006-61",
+      "nome": "AUTO PEÇAS MEDRADO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "126",
+      "cnpj": "20.879.821/0001-57",
+      "nome": "AUTO PECAS MEDRADO LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "127",
+      "cnpj": "09.551.055/0001-64",
+      "nome": "COMERCIO DE PECAS MORETTO LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "128",
+      "cnpj": "13.189.147/0001-13",
+      "nome": "AUTOLAVE CAMACARI LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "129",
+      "cnpj": "76.405.059/0001-21",
+      "nome": "DECIO MERLOTTO",
+      "tipo": "1"
+    },
+    {
+      "id": "130",
+      "cnpj": "79.051.785/0001-81",
+      "nome": "FILBRAM COMÉRCIO DE AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "131",
+      "cnpj": "06.888.227/0001-00",
+      "nome": "BIG PEÇAS COM. DE PEÇAS PARA",
+      "tipo": "1"
+    },
+    {
+      "id": "132",
+      "cnpj": "76.131.440/0001-40",
+      "nome": "AUTO PEÇAS AURÉLIO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "133",
+      "cnpj": "79.211.785/0002-82",
+      "nome": "COMERCIO DE PEÇAS E ACESSORIOS RAMTHUN LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "134",
+      "cnpj": "82.394.784/0001-44",
+      "nome": "ROTARK AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "135",
+      "cnpj": "75.659.839/0001-35",
+      "nome": "F. DELGADO E CIA",
+      "tipo": "1"
+    },
+    {
+      "id": "136",
+      "cnpj": "14.897.423/0001-60",
+      "nome": "VAREJAO COMERCIO E SERVICOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "137",
+      "cnpj": "37.041.174/0001-02",
+      "nome": "ARAGUAIA AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "138",
+      "cnpj": "10.572.564/0001-52",
+      "nome": "MORAL AUTO PEÇAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "139",
+      "cnpj": "10.572.564/0002-33",
+      "nome": "MORAL AUTO PEÇAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "140",
+      "cnpj": "10.572.564/0003-14",
+      "nome": "MORAL AUTO PEÇAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "141",
+      "cnpj": "01.932.912/0001-64",
+      "nome": "DISTRIBUIDORA DE PEÇAS PRACAR LTDA-EPP",
+      "tipo": ""
+    },
+    {
+      "id": "142",
+      "cnpj": "07.902.015/0001-94",
+      "nome": "TW AUTO PECAS E ACESSORIOS LTDA",
+      "tipo": ""
+    },
+    {
+      "id": "143",
+      "cnpj": "26.826.644/0001-27",
+      "nome": "WAKI AUTO PECAS E ACESSORIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "144",
+      "cnpj": "37.540.747/0001-42",
+      "nome": "AUTO PECAS 1313 LTDA 36",
+      "tipo": "1"
+    },
+    {
+      "id": "145",
+      "cnpj": "10.510.476/0001-26",
+      "nome": "IMOLLA AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "146",
+      "cnpj": "08.387.584/0001-01",
+      "nome": "PREMIUM DISTRIBUIDORA DE AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "147",
+      "cnpj": "01.306.605/0001-78",
+      "nome": "AUDIPECAS ITAUNA COMERCIO LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "148",
+      "cnpj": "42.814.517/0001-64",
+      "nome": "AR COMERCIO DE PECAS PRODUTOS E SERVICOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "149",
+      "cnpj": "38.620.670/0001-83",
+      "nome": "HR AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "150",
+      "cnpj": "02.031.198/0001-04",
+      "nome": "BRUMADO AUTO PEÇAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "151",
+      "cnpj": "07.761.743/0001-23",
+      "nome": "SERVPEÇAS PECAS AUTOMOTIVAS E SERVS.CARANGOLA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "152",
+      "cnpj": "21.528.450/0001-21",
+      "nome": "ARI SALES AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "153",
+      "cnpj": "20.870.721/0001-60",
+      "nome": "AUTO PECAS TREVO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "154",
+      "cnpj": "21.783.212/0001-62",
+      "nome": "AUTO PECAS BORGES LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "155",
+      "cnpj": "38.584.322/0001-06",
+      "nome": "IRMAOS CRUZ AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "156",
+      "cnpj": "65.327.892/0001-85",
+      "nome": "MONTEPEÇAS LTDA M.E",
+      "tipo": "1"
+    },
+    {
+      "id": "157",
+      "cnpj": "20.144.283/0001-52",
+      "nome": "AUDIPECAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "158",
+      "cnpj": "19.589.506/0001-06",
+      "nome": "CANI AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "159",
+      "cnpj": "41.684.788/0001-80",
+      "nome": "GERWAL AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "160",
+      "cnpj": "00.210.027/0001-09",
+      "nome": "BHM DIESEL LIMITADA",
+      "tipo": "1"
+    },
+    {
+      "id": "161",
+      "cnpj": "21.532.270/0001-13",
+      "nome": "MUNDIAL PECAS SIMOES LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "162",
+      "cnpj": "25.989.609/0001-66",
+      "nome": "AUTO PECAS PRATA DIESEL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "163",
+      "cnpj": "03.916.185/0001-77",
+      "nome": "LUCIO AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "164",
+      "cnpj": "16.890.030/0001-50",
+      "nome": "AUTO PECAS FERREIRA SA LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "165",
+      "cnpj": "22.142.067/0001-01",
+      "nome": "HS AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "166",
+      "cnpj": "03.406.149/0001-63",
+      "nome": "CENTRO AUTOMOTIVO CACULA LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "167",
+      "cnpj": "12.866.807/0001-90",
+      "nome": "PEIXOTO AUTO PECAS E SERVICOS LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "168",
+      "cnpj": "21.873.831/0001-48",
+      "nome": "1100 MOTOR PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "169",
+      "cnpj": "21.615.950/0001-09",
+      "nome": "SUPERFREIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "170",
+      "cnpj": "22.427.330/0001-09",
+      "nome": "COMERCIO DE PECAS JOMAR LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "171",
+      "cnpj": "01.256.145/0001-10",
+      "nome": "AUTO PECAS TIGRAO LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "172",
+      "cnpj": "06.144.035/0001-80",
+      "nome": "RBC CENTRO AUTOMOTIVO LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "173",
+      "cnpj": "24.161.523/0001-88",
+      "nome": "ACESSORIOS SAO CRISTOVAO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "174",
+      "cnpj": "01.959.155/0001-12",
+      "nome": "JM LABORATORIO DIESEL LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "175",
+      "cnpj": "23.589.674/0001-79",
+      "nome": "AUTO PECAS IDEAL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "176",
+      "cnpj": "20.337.846/0001-29",
+      "nome": "LIDERPECAS PECAS AUTOMOTIVAS EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "177",
+      "cnpj": "37.016.326/0001-17",
+      "nome": "WG DISTRIBUIDORA E COMERCIO DE PECAS PARA VEICULOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "178",
+      "cnpj": "05.095.233/0001-39",
+      "nome": "RIBEIRO NASCIMENTO E COSTA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "179",
+      "cnpj": "02.367.703/0001-88",
+      "nome": "KR COMPONENTES AUTOMOTIVOS",
+      "tipo": "1"
+    },
+    {
+      "id": "180",
+      "cnpj": "28.418.929/0001-54",
+      "nome": "AUTO PECAS MECANICA FERRARI LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "181",
+      "cnpj": "20.149.617/0001-80",
+      "nome": "CLEMILCE B BIANCARDI - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "182",
+      "cnpj": "39.280.680/0001-80",
+      "nome": "RPF AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "183",
+      "cnpj": "30.968.663/0001-65",
+      "nome": "BP AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "184",
+      "cnpj": "03.530.378/0001-95",
+      "nome": "LORENZONI DIESEL LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "185",
+      "cnpj": "03.043.589/0001-01",
+      "nome": "REI DAS PECAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "186",
+      "cnpj": "31.805.377/0001-41",
+      "nome": "UNIPECAS COMERCIO DE PECAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "187",
+      "cnpj": "32.463.549/0001-09",
+      "nome": "SMAP AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "188",
+      "cnpj": "05.286.344/0001-22",
+      "nome": "CENTER DIESEL AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "189",
+      "cnpj": "02.975.877/0001-23",
+      "nome": "GMC DISTRIBUIDORA DE",
+      "tipo": "1"
+    },
+    {
+      "id": "190",
+      "cnpj": "31.474.836/0001-51",
+      "nome": "AUTO PECAS ALONSO LTDA - 62",
+      "tipo": "1"
+    },
+    {
+      "id": "191",
+      "cnpj": "26.918.591/0001-74",
+      "nome": "AVAN PECAS E SERVICOS EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "192",
+      "cnpj": "05.043.798/0001-72",
+      "nome": "AUTOPECAS CARDOSO ANDRADE",
+      "tipo": "1"
+    },
+    {
+      "id": "193",
+      "cnpj": "11.266.946/0001-10",
+      "nome": "TUDO DO CARRO AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "194",
+      "cnpj": "02.155.775/0001-61",
+      "nome": "J.S. CANUTO DIREÇÕES",
+      "tipo": "1"
+    },
+    {
+      "id": "195",
+      "cnpj": "10.634.770/0001-40",
+      "nome": "PASCOTTO E CIA LTDA ME",
+      "tipo": "2"
+    },
+    {
+      "id": "196",
+      "cnpj": "24.090.788/0001-32",
+      "nome": "E.A. DA SILVA JUNIOR AUTOMOTORES - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "197",
+      "cnpj": "11.384.025/0001-52",
+      "nome": "A C FARIAS COM. DE PEÇAS E SERVI. LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "198",
+      "cnpj": "07.193.564/0001-37",
+      "nome": "LUCIANO FABIO VIEIRA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "199",
+      "cnpj": "15.389.901/0001-94",
+      "nome": "AUTO PECAS E POSTO DE MOLAS PIROLI LTDA ME 34",
+      "tipo": "1"
+    },
+    {
+      "id": "200",
+      "cnpj": "00.573.107/0003-90",
+      "nome": "JOSE SIVALDO RIOS CARVALHO & CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "201",
+      "cnpj": "39.492.491/0001-70",
+      "nome": "D LEMOS DE R B AUTO PECAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "202",
+      "cnpj": "09.627.289/0001-48",
+      "nome": "GILVAN CENTRO AUTOMOTIVO LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "203",
+      "cnpj": "07.955.559/0002-03",
+      "nome": "AUTO SERVICOS MERIDIONAL EIRELI - 02",
+      "tipo": "1"
+    },
+    {
+      "id": "204",
+      "cnpj": "01.624.149/0008-80",
+      "nome": "CLAUDIO AUTOPEÇAS LTDA - PVA FILAL 07",
+      "tipo": "1"
+    },
+    {
+      "id": "205",
+      "cnpj": "13.033.795/0001-86",
+      "nome": "WA CENTRO AUTOMOTIVO LTDA-EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "206",
+      "cnpj": "09.627.176/0001-42",
+      "nome": "E. C. S. DISTRIBUIDORA DE PEÇAS E ACESSORIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "207",
+      "cnpj": "00.685.703/0001-09",
+      "nome": "AUTOMOTOR PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "208",
+      "cnpj": "08.279.633/0001-92",
+      "nome": "TREVAO PECAS E ACESSORIOS JATAI LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "209",
+      "cnpj": "42.809.475/0001-73",
+      "nome": "BRASILUSA PNEUS E AUTO PEÇAS EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "210",
+      "cnpj": "09.002.715/0001-58",
+      "nome": "CENTRO AUTOMOTIVO MONAM LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "211",
+      "cnpj": "09.329.560/0001-69",
+      "nome": "PNEUSTIL COMERCIO DE PNEUS LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "212",
+      "cnpj": "27.536.937/0001-32",
+      "nome": "JM DISTRIBUIDORA AUTOMOTIVA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "213",
+      "cnpj": "14.475.041/0001-49",
+      "nome": "AUTO PECAS ESTRADA REAL LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "214",
+      "cnpj": "40.921.140/0001-17",
+      "nome": "AUTO PEÇAS REAL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "215",
+      "cnpj": "07.511.242/0002-70",
+      "nome": "RODRIGO OTAVIO VALENCA GENU - CARUARU",
+      "tipo": "1"
+    },
+    {
+      "id": "216",
+      "cnpj": "30.679.393/0001-72",
+      "nome": "MUNDIAL AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "217",
+      "cnpj": "00.420.410/0001-91",
+      "nome": "AUTO PECAS RONDOMIG LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "218",
+      "cnpj": "02.422.421/0001-36",
+      "nome": "DIVICAR AUTO PECAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "219",
+      "cnpj": "06.175.618/0001-79",
+      "nome": "AUTOMANIA PECAS AUTOMOTIVAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "220",
+      "cnpj": "02.114.575/0002-41",
+      "nome": "NOVA AUTO PEÇAS LTDA -",
+      "tipo": "1"
+    },
+    {
+      "id": "221",
+      "cnpj": "13.991.133/0001-19",
+      "nome": "ALMEIDA PNEUS AUTO CENTER LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "222",
+      "cnpj": "27.952.054/0001-03",
+      "nome": "J.S.L.RODRIGUES ME",
+      "tipo": "1"
+    },
+    {
+      "id": "223",
+      "cnpj": "08.045.990/0001-96",
+      "nome": "FRANCISCO DE A C ARAUJO ME",
+      "tipo": "1"
+    },
+    {
+      "id": "224",
+      "cnpj": "78.703.022/0001-05",
+      "nome": "AUTO ELÉTRICA MANZANO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "225",
+      "cnpj": "05.342.872/0001-51",
+      "nome": "ROZANA LARANJEIRA DE QUEIROZ",
+      "tipo": "1"
+    },
+    {
+      "id": "226",
+      "cnpj": "78.610.656/0001-13",
+      "nome": "AUTO PEÇAS LONDRINA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "227",
+      "cnpj": "13.417.854/0001-10",
+      "nome": "P.V DE ANDRADE DISTRIBUIDORA E IMPORTADORA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "228",
+      "cnpj": "02.912.127/0001-02",
+      "nome": "STREET S DISTRIBUIDORA",
+      "tipo": "1"
+    },
+    {
+      "id": "229",
+      "cnpj": "15.524.691/0001-08",
+      "nome": "COMERCIAL DE PECAS SÓ FIAT LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "230",
+      "cnpj": "03.891.903/0001-06",
+      "nome": "CARLOS A R RODRIGUES",
+      "tipo": "1"
+    },
+    {
+      "id": "231",
+      "cnpj": "01.081.443/0001-17",
+      "nome": "PF COMERCIO DE PEÇAS E",
+      "tipo": "1"
+    },
+    {
+      "id": "232",
+      "cnpj": "71.232.276/0001-43",
+      "nome": "PEIXINHO AUTO PECAS E ESCAPAMENTOS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "233",
+      "cnpj": "07.856.670/0001-53",
+      "nome": "PLANALCAR AUTO PECAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "234",
+      "cnpj": "41.172.123/0001-97",
+      "nome": "F STERN CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "235",
+      "cnpj": "17.777.557/0001-36",
+      "nome": "ADAILTON PEREIRA COTRIM EIRELI ME",
+      "tipo": "1"
+    },
+    {
+      "id": "236",
+      "cnpj": "01.915.223/0001-41",
+      "nome": "ZEZINHO DISTRIBUIDORA DE PEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "237",
+      "cnpj": "30.296.946/0001-08",
+      "nome": "TMJ AUTO PECAS TR LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "238",
+      "cnpj": "36.693.185/0001-04",
+      "nome": "GLOBALCAR AUTOPECAS SOCIEDADE UNIPESSOAL LTDA EPP",
+      "tipo": "2"
+    },
+    {
+      "id": "239",
+      "cnpj": "01.634.673/0001-66",
+      "nome": "HB PECAS E ACESSORIOS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "240",
+      "cnpj": "20.149.617/0002-61",
+      "nome": "CLEMILCE B. BIANCARDI ME - FILIAL",
+      "tipo": "1"
+    },
+    {
+      "id": "241",
+      "cnpj": "04.636.451/0001-70",
+      "nome": "GB AUTO PEÇAS EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "242",
+      "cnpj": "05.286.344/0003-94",
+      "nome": "CENTERDIESEL AUTO PEÇAS LTDA -",
+      "tipo": "1"
+    },
+    {
+      "id": "243",
+      "cnpj": "02.391.146/0001-30",
+      "nome": "RETIFICADORA SONORA LTDA EPP 23",
+      "tipo": "1"
+    },
+    {
+      "id": "244",
+      "cnpj": "10.593.945/0001-18",
+      "nome": "ARRAIAL AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "245",
+      "cnpj": "08.347.637/0001-60",
+      "nome": "PISQUILA ROLAMENTOS E PECAS LTDA 21",
+      "tipo": "1"
+    },
+    {
+      "id": "246",
+      "cnpj": "09.627.289/0002-29",
+      "nome": "GILVAN CENTRO AUTOMOTIVO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "247",
+      "cnpj": "00.069.327/0001-10",
+      "nome": "J R DE OLIVEIRA AUTO PECAS ME",
+      "tipo": "1"
+    },
+    {
+      "id": "248",
+      "cnpj": "07.752.928/0001-71",
+      "nome": "PENA PECAS AUTOMOTIVAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "249",
+      "cnpj": "02.233.424/0001-21",
+      "nome": "NERIO AUTOPECAS E PARAFUSOS LTDA EPP - LAFAIETE",
+      "tipo": "2"
+    },
+    {
+      "id": "250",
+      "cnpj": "80.602.790/0001-14",
+      "nome": "TRIUNFO PNEUS E EQUIPAMENTOS LTDA EPP",
+      "tipo": "2"
+    },
+    {
+      "id": "251",
+      "cnpj": "07.807.070/0001-03",
+      "nome": "VL PECAS AUTOMOTIVAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "252",
+      "cnpj": "05.625.971/0001-40",
+      "nome": "COSTA LIMA AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "253",
+      "cnpj": "35.833.285/0001-26",
+      "nome": "PC AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "254",
+      "cnpj": "13.014.621/0001-76",
+      "nome": "AUTO ELETRICA E AUTO CENTER MORETTO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "255",
+      "cnpj": "13.170.666/0001-30",
+      "nome": "ADICESAR DISTRIBUIDORA DE PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "256",
+      "cnpj": "28.663.808/0001-78",
+      "nome": "VIX PEÇAS PANCIERE COMERCIO DE PEÇAS E SERVIÇOS EIRELI - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "257",
+      "cnpj": "84.945.856/0001-20",
+      "nome": "EMPAUTO COM. DE AUTOPEÇAS LTDA -  ME",
+      "tipo": "2"
+    },
+    {
+      "id": "258",
+      "cnpj": "01.730.681/0001-06",
+      "nome": "COMPLEMENTO  AUTO PEÇAS LTDA-",
+      "tipo": "1"
+    },
+    {
+      "id": "259",
+      "cnpj": "24.140.334/0001-29",
+      "nome": "SANTO ANTONIO AUTO ELETRICA EIRELI ME",
+      "tipo": "1"
+    },
+    {
+      "id": "260",
+      "cnpj": "85.278.638/0002-22",
+      "nome": "CJ DISTRIBUIDORA DE AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "261",
+      "cnpj": "18.742.067/0001-67",
+      "nome": "A DOS SANTOS NASCIMENTO AUTO PEÇAS ME",
+      "tipo": "1"
+    },
+    {
+      "id": "262",
+      "cnpj": "05.370.139/0001-40",
+      "nome": "COMÉRCIO E DISTRIBUIDORA DE SVM",
+      "tipo": "1"
+    },
+    {
+      "id": "263",
+      "cnpj": "02.641.215/0001-17",
+      "nome": "PNEUCAR COMERCIO DE PNEUS",
+      "tipo": "1"
+    },
+    {
+      "id": "264",
+      "cnpj": "02.895.297/0001-26",
+      "nome": "GISALTO COM DE AUTO PECAS P/",
+      "tipo": "1"
+    },
+    {
+      "id": "265",
+      "cnpj": "38.070.378/0001-34",
+      "nome": "GTR DISTRIBUIDORA DE AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "266",
+      "cnpj": "09.565.555/0001-55",
+      "nome": "SOLUÇÃO COMERCIO DE PEÇAS E ACESSÓRIOS PARA VEICULO",
+      "tipo": "1"
+    },
+    {
+      "id": "267",
+      "cnpj": "02.043.434/0001-02",
+      "nome": "S  A  CAVALLIN CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "268",
+      "cnpj": "07.588.730/0001-02",
+      "nome": "AUTOCANI PECAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "269",
+      "cnpj": "02.305.563/0001-13",
+      "nome": "CIFER COMERCIAL DE EMBREAGENS",
+      "tipo": "1"
+    },
+    {
+      "id": "270",
+      "cnpj": "02.944.759/0001-58",
+      "nome": "HAP COMERCIO DE PEÇAS LTDA 12",
+      "tipo": "1"
+    },
+    {
+      "id": "271",
+      "cnpj": "39.824.032/0001-47",
+      "nome": "SARTORI AUTO PECAS E SERVICOS EIRELI EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "272",
+      "cnpj": "41.704.313/0001-08",
+      "nome": "AUTO PECAS LANA LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "273",
+      "cnpj": "19.201.480/0001-87",
+      "nome": "MC AUTO PEÇAS EIRELI",
+      "tipo": "2"
+    },
+    {
+      "id": "274",
+      "cnpj": "33.697.095/0001-01",
+      "nome": "AMARAL PECAS PARA VEICULOS LTDA ME - COLIDER",
+      "tipo": "1"
+    },
+    {
+      "id": "275",
+      "cnpj": "02.790.796/0001-59",
+      "nome": "RR COMERCIO IMPORTADORA E DISTRIBUIDORA DE PECAS AUTOMOTIVAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "276",
+      "cnpj": "04.872.504/0001-52",
+      "nome": "REIS COMERCIO E SERVIÇOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "277",
+      "cnpj": "09.312.706/0001-63",
+      "nome": "CICERA DE CASSIA NEVES DOS SANTOS EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "278",
+      "cnpj": "00.477.603/0001-89",
+      "nome": "AUTO PECAS MUTUM 1",
+      "tipo": "1"
+    },
+    {
+      "id": "279",
+      "cnpj": "08.969.703/0004-87",
+      "nome": "SALVADOR COMERCIAL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "280",
+      "cnpj": "12.099.913/0001-96",
+      "nome": "AZEVEDO AUTO CENTER LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "281",
+      "cnpj": "03.138.197/0001-18",
+      "nome": "RETIFICA COLINAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "282",
+      "cnpj": "11.249.981/0002-02",
+      "nome": "TROPICAL COMÉRCIO DE PEÇAS LTDA - VG",
+      "tipo": "1"
+    },
+    {
+      "id": "283",
+      "cnpj": "38.496.978/0001-69",
+      "nome": "FRANÇA AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "284",
+      "cnpj": "01.738.478/0001-86",
+      "nome": "CÉLIO GARCIA E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "285",
+      "cnpj": "06.326.834/0001-78",
+      "nome": "AUTO PECAS TRADICIONAL LTDA 30",
+      "tipo": "1"
+    },
+    {
+      "id": "286",
+      "cnpj": "01.530.971/0001-06",
+      "nome": "OSVALDO SANTI E CIA LTDA 20",
+      "tipo": "1"
+    },
+    {
+      "id": "287",
+      "cnpj": "07.874.399/0001-89",
+      "nome": "SALVADOR AUTO PEÇAS LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "288",
+      "cnpj": "26.491.141/0001-48",
+      "nome": "AUTOPECAS ANGELO FALCAO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "289",
+      "cnpj": "20.879.821/0005-80",
+      "nome": "AUTO PECAS MEDRADO LTDA - EPP ( ALMENARA )",
+      "tipo": "1"
+    },
+    {
+      "id": "290",
+      "cnpj": "82.320.730/0001-34",
+      "nome": "DAL MOLIN AUTO PECAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "291",
+      "cnpj": "01.288.673/0001-51",
+      "nome": "FERNANDO PEÇAS DIESEL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "292",
+      "cnpj": "31.146.500/0001-60",
+      "nome": "C. NUNES AUTO PEÇAS EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "293",
+      "cnpj": "30.402.568/0001-08",
+      "nome": "FERREIRA E SILVA AUTOPEÇAS E SERVIÇOS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "294",
+      "cnpj": "43.623.531/0001-43",
+      "nome": "UNIKHA AUTOMOTVA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "295",
+      "cnpj": "09.124.395/0001-09",
+      "nome": "MERCENAVI PECAS E SERVICOS LTDA EPP 16",
+      "tipo": "1"
+    },
+    {
+      "id": "296",
+      "cnpj": "82.007.279/0001-08",
+      "nome": "CIADIESEL BOMBAS INJETORAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "297",
+      "cnpj": "04.365.181/0001-00",
+      "nome": "DUAUPE DISTRIBUIDORA DE PEÇAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "298",
+      "cnpj": "24.696.643/0001-80",
+      "nome": "AUTO PECAS VERDAO LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "299",
+      "cnpj": "07.314.303/0001-28",
+      "nome": "PMA Distribuidora Automotiva do Brasil LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "300",
+      "cnpj": "07.147.659/0001-14",
+      "nome": "J.CAR AUTOPECAS E SERVICOS AUTOMOTIVOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "301",
+      "cnpj": "11.091.325/0001-43",
+      "nome": "ANDRE ELOY DE ABREU NETO",
+      "tipo": "1"
+    },
+    {
+      "id": "302",
+      "cnpj": "14.239.626/0001-60",
+      "nome": "EFRAIM AUTO PECAS LTDA  - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "303",
+      "cnpj": "00.393.445/0001-89",
+      "nome": "JDIESEL COM. DE PEÇAS E ACESS.",
+      "tipo": "1"
+    },
+    {
+      "id": "304",
+      "cnpj": "70.393.541/0001-02",
+      "nome": "AUTO PECAS CAIUA LTDA 29",
+      "tipo": "1"
+    },
+    {
+      "id": "305",
+      "cnpj": "11.228.770/0001-02",
+      "nome": "COTRIMULTIMARCAS AUTOPEÇAS LTDA ME",
+      "tipo": "2"
+    },
+    {
+      "id": "306",
+      "cnpj": "40.386.625/0001-58",
+      "nome": "EDUMAR AUTO PECAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "307",
+      "cnpj": "15.235.035/0001-87",
+      "nome": "QSL COMÉRCIO DE AUTOPEÇAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "308",
+      "cnpj": "40.913.954/0001-00",
+      "nome": "UNIÃO DA VITORIA 647 LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "309",
+      "cnpj": "24.454.902/0001-66",
+      "nome": "ARRAIAL AUTOELETRICA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "310",
+      "cnpj": "21.565.270/0001-10",
+      "nome": "CARNEIRO AUTO PEÇAS LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "311",
+      "cnpj": "08.719.224/0001-60",
+      "nome": "JULIO CESAR SIMONETTI ME",
+      "tipo": "1"
+    },
+    {
+      "id": "312",
+      "cnpj": "10.250.900/0001-40",
+      "nome": "AUTO PEÇAS LIDER EIRELI EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "313",
+      "cnpj": "10.593.098/0001-91",
+      "nome": "AUTO PECAS GUACUI DIESEL EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "314",
+      "cnpj": "04.671.382/0001-36",
+      "nome": "GUIDAUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "315",
+      "cnpj": "64.590.334/0001-45",
+      "nome": "TARUMA DISTR.DE AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "316",
+      "cnpj": "05.743.219/0001-02",
+      "nome": "PAULINO GOMES E PEREIRA LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "317",
+      "cnpj": "00.379.655/0005-46",
+      "nome": "ZERECO DISTRIBUIDORA DE PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "318",
+      "cnpj": "56.001.373/0001-31",
+      "nome": "CARECA AUTO PECAS LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "319",
+      "cnpj": "10.588.317/0001-44",
+      "nome": "RETIFICA MERIDIONAL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "320",
+      "cnpj": "08.612.368/0001-12",
+      "nome": "COMPNEUS COMERCIO DE PNEUS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "321",
+      "cnpj": "05.138.019/0001-12",
+      "nome": "GTC COMERCIO DE PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "322",
+      "cnpj": "00.341.103/0001-15",
+      "nome": "RODAP AUTO PEÇAS LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "323",
+      "cnpj": "03.923.430/0001-73",
+      "nome": "AUTO PECAS CONTINENTAL LTDA EPP 5",
+      "tipo": "1"
+    },
+    {
+      "id": "324",
+      "cnpj": "36.001.089/0001-58",
+      "nome": "SELEME OFICINA MECANICA E AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "325",
+      "cnpj": "40.505.216/0001-23",
+      "nome": "STAR PECAS COM. DE PECAS AUTOMOTIVAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "326",
+      "cnpj": "10.414.838/0001-85",
+      "nome": "HIT DISTRIBUIDORA DE AUTOPEÇAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "327",
+      "cnpj": "34.323.310/0001-69",
+      "nome": "XPEÇAS AUTOPEÇAS EIRELLI",
+      "tipo": "1"
+    },
+    {
+      "id": "328",
+      "cnpj": "05.306.779/0001-91",
+      "nome": "BENVENUTI AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "329",
+      "cnpj": "26.836.809/0001-41",
+      "nome": "ZELMAR ZANELLA ME 27",
+      "tipo": "1"
+    },
+    {
+      "id": "330",
+      "cnpj": "03.924.623/0001-49",
+      "nome": "TAMADIL AUTO PEÇAS - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "331",
+      "cnpj": "32.168.623/0001-64",
+      "nome": "CPA PECAS AUTOMOTIVAS LTDA - CENTRO LOGISTICO",
+      "tipo": "2"
+    },
+    {
+      "id": "332",
+      "cnpj": "08.245.260/0001-39",
+      "nome": "COLAPECAS MECANICA LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "333",
+      "cnpj": "07.852.006/0001-36",
+      "nome": "TRACTORTEM DISTRIBUIDORA E IMP. DE PECAS PARA TRATORES LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "334",
+      "cnpj": "08.241.772/0001-27",
+      "nome": "ROTA TRUCK LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "335",
+      "cnpj": "02.550.040/0001-32",
+      "nome": "GR PEIXOTO",
+      "tipo": "1"
+    },
+    {
+      "id": "336",
+      "cnpj": "39.825.583/0001-25",
+      "nome": "CAPRINI AUTO PECAS, IMPORTACAO E EXPORTACAO LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "337",
+      "cnpj": "72.112.022/0001-54",
+      "nome": "DAGA E GALLO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "338",
+      "cnpj": "29.306.276/0001-84",
+      "nome": "KITSPEÇAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "339",
+      "cnpj": "08.673.556/0001-50",
+      "nome": "PARANA AUTOPECAS LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "340",
+      "cnpj": "03.447.538/0001-37",
+      "nome": "CAMIOPAR MECÂNICA E POSTO DE",
+      "tipo": "1"
+    },
+    {
+      "id": "341",
+      "cnpj": "24.533.005/0001-48",
+      "nome": "VERTICAL AUTOMOTIVO COMERCIO DE PEÇAS EIRELLI",
+      "tipo": "2"
+    },
+    {
+      "id": "342",
+      "cnpj": "00.452.917/0001-27",
+      "nome": "AUTO PEÇAS MAX LTDA EPP",
+      "tipo": "2"
+    },
+    {
+      "id": "343",
+      "cnpj": "85.045.516/0001-05",
+      "nome": "CLEVERSON FLAVIO CZAR E CIA LTDA - EPP.",
+      "tipo": "1"
+    },
+    {
+      "id": "344",
+      "cnpj": "01.449.292/0001-07",
+      "nome": "RONALDO PEDRO TONIAL 24",
+      "tipo": "1"
+    },
+    {
+      "id": "345",
+      "cnpj": "24.747.099/0002-39",
+      "nome": "EDSON AUGUSTO RIBEIRO DOS SANTOS D. AQ",
+      "tipo": "1"
+    },
+    {
+      "id": "346",
+      "cnpj": "40.580.141/0001-45",
+      "nome": "SO EMBREAGENS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "347",
+      "cnpj": "78.110.053/0001-52",
+      "nome": "XARA COMÉRCIO DE PEÇAS CAMINHÕES LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "348",
+      "cnpj": "41.774.798/0001-06",
+      "nome": "FENIX DISTRIBUIDORA DE AUTO PECAS E ACESSORIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "349",
+      "cnpj": "23.219.590/0001-43",
+      "nome": "DELTA AUTOPEÇAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "350",
+      "cnpj": "15.393.341/0001-41",
+      "nome": "WALTER BECK 26",
+      "tipo": "1"
+    },
+    {
+      "id": "351",
+      "cnpj": "03.682.180/0001-27",
+      "nome": "EDGAR AUTO PECAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "352",
+      "cnpj": "29.975.688/0001-07",
+      "nome": "RIBEIRO E RODRIGUES PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "353",
+      "cnpj": "01.794.658/0001-85",
+      "nome": "C. FREDIANI E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "354",
+      "cnpj": "20.276.027/0001-19",
+      "nome": "BARROS E LESSA PEÇAS E ACESSÓRIOS PARA VEÍCULOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "355",
+      "cnpj": "00.960.583/0001-00",
+      "nome": "AUTO PECAS GIDIAO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "356",
+      "cnpj": "07.511.242/0004-31",
+      "nome": "RODRIGO OTAVIO VALENÇA GENU ME",
+      "tipo": "1"
+    },
+    {
+      "id": "357",
+      "cnpj": "08.793.371/0001-80",
+      "nome": "C.DIESEL PARTS COMERCIO DE AUTOPEÇAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "358",
+      "cnpj": "09.627.289/0005-71",
+      "nome": "GILVAN CENTRO AUTOMOTIVO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "359",
+      "cnpj": "00.710.791/0003-05",
+      "nome": "JMV AUTOPECAS LTDA ( FILIAL )",
+      "tipo": "1"
+    },
+    {
+      "id": "360",
+      "cnpj": "20.906.468/0001-57",
+      "nome": "VICENCAR COMÉRCIO E SERVIÇOS DE AUTO PEÇAS LTDA-EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "361",
+      "cnpj": "81.187.106/0001-48",
+      "nome": "AUTO PEÇAS RECH LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "362",
+      "cnpj": "43.227.837/0001-80",
+      "nome": "TOTAL PECAS E ACESSORIOS LTDA - MIMOSO",
+      "tipo": "2"
+    },
+    {
+      "id": "363",
+      "cnpj": "47.338.405/0001-06",
+      "nome": "GMR COMERCIO DE PECAS E ACESSORIOS LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "364",
+      "cnpj": "02.567.330/0001-99",
+      "nome": "SP IMPORTS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "365",
+      "cnpj": "01.774.047/0001-75",
+      "nome": "Laser Pecas e Manutenção Automotiva LTDA",
+      "tipo": ""
+    },
+    {
+      "id": "366",
+      "cnpj": "39.407.282/0001-81",
+      "nome": "REFERENCIA DISTRIBUIDORA DE AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "367",
+      "cnpj": "14.823.036/0001-80",
+      "nome": "ANCORA AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "370",
+      "cnpj": "09.015.713/0001-01",
+      "nome": "AUTO CAR COMERCIO DE PECAS E ACESSORIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "371",
+      "cnpj": "13.074.407/0001-05",
+      "nome": "CASTELAO COMERCIO DE PECAS E SERVICOS EIRELI EPP",
+      "tipo": "2"
+    },
+    {
+      "id": "372",
+      "cnpj": "11.556.817/0001-67",
+      "nome": "MCA PEÇAS E SERVIÇOS LTDA EPP-MULTICAR",
+      "tipo": "1"
+    },
+    {
+      "id": "373",
+      "cnpj": "34.925.161/0002-99",
+      "nome": "So Pesados Comercio de Pecas e Acessorios LTDA",
+      "tipo": ""
+    },
+    {
+      "id": "374",
+      "cnpj": "03.983.442/0001-93",
+      "nome": "Welington Rojas Gavilan e Cia LTDA",
+      "tipo": ""
+    },
+    {
+      "id": "375",
+      "cnpj": "00.573.107/0001-29",
+      "nome": "JOSE SIVALDO RIOS DE CARVALHO E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "376",
+      "cnpj": "06.301.975/0001-36",
+      "nome": "VEICULAR DISTRIBUIDORA DE",
+      "tipo": "1"
+    },
+    {
+      "id": "377",
+      "cnpj": "07.529.832/0001-49",
+      "nome": "MIX AUTO PECAS E ACESSORIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "378",
+      "cnpj": "01.315.076/0001-79",
+      "nome": "LOBO AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "381",
+      "cnpj": "00.462.843/0001-00",
+      "nome": "AUTO PECAS E MECANICA DARCI LTDA 3",
+      "tipo": "1"
+    },
+    {
+      "id": "382",
+      "cnpj": "01.384.909/0001-53",
+      "nome": "TOLEDO PECAS LTDA ME 25",
+      "tipo": "1"
+    },
+    {
+      "id": "383",
+      "cnpj": "54.903.794/0001-22",
+      "nome": "POHL & POHL LTDA - SUMARÉ",
+      "tipo": "1"
+    },
+    {
+      "id": "384",
+      "cnpj": "09.227.008/0001-60",
+      "nome": "SOORETAMA AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "385",
+      "cnpj": "78.586.138/0001-01",
+      "nome": "PUMA AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "386",
+      "cnpj": "23.108.929/0001-34",
+      "nome": "MARTINS AUTOPECAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "387",
+      "cnpj": "24.422.016/0001-50",
+      "nome": "QUALITY IMPORT PEÇAS E ACESSORIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "389",
+      "cnpj": "18.015.981/0002-97",
+      "nome": "TEMPRA AUTO PEÇAS (18.015.981/0002-97)",
+      "tipo": "1"
+    },
+    {
+      "id": "390",
+      "cnpj": "14.417.151/0001-54",
+      "nome": "AUTO CEZAR COMERCIAL DE PEÇAS E SERVIÇOS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "391",
+      "cnpj": "07.203.966/0001-75",
+      "nome": "RIO MAR AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "392",
+      "cnpj": "20.464.024/0001-09",
+      "nome": "WB COMÉRCIO DE PEÇAS AUTOMOTIVAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "393",
+      "cnpj": "06.012.511/0001-00",
+      "nome": "EDMUNDO PECAS E SERVICOS E",
+      "tipo": "1"
+    },
+    {
+      "id": "394",
+      "cnpj": "01.752.598/0001-38",
+      "nome": "BRITO DISTRIBUIDORA DE PEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "395",
+      "cnpj": "04.839.210/0001-29",
+      "nome": "A.C.DE ALMEIDA PEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "396",
+      "cnpj": "02.565.226/0001-65",
+      "nome": "ANTONIO ALFREDO CALHEIROS DE ALMEIDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "397",
+      "cnpj": "24.352.110/0001-80",
+      "nome": "EDIVANIA B DOS SANTOS AUTO PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "398",
+      "cnpj": "08.174.797/0001-55",
+      "nome": "MARINHO VEICULOS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "399",
+      "cnpj": "07.630.340/0001-45",
+      "nome": "A B AUTOPEÇAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "400",
+      "cnpj": "03.390.863/0002-91",
+      "nome": "M.G.S COMERCIO E IMPORTAÇÃO DE",
+      "tipo": "1"
+    },
+    {
+      "id": "401",
+      "cnpj": "01.437.983/0002-71",
+      "nome": "JHM COMERCIAL DE PEÇAS LTDA -",
+      "tipo": "1"
+    },
+    {
+      "id": "402",
+      "cnpj": "01.016.052/0001-19",
+      "nome": "BIG CAR AUTOPEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "403",
+      "cnpj": "10.789.980/0001-07",
+      "nome": "LACA COMERCIO E REPRESENTAÇÕES LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "404",
+      "cnpj": "09.290.746/0001-51",
+      "nome": "COMERCIAL DE PEÇAS E TRATORES LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "405",
+      "cnpj": "40.921.140/0002-06",
+      "nome": "AUTOPEÇAS REAL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "406",
+      "cnpj": "14.816.520/0001-81",
+      "nome": "NF NUNES COMÉRCIO DE PEÇAS E REPARAÇÃO MECÂNICA DE",
+      "tipo": "1"
+    },
+    {
+      "id": "407",
+      "cnpj": "12.069.177/0001-23",
+      "nome": "RM RETIFICA DE MOTORES LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "408",
+      "cnpj": "11.875.770/0001-02",
+      "nome": "UNAUTO  UNA AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "409",
+      "cnpj": "05.747.025/0001-77",
+      "nome": "PAULO SERGIO DE O.SILVERIO AUTO",
+      "tipo": "1"
+    },
+    {
+      "id": "410",
+      "cnpj": "33.404.666/0001-64",
+      "nome": "CASA DA BORRACHA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "411",
+      "cnpj": "08.679.114/0001-11",
+      "nome": "C.G BRAGA PEÇAS E SERV AUTOMOTIVOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "412",
+      "cnpj": "14.897.423/0002-41",
+      "nome": "VAREJAO COMERCIO E SERVICOS LTDA BA",
+      "tipo": "1"
+    },
+    {
+      "id": "413",
+      "cnpj": "00.787.965/0001-76",
+      "nome": "PANDA'S AUTO DIESEL PEÇAS E SERVIÇOS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "414",
+      "cnpj": "03.012.797/0001-35",
+      "nome": "AUTO CENTER NORTE LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "415",
+      "cnpj": "11.917.929/0001-04",
+      "nome": "KID AUTO PEÇAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "416",
+      "cnpj": "45.820.758/0002-95",
+      "nome": "CLAUDIO AUTOPEÇAS MARANHÃO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "417",
+      "cnpj": "05.725.071/0002-56",
+      "nome": "JARACATIA DISTRIBUIDORA LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "423",
+      "cnpj": "48.399.225/0001-99",
+      "nome": "MOTORVAL AUTOPEÇAS - INGA",
+      "tipo": "1"
+    },
+    {
+      "id": "424",
+      "cnpj": "07.511.242/0001-99",
+      "nome": "RODRIGO OTAVIO VALENCA GENU - PESQUEIRA",
+      "tipo": "1"
+    },
+    {
+      "id": "425",
+      "cnpj": "07.511.242/0003-50",
+      "nome": "RODRIGO OTAVIO VALENCA GENU - CARUARU 03",
+      "tipo": "1"
+    },
+    {
+      "id": "426",
+      "cnpj": "12.002.549/0001-02",
+      "nome": "VILOSA COMERCIO DE PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "427",
+      "cnpj": "07.955.559/0001-14",
+      "nome": "AUTO SERVICOS MERIDIONAL EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "428",
+      "cnpj": "01.393.139/0001-05",
+      "nome": "RETIFICA IRMAOS BERG LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "429",
+      "cnpj": "12.192.149/0001-07",
+      "nome": "MIX DIESEL DISTRIBUIDORA LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "430",
+      "cnpj": "46.276.489/0001-20",
+      "nome": "CLAUDIO AUTO PECAS DO VALE LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "432",
+      "cnpj": "24.140.368/0001-13",
+      "nome": "SANTO ANTONIO AUTO PECAS PORANGATU EIRELI ME",
+      "tipo": "1"
+    },
+    {
+      "id": "433",
+      "cnpj": "04.719.808/0001-84",
+      "nome": "AUTO PECAS TAURUS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "434",
+      "cnpj": "04.719.808/0002-65",
+      "nome": "AUTO PECAS TAURUS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "435",
+      "cnpj": "13.398.487/0001-54",
+      "nome": "PM DA SILVA RAINHA E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "436",
+      "cnpj": "04.860.939/0001-87",
+      "nome": "PB RAINHA AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "379",
+      "cnpj": "15.664.953/0001-21",
+      "nome": "REDE ANCORA - GO",
+      "tipo": "3"
+    },
+    {
+      "id": "380",
+      "cnpj": "09.017.015/0001-37",
+      "nome": "Rede ANCORA - RJ",
+      "tipo": "3"
+    },
+    {
+      "id": "422",
+      "cnpj": "05.916.095/0001-01",
+      "nome": "Rede ANCORA - MG",
+      "tipo": "3"
+    },
+    {
+      "id": "388",
+      "cnpj": "08.723.151/0001-80",
+      "nome": "Rede ANCORA - PE",
+      "tipo": "3"
+    },
+    {
+      "id": "421",
+      "cnpj": "08.058.705/0001-71",
+      "nome": "Rede ANCORA - PR",
+      "tipo": "3"
+    },
+    {
+      "id": "420",
+      "cnpj": "14.404.395/0001-00",
+      "nome": "Rede ANCORA - MS",
+      "tipo": "3"
+    },
+    {
+      "id": "431",
+      "cnpj": "08.707.651/0001-28",
+      "nome": "Rede ANCORA - PA",
+      "tipo": "3"
+    },
+    {
+      "id": "419",
+      "cnpj": "11.864.942/0001-34",
+      "nome": "Rede ANCORA - MT",
+      "tipo": "3"
+    },
+    {
+      "id": "369",
+      "cnpj": "17.524.352/0001-49",
+      "nome": "Rede ANCORA - AL",
+      "tipo": "3"
+    },
+    {
+      "id": "368",
+      "cnpj": "07.908.936/0001-64",
+      "nome": "Rede ANCORA - SC",
+      "tipo": "3"
+    },
+    {
+      "id": "437",
+      "cnpj": "08.586.902/0001-63",
+      "nome": "NA DA SILVA & CIA LTDA ME - RAINHA",
+      "tipo": "1"
+    },
+    {
+      "id": "438",
+      "cnpj": "02.147.439/0001-77",
+      "nome": "AUTO PECAS DISTAK LTDA ME 35",
+      "tipo": "1"
+    },
+    {
+      "id": "439",
+      "cnpj": "06.097.886/0001-10",
+      "nome": "NACIONAL AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "440",
+      "cnpj": "02.114.575/0001-60",
+      "nome": "NOVA AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "441",
+      "cnpj": "04.146.820/0001-47",
+      "nome": "AUTO PEÇAS GUAJARA (04.146.820/0001-47)",
+      "tipo": "1"
+    },
+    {
+      "id": "442",
+      "cnpj": "03.884.844/0001-30",
+      "nome": "ANACLEA CARREGOSA ANDRADE",
+      "tipo": "1"
+    },
+    {
+      "id": "443",
+      "cnpj": "79.051.645/0001-03",
+      "nome": "HAITO UTIDA E FILHO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "444",
+      "cnpj": "06.134.374/0001-86",
+      "nome": "MUNDIAL COMERCIO DE AUTO",
+      "tipo": "1"
+    },
+    {
+      "id": "445",
+      "cnpj": "02.193.480/0001-80",
+      "nome": "CIRO AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "446",
+      "cnpj": "07.069.980/0001-28",
+      "nome": "ORIGINAL DIST DE AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "447",
+      "cnpj": "20.271.137/0001-98",
+      "nome": "JACOBINA COMERCIO E SERVIÇOS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "448",
+      "cnpj": "32.466.630/0001-42",
+      "nome": "FREDDY CENTRO AUTOMOTIVO",
+      "tipo": "1"
+    },
+    {
+      "id": "449",
+      "cnpj": "57.077.430/0001-29",
+      "nome": "KADETT AUTO PECAS ACES LTDA - EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "450",
+      "cnpj": "02.189.806/0001-03",
+      "nome": "GUSTAVO AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "451",
+      "cnpj": "03.216.310/0001-36",
+      "nome": "HJL DISTRIBUIDORA DE PECAS E",
+      "tipo": "1"
+    },
+    {
+      "id": "452",
+      "cnpj": "36.379.121/0001-33",
+      "nome": "SOSSAI AUTO PECAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "453",
+      "cnpj": "03.993.515/0001-28",
+      "nome": "DIAS ALEIXO &  SILVA LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "454",
+      "cnpj": "01.379.395/0001-48",
+      "nome": "PARAIBA COMERCIO DE PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "455",
+      "cnpj": "17.238.810/0001-83",
+      "nome": "KAROLINE FUCHS ME",
+      "tipo": "1"
+    },
+    {
+      "id": "456",
+      "cnpj": "01.894.321/0001-40",
+      "nome": "TOTAKE & WATANABE LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "457",
+      "cnpj": "04.943.415/0001-50",
+      "nome": "SPADA PEÇAS E SERVIÇOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "458",
+      "cnpj": "72.092.406/0001-52",
+      "nome": "BELLAN AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "459",
+      "cnpj": "28.400.646/0001-85",
+      "nome": "PROCAR AUTO PECAS E ACESSORIOS LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "460",
+      "cnpj": "05.793.903/0001-90",
+      "nome": "RIO COMERCIO DE COMPONENTES",
+      "tipo": "1"
+    },
+    {
+      "id": "461",
+      "cnpj": "67.612.150/0001-27",
+      "nome": "ITATOTAL PECAS AUTOMOTIVAS LTDA. - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "462",
+      "cnpj": "05.108.968/0001-50",
+      "nome": "NOSSAH AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "463",
+      "cnpj": "06.092.032/0001-40",
+      "nome": "ABONIZIO E TORRES LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "464",
+      "cnpj": "24.969.636/0001-04",
+      "nome": "O MONTAGNA & CIA LTDA - SORRISO",
+      "tipo": "1"
+    },
+    {
+      "id": "465",
+      "cnpj": "02.411.173/0001-28",
+      "nome": "MULTIPOINT SERVICOS AUTO",
+      "tipo": "1"
+    },
+    {
+      "id": "466",
+      "cnpj": "07.544.962/0002-31",
+      "nome": "R&R FILIAL",
+      "tipo": "1"
+    },
+    {
+      "id": "467",
+      "cnpj": "72.329.550/0001-60",
+      "nome": "SORASA AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "468",
+      "cnpj": "07.742.066/0001-04",
+      "nome": "CALPEN PECAS AUTOMOTIVAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "469",
+      "cnpj": "81.165.805/0001-97",
+      "nome": "J.C. MUNGO LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "470",
+      "cnpj": "02.401.187/0001-60",
+      "nome": "REDAVE COMERCIO DE AUTOPEÇAS E SERVIÇOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "471",
+      "cnpj": "27.579.310/0001-69",
+      "nome": "LIBRELATO AUTOPECAS LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "472",
+      "cnpj": "65.395.881/0001-32",
+      "nome": "RECOMPECAS COMERCIO DE PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "473",
+      "cnpj": "03.392.794/0001-74",
+      "nome": "M MEIRA CARDOSO ME - JUINA",
+      "tipo": "1"
+    },
+    {
+      "id": "474",
+      "cnpj": "15.960.933/0001-06",
+      "nome": "DISTRIBUIDORA DE PEÇAS RONDONOPOLIS - TANGARA DA SERRA",
+      "tipo": "1"
+    },
+    {
+      "id": "475",
+      "cnpj": "19.407.772/0001-70",
+      "nome": "MURA E MERIGHI DISTR. DE PEÇAS E ACESS AUTOMOTIVOS LTDA 77",
+      "tipo": "1"
+    },
+    {
+      "id": "476",
+      "cnpj": "15.929.110/0001-00",
+      "nome": "RETIFICADORA COXIM LTDA 43",
+      "tipo": "1"
+    },
+    {
+      "id": "477",
+      "cnpj": "06.307.627/0001-76",
+      "nome": "A LIMA ROCHA",
+      "tipo": "1"
+    },
+    {
+      "id": "478",
+      "cnpj": "00.370.714/0001-91",
+      "nome": "MACHADO OLIVEIRA AUTOPECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "479",
+      "cnpj": "68.295.724/0001-43",
+      "nome": "ANAGE RECUPERADORA E COMERCIO DE AUTO PECAS LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "480",
+      "cnpj": "11.388.492/0001-50",
+      "nome": "MINAS IMPORTS COMERCIO  DE PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "481",
+      "cnpj": "16.622.862/0001-96",
+      "nome": "AUTO BITTS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "482",
+      "cnpj": "82.243.767/0001-06",
+      "nome": "P V COMERCIO DE AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "483",
+      "cnpj": "33.697.095/0002-84",
+      "nome": "AMARAL PECAS PARA VEICULOS LTDA - EPP- CANAA",
+      "tipo": "1"
+    },
+    {
+      "id": "484",
+      "cnpj": "10.876.413/0002-79",
+      "nome": "CNS PEÇAS E SERVIÇOS AUTOMOTIVOS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "485",
+      "cnpj": "30.637.179/0001-53",
+      "nome": "AUTOTAVARES DISTRIBUIDORA DE PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "486",
+      "cnpj": "13.544.511/0001-16",
+      "nome": "FIGUEIREDO DISTRIBUIDORA DE AUTOPECAS LTDA - VG",
+      "tipo": "1"
+    },
+    {
+      "id": "487",
+      "cnpj": "00.282.470/0001-95",
+      "nome": "STRALANGO COMÉRCIO DE AUTO",
+      "tipo": "1"
+    },
+    {
+      "id": "488",
+      "cnpj": "68.493.642/0001-03",
+      "nome": "PONTO FORD COMERCIO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "489",
+      "cnpj": "01.698.344/0001-89",
+      "nome": "DW SKAP PNEUS PECAS E",
+      "tipo": "1"
+    },
+    {
+      "id": "490",
+      "cnpj": "34.307.844/0001-43",
+      "nome": "COMERCIAL MAGALHAES ALMEIDA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "491",
+      "cnpj": "07.018.204/0001-07",
+      "nome": "COPECAL DISTR.DE AUTO PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "492",
+      "cnpj": "08.296.250/0001-22",
+      "nome": "CAIXETA AUTO PEÇAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "493",
+      "cnpj": "71.702.856/0001-57",
+      "nome": "PRINCAR PECAS E SERVICOS LTDA-EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "494",
+      "cnpj": "40.384.356/0001-90",
+      "nome": "LUPI AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "495",
+      "cnpj": "03.372.832/0001-27",
+      "nome": "OLIVEIRA E CHAVES LTDA 19",
+      "tipo": "1"
+    },
+    {
+      "id": "496",
+      "cnpj": "68.420.678/0001-67",
+      "nome": "ATLANTA AUTO PEÇAS E",
+      "tipo": "1"
+    },
+    {
+      "id": "497",
+      "cnpj": "75.210.773/0001-00",
+      "nome": "SANTA FELICIDADE AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "498",
+      "cnpj": "86.787.892/0001-38",
+      "nome": "IRAPEÇAS COMÉRCIO DE AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "499",
+      "cnpj": "67.239.145/0001-10",
+      "nome": "ROSA E BERTONI AUTO PECAS LTDA. (RB)",
+      "tipo": "1"
+    },
+    {
+      "id": "500",
+      "cnpj": "05.980.518/0001-52",
+      "nome": "HP HIDRAULICA AUTO-PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "501",
+      "cnpj": "73.946.899/0001-03",
+      "nome": "SPADIESEL - DISTRIBUIDORA DE AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "502",
+      "cnpj": "10.853.327/0001-60",
+      "nome": "AUTOBC COMERCIO DE PECAS AUTOMOTIVAS E INDUSTRIAIS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "503",
+      "cnpj": "05.473.169/0001-82",
+      "nome": "MECANICA E AUTO PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "504",
+      "cnpj": "10.659.742/0001-87",
+      "nome": "NEGRAO AUTO PECAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "505",
+      "cnpj": "32.225.677/0001-14",
+      "nome": "NOVA VIA PECAS E ACESSORIOS LTDA - VILA VELHA",
+      "tipo": "2"
+    },
+    {
+      "id": "506",
+      "cnpj": "08.939.579/0001-64",
+      "nome": "MEGATRUCKS AUTO PECAS LTDA ME (MARACAJU)",
+      "tipo": "1"
+    },
+    {
+      "id": "507",
+      "cnpj": "05.552.295/0006-37",
+      "nome": "MERTENS E CIA LTDA - COLOMBO",
+      "tipo": "2"
+    },
+    {
+      "id": "508",
+      "cnpj": "86.933.645/0001-00",
+      "nome": "AUTO PECAS CROMINIA LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "509",
+      "cnpj": "04.754.466/0003-03",
+      "nome": "SELEGATO AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "510",
+      "cnpj": "00.982.934/0001-76",
+      "nome": "MERCEROL DISTRIBUIDORA DE",
+      "tipo": "1"
+    },
+    {
+      "id": "511",
+      "cnpj": "20.879.821/0003-19",
+      "nome": "AUTO PECAS MEDRADO LTDA - EPP ( FILIAL )",
+      "tipo": "1"
+    },
+    {
+      "id": "512",
+      "cnpj": "26.902.692/0001-57",
+      "nome": "TOTAL COMERCIO E REPRESENTACOES LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "513",
+      "cnpj": "01.624.149/0001-04",
+      "nome": "CLAUDIO AUTO PECAS LTDA - PVA",
+      "tipo": "1"
+    },
+    {
+      "id": "514",
+      "cnpj": "01.624.149/0004-57",
+      "nome": "CLAUDIO AUTO PEÇAS - CONFRESA",
+      "tipo": "1"
+    },
+    {
+      "id": "515",
+      "cnpj": "01.624.149/0005-38",
+      "nome": "CLAUDIO AUTO PEÇAS -",
+      "tipo": "1"
+    },
+    {
+      "id": "516",
+      "cnpj": "01.624.149/0007-08",
+      "nome": "CLAUDIO AUTO PEÇAS LTDA - BRG",
+      "tipo": "1"
+    },
+    {
+      "id": "517",
+      "cnpj": "31.384.154/0001-58",
+      "nome": "CLA AUTO PEÇAS LTDA - CNP",
+      "tipo": "1"
+    },
+    {
+      "id": "518",
+      "cnpj": "46.276.489/0004-72",
+      "nome": "CLAUDIO AUTO PECAS DO VALE LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "519",
+      "cnpj": "45.262.202/0001-40",
+      "nome": "CLAUDIO AUTO PECAS DO VALE LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "520",
+      "cnpj": "46.276.489/0003-91",
+      "nome": "CLAUDIO AUTO PECAS DO VALE LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "521",
+      "cnpj": "46.276.489/0002-00",
+      "nome": "CLAUDIO AUTOPECAS DO VALE LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "522",
+      "cnpj": "01.624.149/0010-03",
+      "nome": "CLAUDIO AUTO PECAS DO VALE LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "523",
+      "cnpj": "31.384.154/0003-10",
+      "nome": "CLA AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "524",
+      "cnpj": "45.262.202/0002-20",
+      "nome": "CLA AUTOPECAS MIRASSOL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "525",
+      "cnpj": "11.249.981/0001-21",
+      "nome": "TROPICAL COMERCIO PEÇAS LTDA - CBA",
+      "tipo": "1"
+    },
+    {
+      "id": "526",
+      "cnpj": "82.368.671/0001-74",
+      "nome": "AUDEME AUTOPEÇAS E ACESSÓRIOS DEME LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "527",
+      "cnpj": "75.791.368/0003-86",
+      "nome": "KRAMBECK COMERCIO DE AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "528",
+      "cnpj": "75.791.368/0002-03",
+      "nome": "KRAMBECK COMERCIO DE AUTOPECAS LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "529",
+      "cnpj": "11.368.523/0001-01",
+      "nome": "LUCAS JOSE BERTONI ROSA AUTO PECAS - RB",
+      "tipo": "1"
+    },
+    {
+      "id": "530",
+      "cnpj": "85.278.638/0005-75",
+      "nome": "CJ DISTRIBUIDORA DE AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "531",
+      "cnpj": "35.774.611/0005-03",
+      "nome": "PECITA PECAS ITAGUAI LTDA (35.774.611/0005-03)",
+      "tipo": ""
+    },
+    {
+      "id": "532",
+      "cnpj": "01.709.513/0002-10",
+      "nome": "IBAD AUTO PECAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "533",
+      "cnpj": "01.709.513/0003-09",
+      "nome": "IBAD AUTO PEÇAS LTDA (III)",
+      "tipo": "1"
+    },
+    {
+      "id": "534",
+      "cnpj": "01.709.513/0004-81",
+      "nome": "IBAD AUTO PEÇAS LTDA ME (IV)",
+      "tipo": "1"
+    },
+    {
+      "id": "535",
+      "cnpj": "07.883.453/0001-52",
+      "nome": "IBAD II AUTO PECAS LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "536",
+      "cnpj": "07.883.453/0002-33",
+      "nome": "IBAD II GALPÃO",
+      "tipo": "1"
+    },
+    {
+      "id": "537",
+      "cnpj": "75.210.773/0003-63",
+      "nome": "SANTA FELICIDADE AUTO PECAS LTDA - FILIAL",
+      "tipo": "1"
+    },
+    {
+      "id": "538",
+      "cnpj": "13.544.511/0002-05",
+      "nome": "FIGUEIREDO DISTRIBUIDORA DE AUTOPECAS LTDA - COXIPÓ",
+      "tipo": "1"
+    },
+    {
+      "id": "539",
+      "cnpj": "24.969.636/0004-57",
+      "nome": "O MONTAGNA & CIA LTDA - NOVA MUTUM",
+      "tipo": "1"
+    },
+    {
+      "id": "540",
+      "cnpj": "24.969.636/0002-95",
+      "nome": "O MONTAGNA & CIA LTDA - LUCAS",
+      "tipo": "1"
+    },
+    {
+      "id": "541",
+      "cnpj": "05.477.760/0003-70",
+      "nome": "PMA DISTRIBUIDORA DE AUTOPEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "542",
+      "cnpj": "05.492.807/0001-02",
+      "nome": "ACYMA EMPREENDIMENTOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "543",
+      "cnpj": "05.477.760/0001-08",
+      "nome": "PMA DISTRIBUIDORA AUTO PEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "544",
+      "cnpj": "16.622.862/0003-58",
+      "nome": "AUTO BITTS LTDA - FILIAL",
+      "tipo": "1"
+    },
+    {
+      "id": "545",
+      "cnpj": "16.622.862/0004-39",
+      "nome": "AUTO BITTS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "546",
+      "cnpj": "13.639.387/0001-72",
+      "nome": "AUTOMAX AUTO PECAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "547",
+      "cnpj": "32.463.549/0003-70",
+      "nome": "SMAP AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "548",
+      "cnpj": "31.263.577/0003-81",
+      "nome": "ALTESE AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "549",
+      "cnpj": "46.321.398/0001-69",
+      "nome": "QSL AUDEME LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "550",
+      "cnpj": "82.368.671/0003-36",
+      "nome": "AUDEME AUTOPEÇAS E ACESSÓRIOS DEME LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "551",
+      "cnpj": "79.211.785/0001-00",
+      "nome": "COMERCIO DE PEÇAS E ACESSORIOS RAMTHUN LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "552",
+      "cnpj": "24.969.636/0003-76",
+      "nome": "O MONTAGNA & CIA LTDA -SORRISO/PESADA",
+      "tipo": "1"
+    },
+    {
+      "id": "553",
+      "cnpj": "13.358.646/0001-97",
+      "nome": "TALISON FABIANO DA SILVA SOUZA",
+      "tipo": "2"
+    },
+    {
+      "id": "554",
+      "cnpj": "13.411.402/0001-20",
+      "nome": "PENAUTO PEÇAS AUTOMOTIVAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "555",
+      "cnpj": "13.411.402/0002-01",
+      "nome": "PENAUTO PEÇAS AUTOMOTIVAS - FILIAL",
+      "tipo": "1"
+    },
+    {
+      "id": "556",
+      "cnpj": "07.742.066/0002-87",
+      "nome": "CALPEN PECAS FILIAL AUTOMOTIVAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "557",
+      "cnpj": "02.114.575/0005-94",
+      "nome": "NOVA AUTO PEÇAS - GUAJARA",
+      "tipo": "1"
+    },
+    {
+      "id": "558",
+      "cnpj": "02.114.575/0003-22",
+      "nome": "NOVA AUTO PEÇAS LTDA - DIESEL",
+      "tipo": "1"
+    },
+    {
+      "id": "559",
+      "cnpj": "05.286.344/0002-03",
+      "nome": "CENTERDIESEL AUTO PEÇAS LTDA -",
+      "tipo": "1"
+    },
+    {
+      "id": "560",
+      "cnpj": "05.286.344/0004-75",
+      "nome": "CENTERDIESEL AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "561",
+      "cnpj": "13.991.133/0002-08",
+      "nome": "ALMEIDA PNEUS AUTO CENTER LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "562",
+      "cnpj": "32.463.549/0002-90",
+      "nome": "SMAP AUTO PECAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "563",
+      "cnpj": "32.463.549/0004-51",
+      "nome": "Smap Auto Pecas LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "564",
+      "cnpj": "28.512.283/0001-70",
+      "nome": "PEÇAUTO PEÇAS AUTOMOTIVAS LTDA - CENTRO LOGÍSTICO",
+      "tipo": "2"
+    },
+    {
+      "id": "565",
+      "cnpj": "64.435.670/0003-85",
+      "nome": "DIESEL SETE PEÇAS LTDA - CURVELO",
+      "tipo": "1"
+    },
+    {
+      "id": "566",
+      "cnpj": "31.263.577/0002-09",
+      "nome": "ALTESE AUTO PECAS LTDA (GM)",
+      "tipo": "1"
+    },
+    {
+      "id": "567",
+      "cnpj": "31.263.577/0005-43",
+      "nome": "ALTESE AUTO PEÇAS LTDA (BARRA)",
+      "tipo": "1"
+    },
+    {
+      "id": "568",
+      "cnpj": "31.263.577/0006-24",
+      "nome": "ALTESE AUTO PEÇAS LTDA (RECREIO)",
+      "tipo": "1"
+    },
+    {
+      "id": "569",
+      "cnpj": "31.263.577/0007-05",
+      "nome": "ALTESE AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "570",
+      "cnpj": "07.503.705/0001-70",
+      "nome": "NOVA ALTESE COMERCIO DE AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "571",
+      "cnpj": "22.142.067/0002-84",
+      "nome": "HS AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "572",
+      "cnpj": "10.510.476/0002-07",
+      "nome": "IMOLLA AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "573",
+      "cnpj": "02.233.424/0002-02",
+      "nome": "NERIO AUTOPEÇAS E ACESSORIOS LTDA- CONGONHAS",
+      "tipo": "2"
+    },
+    {
+      "id": "574",
+      "cnpj": "01.624.149/0013-48",
+      "nome": "CLAUDIO AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "575",
+      "cnpj": "31.384.154/0002-39",
+      "nome": "CLA AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "576",
+      "cnpj": "08.969.703/0001-34",
+      "nome": "SALVADOR COMERCIAL LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "577",
+      "cnpj": "08.969.703/0003-04",
+      "nome": "SALVADOR COMERCIAL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "578",
+      "cnpj": "19.205.069/0001-80",
+      "nome": "MILPEÇAS E SERVIÇOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "579",
+      "cnpj": "14.507.770/0001-30",
+      "nome": "DPL DISTRIBUIDORA DE AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "580",
+      "cnpj": "68.420.678/0004-00",
+      "nome": "ATLANTA AUTO PECAS E",
+      "tipo": "1"
+    },
+    {
+      "id": "581",
+      "cnpj": "68.420.678/0003-29",
+      "nome": "ATLANTA AUTO PEÇAS E",
+      "tipo": "1"
+    },
+    {
+      "id": "582",
+      "cnpj": "24.969.636/0006-19",
+      "nome": "O MONTAGNA & CIA LTDA - JUARA",
+      "tipo": "1"
+    },
+    {
+      "id": "583",
+      "cnpj": "24.969.636/0005-38",
+      "nome": "O MONTAGNA & CIA LTDA - ARENAPOLIS",
+      "tipo": "1"
+    },
+    {
+      "id": "584",
+      "cnpj": "85.278.638/0003-03",
+      "nome": "CJ DISTRIBUIDORA DE AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "585",
+      "cnpj": "85.278.638/0006-56",
+      "nome": "CJ DISTRIBUIDORA DE AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "586",
+      "cnpj": "85.278.638/0008-18",
+      "nome": "CJ DISTRIBUIDORA DE AUTOPECAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "587",
+      "cnpj": "85.216.422/0003-13",
+      "nome": "SCHAURICH E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "588",
+      "cnpj": "85.216.422/0005-85",
+      "nome": "SCHAURICH E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "589",
+      "cnpj": "07.544.962/0001-50",
+      "nome": "R&R AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "590",
+      "cnpj": "68.420.678/0002-48",
+      "nome": "ATLANTA II AUTO PEÇAS E",
+      "tipo": "1"
+    },
+    {
+      "id": "591",
+      "cnpj": "",
+      "nome": "AUTO PECAS CAIUA LTDA",
+      "tipo": ""
+    },
+    {
+      "id": "592",
+      "cnpj": "15.389.901/0004-37",
+      "nome": "AUTO PECAS E POSTO DE MOLA PIROLI LTDA - ME 51",
+      "tipo": "1"
+    },
+    {
+      "id": "593",
+      "cnpj": "15.389.901/0005-18",
+      "nome": "AUTO PEÇAS E POSTO DE MOLAS PIROLI - ME 67",
+      "tipo": "1"
+    },
+    {
+      "id": "594",
+      "cnpj": "06.243.591/0001-04",
+      "nome": "DE CONTO AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "595",
+      "cnpj": "12.225.200/0001-21",
+      "nome": "MA AUTOMOTIVA E ACESSORIOS LTDA 41",
+      "tipo": "1"
+    },
+    {
+      "id": "596",
+      "cnpj": "19.558.053/0001-50",
+      "nome": "MEGATRUCKS PECAS E ACESSORIOS LTDA  (JARDIM)",
+      "tipo": "1"
+    },
+    {
+      "id": "597",
+      "cnpj": "02.147.439/0003-39",
+      "nome": "AUTOPEÇAS DISTAK ",
+      "tipo": "1"
+    },
+    {
+      "id": "598",
+      "cnpj": "77.938.702/0001-45",
+      "nome": "VALE DO IVAI COM. DE PEÇAS PARA AUTOS E TRATORES LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "599",
+      "cnpj": "12.358.399/0001-66",
+      "nome": "FF DA CUNHA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "600",
+      "cnpj": "03.819.459/0001-00",
+      "nome": "JR DA CUNHA AUTO PEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "601",
+      "cnpj": "75.404.863/0001-23",
+      "nome": "ARAPONGAS AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "602",
+      "cnpj": "30.507.085/0001-60",
+      "nome": "PRANDI & MANZANO  LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "603",
+      "cnpj": "11.956.164/0001-03",
+      "nome": "UTIDA TRUCK CENTER LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "604",
+      "cnpj": "10.454.427/0001-13",
+      "nome": "COMERCIAL DE PEÇAS GODOY LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "605",
+      "cnpj": "79.209.276/0001-34",
+      "nome": "AUTO PEÇAS E SERVIÇOS GRAUQUEMAR LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "606",
+      "cnpj": "03.490.045/0001-80",
+      "nome": "H MILANI E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "607",
+      "cnpj": "04.024.112/0001-33",
+      "nome": "ARTE AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "608",
+      "cnpj": "05.847.783/0001-67",
+      "nome": "MANDA CHUVA AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "609",
+      "cnpj": "17.529.965/0001-79",
+      "nome": "SPATRANS - DISTRIBUIDORA DE AUTO PEÇAS E TRANSPORTES LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "610",
+      "cnpj": "04.683.301/0001-18",
+      "nome": "R. LIBRELATO E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "611",
+      "cnpj": "11.984.684/0001-20",
+      "nome": "A.T.ROSSI EIRELLI",
+      "tipo": "1"
+    },
+    {
+      "id": "612",
+      "cnpj": "76.108.315/0001-19",
+      "nome": "AUTO MECÂNICA TUPI LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "613",
+      "cnpj": "78.128.592/0001-19",
+      "nome": "RIBAS AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "614",
+      "cnpj": "37.576.428/0001-97",
+      "nome": "Andrea Doria Chaves Monteiro",
+      "tipo": "1"
+    },
+    {
+      "id": "615",
+      "cnpj": "ACB ACIOLE",
+      "nome": "",
+      "tipo": ""
+    },
+    {
+      "id": "616",
+      "cnpj": "15.238.291/0001-28",
+      "nome": "AUTOPARTS COMERCIO DE PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "617",
+      "cnpj": "03.372.832/0002-08",
+      "nome": "OLIVEIRA E CHAVES LTDA ME 44",
+      "tipo": "1"
+    },
+    {
+      "id": "618",
+      "cnpj": "02.790.796/0004-00",
+      "nome": "COMPARTS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "619",
+      "cnpj": "09.572.086/0001-00",
+      "nome": "AUTO PEÇAS BRITO GUIRAO LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "620",
+      "cnpj": "20.300.014/0001-38",
+      "nome": "PASCOTTO GRANUCCI LTDA EPP",
+      "tipo": "2"
+    },
+    {
+      "id": "621",
+      "cnpj": "18.741.414/0001-37",
+      "nome": "ZOIRO AUGUSTO ANTONIETTI PASCOTTO ME",
+      "tipo": "2"
+    },
+    {
+      "id": "622",
+      "cnpj": "08.939.579/0002-45",
+      "nome": "MEGATRUCKS AUTOPEÇAS LTDA (SIDROLANDIA)",
+      "tipo": "2"
+    },
+    {
+      "id": "623",
+      "cnpj": "08.603.344/0001-05",
+      "nome": "AUTO PECAS AZEVEDO LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "624",
+      "cnpj": "04.087.116/0001-60",
+      "nome": "AGRA MOTORS COMERCIO DE VEICULOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "625",
+      "cnpj": "12.385.432/0001-47",
+      "nome": "AUTO PECAS LINEA LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "626",
+      "cnpj": "07.256.960/0001-66",
+      "nome": "BOCAIUVA AUTO PECAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "627",
+      "cnpj": "02.415.741/0001-69",
+      "nome": "DELIO ARAUJO ESPIRITO SANTO EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "628",
+      "cnpj": "22.149.553/0001-43",
+      "nome": "DIZ PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "629",
+      "cnpj": "37.356.314/0001-31",
+      "nome": "ESTRELA POSTO DE MOLAS E MECANICA DIESEL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "630",
+      "cnpj": "04.671.382/0002-17",
+      "nome": "GUIDAUTO PECAS LTDA - FILIAL",
+      "tipo": "1"
+    },
+    {
+      "id": "631",
+      "cnpj": "22.536.478/0001-73",
+      "nome": "MINASFREIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "632",
+      "cnpj": "49.264.087/0001-01",
+      "nome": "MULTIPEÇAS DIESEL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "633",
+      "cnpj": "06.324.236/0001-60",
+      "nome": "SILVA E MARQUES COMERCIO DE PECAS AUTOMOTIVAS LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "634",
+      "cnpj": "12.939.461/0001-03",
+      "nome": "UDIVOL COMERCIO E  SERVIÇOS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "635",
+      "cnpj": "13.044.468/0001-20",
+      "nome": "H C MOLAS E SERVIÇOS PARA VEICULOS LTDA ME - PIONEIRO MOLAS",
+      "tipo": "1"
+    },
+    {
+      "id": "636",
+      "cnpj": "07.018.204/0004-41",
+      "nome": "COPECAL DISTR.DE AUTO PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "637",
+      "cnpj": "07.018.204/0002-80",
+      "nome": "COPECAL DISTR.DE AUTO PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "638",
+      "cnpj": "37.383.586/0001-20",
+      "nome": "LOPES ATACADISTA AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "639",
+      "cnpj": "00.317.511/0001-31",
+      "nome": "MEDEIROS & SILVA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "640",
+      "cnpj": "24.747.099/0001-58",
+      "nome": "EDSON AUGUSTO RIBEIRO DOS SANTOS B. DR",
+      "tipo": "1"
+    },
+    {
+      "id": "641",
+      "cnpj": "20.879.821/0004-08",
+      "nome": "AUTO PECAS MEDRADO LTDA - EPP NANUQUE",
+      "tipo": "1"
+    },
+    {
+      "id": "642",
+      "cnpj": "01.954.576/0001-50",
+      "nome": "FRANCISCO ADIL DE OLIVEIRA NOVA",
+      "tipo": "1"
+    },
+    {
+      "id": "643",
+      "cnpj": "34.307.884/0002-24",
+      "nome": "COMERCIAL MAGALHAES ALMEIDA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "644",
+      "cnpj": "11.950.376/0001-83",
+      "nome": "ROGER DE SOUZA GOMES SILVA",
+      "tipo": "1"
+    },
+    {
+      "id": "645",
+      "cnpj": "59.149.427/0001-07",
+      "nome": "MOTOYUKI COMERCIO DE AUTO",
+      "tipo": "1"
+    },
+    {
+      "id": "646",
+      "cnpj": "43.077.890/0001-42",
+      "nome": "PARANA PECAS LTDA (SP)",
+      "tipo": "1"
+    },
+    {
+      "id": "647",
+      "cnpj": "66.150.079/0001-45",
+      "nome": "WRP COMERCIO PECAS DE VEICULOS LTDA. (WRP)",
+      "tipo": "1"
+    },
+    {
+      "id": "648",
+      "cnpj": "78.037.561/0001-52",
+      "nome": "COMERCIAL DE PNEUS GODOY LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "649",
+      "cnpj": "00.389.633/0001-33",
+      "nome": "M. PACHECO CAMPINAS AUTO",
+      "tipo": "1"
+    },
+    {
+      "id": "650",
+      "cnpj": "02.431.719/0001-02",
+      "nome": "BARÃO ONIBUS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "651",
+      "cnpj": "62.000.013/0001-18",
+      "nome": "AUTO LATAS COMERCIO DE PEÇAS & ACESSÓRIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "652",
+      "cnpj": "33.933.813/0001-93",
+      "nome": "CRISTO REI COMERCIO DE PECAS PARA VEICULOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "653",
+      "cnpj": "02.694.611/0002-93",
+      "nome": "GIMENA AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "654",
+      "cnpj": "02.694.611/0001-02",
+      "nome": "GIMENA AUTOPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "655",
+      "cnpj": "34.143.317/0001-07",
+      "nome": "IGOR JOSE GONTIJO",
+      "tipo": "1"
+    },
+    {
+      "id": "656",
+      "cnpj": "12.697.734/0001-50",
+      "nome": "RODRIGUES DA SILVA E MATIAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "657",
+      "cnpj": "07.753.842/0001-63",
+      "nome": "ARAGUADIESEL PORANGATU MECANICA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "658",
+      "cnpj": "09.456.720/0001-30",
+      "nome": "ALVES & KLITZE LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "659",
+      "cnpj": "03.399.509/0001-47",
+      "nome": "MEBRA AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "660",
+      "cnpj": "43.625.563/0001-88",
+      "nome": "NEY PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "661",
+      "cnpj": "31.692.478/0001-53",
+      "nome": "ARMANDO PNEUS E TRANSPORTES LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "662",
+      "cnpj": "21.408.784/0001-61",
+      "nome": "AF PNEUS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "663",
+      "cnpj": "00.242.440/0001-55",
+      "nome": "AUTOBARRA PECAS E MECANICA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "664",
+      "cnpj": "14.470.071/0001-62",
+      "nome": "CRZ PEÇAS E ACESSÓRIOS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "665",
+      "cnpj": "27.353.366/0001-09",
+      "nome": "MECANICA SANTA ELISA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "666",
+      "cnpj": "39.320.882/0001-08",
+      "nome": "POWER AUTO PECAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "667",
+      "cnpj": "05.568.103/0001-76",
+      "nome": "PINHEIRO COMERCIO VAREJISTA DE",
+      "tipo": "1"
+    },
+    {
+      "id": "668",
+      "cnpj": "41.984.602/0001-08",
+      "nome": "MACHADO OLIVEIRA AUTOPECAS - DWM",
+      "tipo": "1"
+    },
+    {
+      "id": "669",
+      "cnpj": "00.710.791/0001-43",
+      "nome": "JMV AUTOPECAS LTDA ( MATRIZ )",
+      "tipo": "1"
+    },
+    {
+      "id": "670",
+      "cnpj": "29.554.937/0001-90",
+      "nome": "BOM PREÇO",
+      "tipo": "2"
+    },
+    {
+      "id": "671",
+      "cnpj": "07.180.838/0001-53",
+      "nome": "NOVA OEST DISTRIBUIDORA AUTOMOTIVA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "672",
+      "cnpj": "54.903.794/0003-94",
+      "nome": "POHL & POHL LTDA - HORTOLANDIA",
+      "tipo": "1"
+    },
+    {
+      "id": "673",
+      "cnpj": "66.135.393/0001-59",
+      "nome": "BROGLIO E GOTARDELO LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "674",
+      "cnpj": "06.307.627/0002-57",
+      "nome": "A LIMA ROCHA - ANANINDEUA",
+      "tipo": "1"
+    },
+    {
+      "id": "675",
+      "cnpj": "06.307.627/0003-38",
+      "nome": "A LIMA ROCHA - JOSE BONIFACIO",
+      "tipo": "1"
+    },
+    {
+      "id": "676",
+      "cnpj": "13.942.645/0001-95",
+      "nome": "MAR AUTO PEÇAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "677",
+      "cnpj": "08.371.120/0001-07",
+      "nome": "RETIFICADORA NOROESTE LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "678",
+      "cnpj": "13.417.854/0002-09",
+      "nome": "P.V. DE ANDRADE AUTO PECAS EIRELI EPP - MARABA",
+      "tipo": "1"
+    },
+    {
+      "id": "679",
+      "cnpj": "13.417.854/0003-81",
+      "nome": "P.V. DE ANDRADE AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "680",
+      "cnpj": "06.308.031/0001-90",
+      "nome": "R A DEBASTIANI ME",
+      "tipo": "1"
+    },
+    {
+      "id": "681",
+      "cnpj": "34.925.161/0001-08",
+      "nome": "SO PESADOS COM.PECAS E ACESSORIOS-NOVO PROGRESSO",
+      "tipo": "1"
+    },
+    {
+      "id": "682",
+      "cnpj": "31.813.140/0001-02",
+      "nome": "ZAMPERLINI DISTRIBUIDORA DE AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "683",
+      "cnpj": "26.603.028/0001-07",
+      "nome": "SUPORTE PECAS E SERVICOS EIRELI",
+      "tipo": "2"
+    },
+    {
+      "id": "684",
+      "cnpj": "39.390.984/0001-08",
+      "nome": "FROSSARD AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "685",
+      "cnpj": "24.542.254/0001-08",
+      "nome": "A C B ACIOLE COM PECAS E SERVICOS LTDA",
+      "tipo": ""
+    },
+    {
+      "id": "686",
+      "cnpj": "03.329.046/0001-47",
+      "nome": "MC CAIAPO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "687",
+      "cnpj": "32.002.431/0001-83",
+      "nome": "PROCOPEÇAS COMERCIO DE AUTOPEÇAS EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "688",
+      "cnpj": "84.833.011/0002-23",
+      "nome": "NEPAL AUTO PEÇAS LTDA - EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "689",
+      "cnpj": "31.474.836/0005-85",
+      "nome": "AUTO PECAS ALONSO EIRELI",
+      "tipo": "1"
+    },
+    {
+      "id": "690",
+      "cnpj": "31.474.836/0006-66",
+      "nome": "AUTO PECAS ALONSO LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "691",
+      "cnpj": "03.715.749/0001-03",
+      "nome": "EDGAR AUTO PECAS IUNA LTDA-ME",
+      "tipo": "1"
+    },
+    {
+      "id": "692",
+      "cnpj": "03.421.489/0001-63",
+      "nome": "IRUPI AUTO PECAS LTDA EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "693",
+      "cnpj": "27.280.023/0001-53",
+      "nome": "MECANICA IRMAOS CANI LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "694",
+      "cnpj": "36.413.607/0001-40",
+      "nome": "MIMOSO COMERCIO DE AUTO PECAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "695",
+      "cnpj": "04.754.466/0001-33",
+      "nome": "SELEGATO AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "696",
+      "cnpj": "06.134.374/0002-67",
+      "nome": "MUNDIAL COMERCIO DE AUTOPEÇAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "697",
+      "cnpj": "05.552.295/0001-22",
+      "nome": "MERTENS E CIA LTDA - SJP",
+      "tipo": "2"
+    },
+    {
+      "id": "698",
+      "cnpj": "34.307.884/0001-43",
+      "nome": "Autolatina Pecas Comercial Magalhaes Almeida LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "699",
+      "cnpj": "26.696.575/0001-84",
+      "nome": "SERGIO ROSA LEAO ME",
+      "tipo": "1"
+    },
+    {
+      "id": "700",
+      "cnpj": "35.758.889/0001-55",
+      "nome": "FENIX CAR PEÇAS E SERVIÇOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "701",
+      "cnpj": "23.203.075/0001-75",
+      "nome": "TAMOIOS AUTO CENTER LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "702",
+      "cnpj": "04.800.712/0001-46",
+      "nome": "A P ROSA NEGRAO E CIA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "703",
+      "cnpj": "20.830.541/0001-54",
+      "nome": "M.VINICIUS SOUZA SOUZA ME - MV DISTRIBUIDORA",
+      "tipo": "1"
+    },
+    {
+      "id": "704",
+      "cnpj": "26.475.948/0003-59",
+      "nome": "WG AGRICULTURE LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "705",
+      "cnpj": "26.475.948/0001-97",
+      "nome": "WG AGRICULTURE LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "706",
+      "cnpj": "10.492.582/0001-24",
+      "nome": "DALLACQUA & DALLACQUA AUTO PEÇAS LTDA - ME",
+      "tipo": "1"
+    },
+    {
+      "id": "707",
+      "cnpj": "00.379.655/0001-12",
+      "nome": "ZERECO DISTRIBUIDORA DE PECAS",
+      "tipo": "1"
+    },
+    {
+      "id": "708",
+      "cnpj": "02.983.455/0001-08",
+      "nome": "CRISTOVAO TADEU DE AZEVEDO",
+      "tipo": "1"
+    },
+    {
+      "id": "709",
+      "cnpj": "04.107.838/0001-30",
+      "nome": "L C DA SILVA PECAS PARA",
+      "tipo": "1"
+    },
+    {
+      "id": "710",
+      "cnpj": "40.384.356/0003-52",
+      "nome": "LUPI AUTO PEÇAS LTDA - FILIAL",
+      "tipo": "1"
+    },
+    {
+      "id": "711",
+      "cnpj": "17.764.646/0001-48",
+      "nome": "PIERONI COMERCIO DE PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "712",
+      "cnpj": "33.746.331/0001-24",
+      "nome": "J R DE PIABETA AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "713",
+      "cnpj": "06.910.296/0001-64",
+      "nome": "AUTO PECAS RAMAR DE BANGU LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "714",
+      "cnpj": "06.910.296/0002-45",
+      "nome": "AUTO PEÇAS RAMAR DE BANGU LTDA EPP - FILIAL",
+      "tipo": "1"
+    },
+    {
+      "id": "715",
+      "cnpj": "30.319.588/0001-01",
+      "nome": "POLY REI AUTO PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "716",
+      "cnpj": "13.299.968/0001-02",
+      "nome": "FS OLIVEIRA AUTOCENTER EIRELLI ME",
+      "tipo": "1"
+    },
+    {
+      "id": "717",
+      "cnpj": "47.873.795/0001-06",
+      "nome": "PESTANA DISTRIBUIDORA DE PECAS LTDA-EPP",
+      "tipo": "1"
+    },
+    {
+      "id": "718",
+      "cnpj": "32.343.229/0001-15",
+      "nome": "GERAÇÃO XV  ",
+      "tipo": "1"
+    },
+    {
+      "id": "719",
+      "cnpj": "10.879.506/0001-76",
+      "nome": "ANCORA COMERCIO  AUTOPEÇAS LTDA ME",
+      "tipo": "1"
+    },
+    {
+      "id": "720",
+      "cnpj": "03.195.677/0001-10",
+      "nome": "COMPARTS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "721",
+      "cnpj": "07.931.863/0001-21",
+      "nome": "FRONTAL DIESEL COMERCIO DE PECAS E SERVIÇOS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "722",
+      "cnpj": "83.298.216/0001-02",
+      "nome": "POSMOVIL POSTO DE MOLAS VIVIAN LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "723",
+      "cnpj": "81.871.436/0001-58",
+      "nome": "DICAUTO AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "724",
+      "cnpj": "04.125.040/0001-10",
+      "nome": "ELETRO PEÇAS SÃO BENTO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "725",
+      "cnpj": "75.791.368/0001-14",
+      "nome": "KRAMBECK COMERCIO DE AUTOPECAS LTDA.",
+      "tipo": "1"
+    },
+    {
+      "id": "726",
+      "cnpj": "42.452.131/0001-50",
+      "nome": "STRACK DISTRIBUIDORA DE AUTOPECAS EIRELI ME",
+      "tipo": "1"
+    },
+    {
+      "id": "727",
+      "cnpj": "02.718.361/0001-01",
+      "nome": "MECANICA E AUTOPEÇAS ANGEVAL",
+      "tipo": "1"
+    },
+    {
+      "id": "728",
+      "cnpj": "07.569.402/0001-50",
+      "nome": "EFATA FIRME E FORTE DISTRIBUIDORA DE LUBRIFICANTES LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "729",
+      "cnpj": "00.379.655/0007-08",
+      "nome": "ZERECO DISTRIBUIDORA DE PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "730",
+      "cnpj": "75.791.368/0004-67",
+      "nome": "KRAMBECK COMERCIO DE AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "731",
+      "cnpj": "92.090.596/0003-48",
+      "nome": "BECAR AUTO PECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "732",
+      "cnpj": "93.988.921/0002-76",
+      "nome": "TURBO AUTO PEÇAS E ACESSORIOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "733",
+      "cnpj": "90.441.585/0001-78",
+      "nome": "UNIPECAS COMERCIO DE AUTO PEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "734",
+      "cnpj": "03.406.149/0006-78",
+      "nome": "CENTRO AUTOMOTIVO CACULA LTDA - AUTOPEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "735",
+      "cnpj": "02.493.176/0001-58",
+      "nome": "AUTO PEÇAS CHATEAUBRIAND LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "736",
+      "cnpj": "07.099.006/0001-07",
+      "nome": "CENTERPEÇAS COMERCIO DE PEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "737",
+      "cnpj": "81.896.789/0001-02",
+      "nome": "ANGAÍ COMÉRCIO DE AUTO PEÇAS",
+      "tipo": "1"
+    },
+    {
+      "id": "738",
+      "cnpj": "36.246.378/0001-17",
+      "nome": "MARCELA NASCIMENTO PERCIANO LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "739",
+      "cnpj": "85.264.570/0003-03",
+      "nome": "ADALBERTO FLORES ME",
+      "tipo": "1"
+    },
+    {
+      "id": "740",
+      "cnpj": "49.995.573/0001-91",
+      "nome": "WILMAR SIGNORELLI WS AUTOPARTS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "741",
+      "cnpj": "40.130.209/0002-75",
+      "nome": "UNIÃO AUTOPEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "742",
+      "cnpj": "14.849.574/0001-43",
+      "nome": "COMEPAL LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "743",
+      "cnpj": "15.524.382/0001-20",
+      "nome": "HB - Hospital Baterias Ltda",
+      "tipo": "2"
+    },
+    {
+      "id": "744",
+      "cnpj": "27.536.937/0003-02",
+      "nome": "JM DISTRIBUIDORA AUTOMOTIVA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "745",
+      "cnpj": "27.536.937/0004-85",
+      "nome": "JM DISTRIBUIDORA AUTOMOTIVA LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "746",
+      "cnpj": "05.936.705/0001-39",
+      "nome": "LILIAN CAMPOS DE MORAIS RIBEIRO",
+      "tipo": "1"
+    },
+    {
+      "id": "747",
+      "cnpj": "44.798.710/0001-84",
+      "nome": "RETIFICA COPECAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "748",
+      "cnpj": "46.921.791/0001-93",
+      "nome": "MP FURLAN COMERCIO DE PEÇAS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "749",
+      "cnpj": "50.465.498/0001-36",
+      "nome": "GERSON LUIS CHUITICOSKI",
+      "tipo": "1"
+    },
+    {
+      "id": "750",
+      "cnpj": "02.518.769/0001-21",
+      "nome": "MAURICIO ROGERIO REQUENA",
+      "tipo": "1"
+    },
+    {
+      "id": "751",
+      "cnpj": "50.482.420/0001-20",
+      "nome": "Autopeças e parafusos Nerio LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "752",
+      "cnpj": "76.788.397/0001-90",
+      "nome": "DEZ MARCHAS AUTOPEÇAS E SERVIÇOS LTDA",
+      "tipo": "1"
+    },
+    {
+      "id": "753",
+      "cnpj": "19.445.572/0001-02",
+      "nome": "GONZATTI E CASEMIRO LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "754",
+      "cnpj": "03.944.728/0001-60",
+      "nome": "Senna pneus Ltda Epp",
+      "tipo": "2"
+    },
+    {
+      "id": "755",
+      "cnpj": "38.110.780/0001-03",
+      "nome": "Unita autopeças Ltda ME",
+      "tipo": "2"
+    },
+    {
+      "id": "756",
+      "cnpj": "33.372.251/0062-78",
+      "nome": "EMPRESA TESTE SP",
+      "tipo": "1"
+    },
+    {
+      "id": "757",
+      "cnpj": "22.221.757/0001-48",
+      "nome": "Itapoar peças e acessórios LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "758",
+      "cnpj": "08.793.371/0004-22",
+      "nome": "C.DIESEL COMERCIO DE AUTOPEÇAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "759",
+      "cnpj": "08.793.371/0002-60",
+      "nome": "C.DIESEL PARTS COMERCIO DE AUTOPEÇAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "760",
+      "cnpj": "08.793.371/0005-03",
+      "nome": "C.DIESEL COMERCIO DE AUTOPECAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "761",
+      "cnpj": "89.656.287/0001-16",
+      "nome": "Empresa -Teste- AL",
+      "tipo": "1"
+    },
+    {
+      "id": "762",
+      "cnpj": "89.656.287/0002-16",
+      "nome": "Empresa -Teste- DF",
+      "tipo": "1"
+    },
+    {
+      "id": "763",
+      "cnpj": "89.656.287/0014-16",
+      "nome": "Empresa -Teste- MA",
+      "tipo": "1"
+    },
+    {
+      "id": "764",
+      "cnpj": "89.656.287/0013-16",
+      "nome": "Empresa -Teste- SC ",
+      "tipo": "1"
+    },
+    {
+      "id": "765",
+      "cnpj": "89.656.287/0003-16",
+      "nome": "Empresa -Teste- ES ",
+      "tipo": "1"
+    },
+    {
+      "id": "766",
+      "cnpj": "89.656.287/0004-16",
+      "nome": "Empresa -Teste- BA",
+      "tipo": "1"
+    },
+    {
+      "id": "767",
+      "cnpj": "89.656.287/0005-16",
+      "nome": "Empresa -Teste- GO",
+      "tipo": "1"
+    },
+    {
+      "id": "768",
+      "cnpj": "89.656.287/0015-16",
+      "nome": "Empresa -Teste- MG",
+      "tipo": "1"
+    },
+    {
+      "id": "769",
+      "cnpj": "89.656.287/0012-16",
+      "nome": "Empresa -Teste- RJ ",
+      "tipo": "1"
+    },
+    {
+      "id": "770",
+      "cnpj": "89.656.287/0011-16",
+      "nome": "Empresa -Teste- RS ",
+      "tipo": "1"
+    },
+    {
+      "id": "771",
+      "cnpj": "89.656.287/0006-16",
+      "nome": "Empresa -Teste- MS ",
+      "tipo": "1"
+    },
+    {
+      "id": "772",
+      "cnpj": "89.656.287/0010-16",
+      "nome": "Empresa -Teste- PR",
+      "tipo": "1"
+    },
+    {
+      "id": "773",
+      "cnpj": "89.656.287/0007-16",
+      "nome": "Empresa -Teste- MT ",
+      "tipo": "1"
+    },
+    {
+      "id": "774",
+      "cnpj": "89.656.287/0009-16",
+      "nome": "Empresa -Teste- PE",
+      "tipo": "1"
+    },
+    {
+      "id": "775",
+      "cnpj": "89.656.287/0008-16",
+      "nome": "Empresa -Teste- PA",
+      "tipo": "1"
+    },
+    {
+      "id": "776",
+      "cnpj": "45.729.066/0001-55",
+      "nome": "AUTOFORTE COMERCIO DE PEÇAS LTDA",
+      "tipo": "2"
+    },
+    {
+      "id": "777",
+      "cnpj": "11.102.426/0001-72",
+      "nome": "FRANCHI E JESUS AUTO PECAS LTDA 11",
+      "tipo": "1"
+    },
+    {
+      "id": "778",
+      "cnpj": "3",
+      "nome": "3S NET",
+      "tipo": "5"
+    },
+    {
+      "id": "779",
+      "cnpj": "30.723.631/0001-08",
+      "nome": "nove ",
+      "tipo": "7"
+    },
+    {
+      "id": "780",
+      "cnpj": "123",
+      "nome": "Gravena comercio de pecas LTDA ME - Joinville",
+      "tipo": "2"
+    },
+    {
+      "id": "781",
+      "cnpj": "14.672.541/0002-51",
+      "nome": "Gravena comercio de pecas LTDA ME - Joinville",
+      "tipo": "2"
+    },
+    {
+      "id": "782",
+      "cnpj": "14.672.541/0001-70",
+      "nome": "Gravena comércio de peças LTDA ME - Maringá ",
+      "tipo": "2"
+    },
+    {
+      "id": "783",
+      "cnpj": "14.672.541/0003-32",
+      "nome": "Gravena comercio de peças LTDA ME - Sarandi",
+      "tipo": "2"
+    },
+    {
+      "id": "418",
+      "cnpj": "07.523.452/0001-05",
+      "nome": "Rede ANCORA - ES",
+      "tipo": "3"
+    },
+    {
+      "id": "35",
+      "cnpj": "09.330.294/0001-94",
+      "nome": "Rede ANCORA - DF",
+      "tipo": "3"
+    }
+  ],
+  "central-eventos": [
+    {
+      "id": "1",
+      "categoria": "Treinamento Mercado Livre",
+      "videos": [
+        {
+          "id": "1",
+          "imagemCapa": "/comunicacoes/imagens/portal_capa_mercadolivre.png",
+          "tituloEvento": "TREINAMENTO - PARTE 01",
+          "dataHoraEvento": "20/09/2022 às 19h00",
+          "assuntoEvento": "Conhecendo o Mercado",
+          "descricaoEvento": "Treinamento do Mercado Livre para a Rede ANCORA<br>\n<a href=\"https://redeancora.sfo3.digitaloceanspaces.com/Treinamentos/MercadoLivre/Apresentação AULA 1.pdf\" target=\"_blank\" media_type=\"application/pdf\">Clique aqui para baixar o material</a>",
+          "idVideo": "755542165?h=995cb90537",
+          "tituloVideo": "TREINAMENTO_PARTE_01"
+        },
+        {
+          "id": "2",
+          "imagemCapa": "/comunicacoes/imagens/portal_capa_mercadolivre.png",
+          "tituloEvento": "TREINAMENTO - PARTE 02",
+          "dataHoraEvento": "27/09/2022 às 19h00",
+          "assuntoEvento": "Pontos-chave",
+          "descricaoEvento": "Treinamento do Mercado Livre para a Rede ANCORA<br>\n<a href=\"https://redeancora.sfo3.digitaloceanspaces.com/Treinamentos/MercadoLivre/Apresentação AULA 2.pdf\" target=\"_blank\" media_type=\"application/pdf\">Clique aqui para baixar o material</a>",
+          "idVideo": "755108805?h=27abe1aa46",
+          "tituloVideo": "TREINAMENTO_PARTE_02"
+        },
+        {
+          "id": "3",
+          "imagemCapa": "/comunicacoes/imagens/portal_capa_mercadolivre.png",
+          "tituloEvento": "TREINAMENTO - PARTE 03",
+          "dataHoraEvento": "04/10/2022 às 19h00",
+          "assuntoEvento": "Pilares Estratégicos",
+          "descricaoEvento": "Treinamento do Mercado Livre para a Rede ANCORA<br>\n<a href=\"https://redeancora.sfo3.digitaloceanspaces.com/Treinamentos/MercadoLivre/Apresentação AULA 3.pdf\" target=\"_blank\" media_type=\"application/pdf\">Clique aqui para baixar o material</a>",
+          "idVideo": "757327185?h=2fecb30ea3",
+          "tituloVideo": "TREINAMENTO_PARTE_03"
+        },
+        {
+          "id": "4",
+          "imagemCapa": "/comunicacoes/imagens/portal_capa_mercadolivre.png",
+          "tituloEvento": "TREINAMENTO - PARTE 04",
+          "dataHoraEvento": "11/10/2022 às 19h00",
+          "assuntoEvento": "Gestão Estratégicas de envios",
+          "descricaoEvento": "Treinamento do Mercado Livre para a Rede ANCORA<br>\n<a href=\"https://redeancora.sfo3.digitaloceanspaces.com/Treinamentos/MercadoLivre/Apresentação AULA 4.pdf\" target=\"_blank\" media_type=\"application/pdf\">Clique aqui para baixar o material</a>",
+          "idVideo": "759900390?h=a493fc74e7",
+          "tituloVideo": "TREINAMENTO_PARTE_04"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "categoria": "Portal de Compras",
+      "videos": [
+        {
+          "id": "5",
+          "imagemCapa": "/comunicacoes/imagens/banner-modal-portal-compras.png",
+          "tituloEvento": "TREINAMENTO - BUSCA 1",
+          "dataHoraEvento": "06/01/2022 às 12h00",
+          "assuntoEvento": "Entendendo os tipos de buscas do novo portal",
+          "descricaoEvento": "Treinamentos do Portal de Compras<br>Busca por termo, busca avançada e busca por placa<br><br>Apresentação de Denis Spalenza",
+          "idVideo": "785269648",
+          "tituloVideo": "PORTAL_DE_COMPRAS_-_BUSCA"
+        },
+        {
+          "id": "6",
+          "imagemCapa": "/comunicacoes/imagens/banner-modal-portal-compras.png",
+          "tituloEvento": "TREINAMENTO - BUSCA 2",
+          "dataHoraEvento": "06/01/2022 às 12h00",
+          "assuntoEvento": "Como os resultados da busca são exibidos",
+          "descricaoEvento": "Treinamentos do Portal de Compras<br><br>Apresentação de Denis Spalenza",
+          "idVideo": "785269619",
+          "tituloVideo": "PORTAL_DE_COMPRAS_-_BUSCA"
+        },
+        {
+          "id": "7",
+          "imagemCapa": "/comunicacoes/imagens/banner-modal-portal-compras.png",
+          "tituloEvento": "TREINAMENTO - BUSCA 3",
+          "dataHoraEvento": "06/01/2022 às 12h00",
+          "assuntoEvento": "Como visualizar detalhes sobre o produto e as aplicações de veículos",
+          "descricaoEvento": "Treinamentos do Portal de Compras<br><br>Apresentação de Denis Spalenza",
+          "idVideo": "785269639",
+          "tituloVideo": "PORTAL_DE_COMPRAS_-_BUSCA"
+        },
+        {
+          "id": "8",
+          "imagemCapa": "/comunicacoes/imagens/banner-modal-portal-compras.png",
+          "tituloEvento": "TREINAMENTO - PEDIDOS 1",
+          "dataHoraEvento": "06/01/2022 às 12h00",
+          "assuntoEvento": "Como acompanhar o andamento dos pedidos",
+          "descricaoEvento": "Treinamentos do Portal de Compras<br/>Aprenda como acompanhar os status de pedido e status de item de pedido, assim como o histórico de movimentação do pedido<br><br>Apresentação de Denis Spalenza",
+          "idVideo": "785286793",
+          "tituloVideo": "PORTAL_DE_COMPRAS_-_PEDIDOS"
+        },
+        {
+          "id": "9",
+          "imagemCapa": "/comunicacoes/imagens/banner-modal-portal-compras.png",
+          "tituloEvento": "TREINAMENTO - PEDIDOS 2",
+          "dataHoraEvento": "06/01/2022 às 12h00",
+          "assuntoEvento": "Como obter as notas fiscais dos pedidos",
+          "descricaoEvento": "Treinamentos do Portal de Compras<br><br>Apresentação de Denis Spalenza",
+          "idVideo": "785279369",
+          "tituloVideo": "PORTAL_DE_COMPRAS_-_NOTAS_FISCAIS"
+        },
+        {
+          "id": "10",
+          "imagemCapa": "/comunicacoes/imagens/banner-modal-portal-compras.png",
+          "tituloEvento": "TREINAMENTO - CARRINHO 5",
+          "dataHoraEvento": "06/01/2022 às 12h00",
+          "assuntoEvento": "Trocando condição de pagamento no carrinho",
+          "descricaoEvento": "Treinamentos do Portal de Compras<br>Aprendas as formas que existem para alterar as condições de pagamento de um ou mais itens do carrinho de<br><br>Apresentação de Denis Spalenza",
+          "idVideo": "786945434",
+          "tituloVideo": "PORTAL_DE_COMPRAS_-_CARRINHO"
+        }
+      ]
+    }
+  ],
+  "colaboradores": [
+    {
+      "id": "1",
+      "nome": "Administrador",
+      "login": "admin",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "2",
+      "nome": "Antonio Henrique Carelli Netto",
+      "login": "antonio.carelli@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "3",
+      "nome": "Guilherme Viana",
+      "login": "guilherme.viana@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "4",
+      "nome": "Jonatas de Moraes Junior",
+      "login": "jonatas.moraes@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "5",
+      "nome": "Rafael Busuth",
+      "login": "rafael.busuth@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "6",
+      "nome": "Denis Colli Spalenza",
+      "login": "denis.spalenza@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "7",
+      "nome": "Rubia Gomes",
+      "login": "rubia.gomes@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "8",
+      "nome": "Luis Marin",
+      "login": "luis.marin@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "9",
+      "nome": "Antonio Neto",
+      "login": "antonio.neto@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "10",
+      "nome": "Rodrigo Nobrega da Silva",
+      "login": "rodrigo.nobrega@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "11",
+      "nome": "Leonardo Gutierrez",
+      "login": "leonardo.gutierrez@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "12",
+      "nome": "Thiago Lima",
+      "login": "thiago.lima@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "13",
+      "nome": "Thais Alves",
+      "login": "thais.alves@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "14",
+      "nome": "José Augusto",
+      "login": "gestor@redeancora.com.br",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "15",
+      "nome": "Colaborador de Teste",
+      "login": "colaborador1@gmail.com",
+      "statusDescricao": "NOVO",
+      "status": "true"
+    },
+    {
+      "id": "16",
+      "nome": "Colaborador de Teste",
+      "login": "colaborador2@gmail.com",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "17",
+      "nome": "João Teste Boas Práticas",
+      "login": "joao",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "18",
+      "nome": "Maria Teste Boas Práticas",
+      "login": "maria",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "19",
+      "nome": "José Teste Boas Práticas",
+      "login": "jose",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "20",
+      "nome": "Carla Teste Boas Práticas",
+      "login": "carla",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "21",
+      "nome": "Neusa Teste Boas Práticas",
+      "login": "neusa",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "22",
+      "nome": "Joana Teste Boas Práticas",
+      "login": "joana",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "23",
+      "nome": "Mário Teste Boas Práticas",
+      "login": "mario",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    },
+    {
+      "id": "24",
+      "nome": "Leonardo Teste Boas Práticas",
+      "login": "leonardo",
+      "statusDescricao": "ATIVO",
+      "status": "true"
+    }
+  ]
+}

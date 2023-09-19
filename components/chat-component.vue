@@ -73,7 +73,7 @@
             ></textarea>
           </div>
 
-          <button class="btn-ghost btn mt-4" @click="emit('ask', question)">
+          <button class="btn btn-ghost mt-4" @click="emit('ask', question)">
             <Icon
               name="mdi:send-outline"
               :disabled="props.loadingSteam || !question"

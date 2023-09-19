@@ -18,13 +18,11 @@
                 leave-from-class="opacity-100"
                 leave-to-class="opacity-0"
               >
-                <!-- PORTAL -->
                 <HomeComponent
                   v-if="app.route === 'home'"
                   @change-view="($event) => handleView($event)"
                 />
 
-                <!-- ADMIN SSO -->
                 <AdminSsoComponent
                   v-else-if="app.route === 'admin_sso' || app.route.includes('admin_sso')"
                   @change-view="($event) => handleView($event)"
@@ -40,7 +38,6 @@
                   @change-view="($event) => handleView($event)"
                 />
 
-                <!-- ASSISTANT -->
                 <ChatComponent
                   v-if="app.route === 'assistant'"
                   :loading-steam="loadingSteam"
@@ -49,7 +46,6 @@
                   @tip="($event) => ask($event)"
                 />
 
-                <!-- MY ACCOUNT -->
                 <MyAccountComponent v-else-if="app.route === 'my_account'" />
               </TransitionGroup>
             </template>
@@ -90,7 +86,6 @@ const fetchUser = () => {
 onMounted(() => {
   Promise.all([
     fetchUser(),
-    // fetchDummy(),
   ]);
 });
 </script>

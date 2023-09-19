@@ -21,14 +21,7 @@
       <slot name="actions"></slot>
     </div>
 
-    <SkeletonComponent
-      v-if="app.loading"
-      :avatar="false"
-      :columns="6"
-      :lines="14"
-    />
-
-    <div v-else class="mt-2 flow-root">
+    <div class="mt-2 flow-root">
       <div class="scrollbar-thumb-gray-300 scrollbar-track-gray-100 -mx-4 max-h-[60vh] overflow-x-auto scrollbar scrollbar-thin sm:-mx-6 lg:-mx-8">
         <div class="py-2 align-middle sm:px-6 lg:px-8">
           <table :class="['divide-gray-300 hidden divide-y rounded md:inline-table md:w-[94vw]']">
@@ -66,7 +59,7 @@
               <tr
                 v-for="tr, i in props.data"
                 :key="`tr_${i}`"
-                :class="[!app.darkMode ? 'hover:bg-slate-100' : 'hover:bg-slate-600']"
+                :class="[!props.darkMode ? 'hover:bg-slate-100' : 'hover:bg-slate-600']"
               >
                 <td
                   v-for="td, j in props.columns"
@@ -117,7 +110,7 @@
                   <div v-if="td.type === 'boolean'">
                     <span
                       v-if="tr[td.field] === true"
-                      :class="[!app.darkMode
+                      :class="[!props.darkMode
                         ? 'inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20'
                         : 'inline-flex items-center rounded-md bg-green-500/10 px-2 py-1 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/20'
                       ]"
@@ -126,7 +119,7 @@
                     </span>
                     <span
                       v-else
-                      :class="[!app.darkMode
+                      :class="[!props.darkMode
                         ? 'inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/20'
                         : 'inline-flex items-center rounded-md bg-red-500/10 px-2 py-1 text-xs font-medium text-red-400 ring-1 ring-inset ring-red-500/20'
                       ]"
@@ -139,7 +132,7 @@
                     <div class="flex gap-x-2">
                       <span
                         v-if="tr[td.field] === true"
-                        :class="[!app.darkMode
+                        :class="[!props.darkMode
                           ? 'inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20'
                           : 'inline-flex items-center rounded-md bg-green-500/10 px-2 py-1 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/20'
                         ]"
@@ -148,7 +141,7 @@
                       </span>
                       <span
                         v-else
-                        :class="[!app.darkMode
+                        :class="[!props.darkMode
                           ? 'inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/20'
                           : 'inline-flex items-center rounded-md bg-red-500/10 px-2 py-1 text-xs font-medium text-red-400 ring-1 ring-inset ring-red-500/20'
                         ]"
@@ -178,7 +171,7 @@
                       :key="`tag-${tag}`"
                       :class="[`bg-[${tag.color}] mx-1 flex w-fit truncate rounded p-0.5 text-xs`]"
                     >
-                      <p :class="[!app.darkMode ? 'bg-white' : 'bg-slate-400', 'rounded p-2 text-xs']">
+                      <p :class="[!props.darkMode ? 'bg-white' : 'bg-slate-400', 'rounded p-2 text-xs']">
                         {{ tag.name }}
                       </p>
                     </span>
@@ -216,7 +209,7 @@
             </tbody>
           </table>
 
-          <div v-if="app.route === 'collaborators'" class="flex flex-col items-center p-4 md:hidden md:p-0">
+          <div v-if="props.route === 'collaborators'" class="flex flex-col items-center p-4 md:hidden md:p-0">
             <div
               v-for="tr, i in props.data"
               :key="`card_${i}`"
@@ -246,7 +239,7 @@
                         Status:
                         <span
                           v-if="tr.status === true"
-                          :class="[!app.darkMode
+                          :class="[!props.darkMode
                             ? 'inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20'
                             : 'inline-flex items-center rounded-md bg-green-500/10 px-2 py-1 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/20'
                           ]"
@@ -255,7 +248,7 @@
                         </span>
                         <span
                           v-else
-                          :class="[!app.darkMode
+                          :class="[!props.darkMode
                             ? 'inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/20'
                             : 'inline-flex items-center rounded-md bg-red-500/10 px-2 py-1 text-xs font-medium text-red-400 ring-1 ring-inset ring-red-500/20'
                           ]"
@@ -274,10 +267,10 @@
 
       <nav
         v-if="props.pagination.actual !== 0"
-        :class="[!app.darkMode ? 'border-gray-200 bg-white' : 'border-sky-600 bg-slate-700', 'my-4 flex justify-between rounded p-2 pb-20']"
+        :class="[!props.darkMode ? 'border-gray-200 bg-white' : 'border-sky-600 bg-slate-700', 'my-4 flex justify-between rounded p-2 pb-20']"
         aria-label="Pagination"
       >
-        <div :class="[!app.darkMode ? 'text-gray-700' : '', 'hidden sm:block']">
+        <div :class="[!props.darkMode ? 'text-gray-700' : '', 'hidden sm:block']">
           <p class="text-sm">
             Página
             <span class="font-medium">
@@ -342,11 +335,8 @@
 </template>
 
 <script setup>
-import { useAppStore } from "~/store/app";
 
 const emits = defineEmits(["next", "prev", "page", "sort"]);
-// const { formatTag } = useFormatTag();
-const app = useAppStore();
 const props = defineProps({
   columns: {
     type: Array,
@@ -358,12 +348,15 @@ const props = defineProps({
     }],
   },
   actionLabel: { type: String, required: false, default: "" },
+  darkMode: { type: Boolean, required: false, default: false },
   action: { type: Function, required: false, default: () => { } },
   actions: { type: Array, required: false, default: () => [] },
   description: { type: String, required: true, default: "" },
   data: { type: Array, required: true, default: () => [] },
   pagination: { type: Object, required: true, default: () => { } },
   title: { type: String, required: true, default: "" },
+  route: { type: String, required: true, default: "" },
+  loading: { type: Boolean, required: false, default: false },
   template: { type: String, required: true, default: "" },
   toggle: { type: Function, required: false, default: () => { } },
 });
@@ -401,5 +394,9 @@ const getVisiblePages = computed(() => {
 const formatInt = (number) => {
   return new Intl.NumberFormat("pt-BR", { style: "decimal" }).format(number);
 };
+
+onMounted(() => {
+  console.log(props);
+});
 
 </script>

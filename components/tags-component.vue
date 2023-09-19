@@ -1,7 +1,8 @@
+<!-- eslint-disable tailwindcss/no-custom-classname -->
 <template>
   <div
     class="tag-input"
-    :class="[{ 'with-count': showCount }, 'text-gray-900 ring-gray-300 mt-2 block rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset focus:ring-2 focus:ring-indigo-600 sm:text-base sm:leading-6']"
+    :class="[{ 'with-count': showCount }, 'mt-2 block rounded-md border-0 py-1.5 pl-3 pr-10 text-slate-900 ring-1 ring-inset ring-slate-300 focus:ring-2 focus:ring-indigo-600 sm:text-base sm:leading-6']"
   >
     <input
       v-model="newTag"

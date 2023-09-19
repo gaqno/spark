@@ -6,7 +6,7 @@
           Filtros
         </h2>
 
-        <button class="btn-ghost btn text-white" @click="app.toggleSlide">
+        <button class="btn btn-ghost text-white" @click="app.toggleSlide">
           <Icon name="mdi:close" />
         </button>
       </div>
@@ -69,7 +69,7 @@
         <button type="button" class="text-sm font-semibold leading-6 text-slate-800">
           Cancelar
         </button>
-        <button type="submit" class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+        <button type="submit" class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
           Salvar
         </button>
       </div>

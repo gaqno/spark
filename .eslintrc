@@ -7,7 +7,6 @@
     "@nuxtjs/eslint-config-typescript",
     "plugin:tailwindcss/recommended"
   ],
-  "plugins": ["vitest"],
   "parserOptions": {
     "parser": "@typescript-eslint/parser",
     "ecmaVersion": 2020

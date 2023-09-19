@@ -1,8 +1,8 @@
 <template>
   <div class="flex h-full flex-col px-8">
     <div class="flex flex-col justify-between gap-4 py-4 md:flex-row">
-      <div class="my-auto flex  flex-col gap-x-4 md:flex-row">
-        <article class="rounded-lg border border-slate-100 bg-white p-6">
+      <div class="my-auto grid grid-cols-1 gap-4 md:grid-cols-4">
+        <article class="col-span-1 rounded-lg border border-slate-100 bg-white p-6">
           <div>
             <p class="truncate text-sm text-slate-500">
               Total de grupos de permissões
@@ -28,7 +28,7 @@
           </div>
         </article>
 
-        <article class="rounded-lg border border-slate-100 bg-white p-6">
+        <article class="col-span-1 rounded-lg border border-slate-100 bg-white p-6">
           <div>
             <p class="truncate text-sm text-slate-500">
               Total de grupos de sistemas
@@ -53,7 +53,7 @@
           </div>
         </article>
 
-        <article class="w-full rounded-lg border border-slate-100 bg-white">
+        <article class="col-span-2 rounded-lg border border-slate-100 bg-white">
           <Bar :data="props.chartData.data" :options="props.chartData.options" class="max-h-[20vh] max-w-lg" />
         </article>
       </div>
@@ -68,9 +68,12 @@
         { label: 'Excluir', icon: 'mdi:trash-can-outline', template: 'delete', action: handleModal },
       ]"
       :columns="columns"
+      :dark-mode="app.darkMode"
       :data="permissionGroups"
       :description="`Você possui ${permissionGroups.length} grupos de permissões cadastrados.`"
+      :loading="app.loading"
       :pagination="pagination"
+      :route="app.route"
       @prev="handlePagination('prev')"
       @next="handlePagination('next')"
       @sort="handlePagination('sort', $event)"

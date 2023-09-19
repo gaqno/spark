@@ -74,8 +74,11 @@
           { label: 'Ações', field: 'actions', sortable: false, details: false, type: 'actions' },
         ]"
         :data="users"
+        :dark-mode="app.darkMode"
         :description="`Você possui ${users.length} usuários cadastrados.`"
         :pagination="pagination"
+        :route="app.route"
+        :loading="app.loading"
         @prev="handlePagination('prev')"
         @next="handlePagination('next')"
         @page="handlePagination('page', $event)"

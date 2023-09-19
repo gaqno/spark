@@ -1,19 +1,18 @@
 import axios from "axios";
-import { useAppStore } from "@/store/app";
+import { UsuarioResponse } from "~/types/response/Usuario";
+import { ApiKeyResponse } from "~/types/response/ApiKey";
+import { UsuariosResponse } from "~/types/response/Usuarios";
+import { ComunicacaoResponse } from "~/types/response/CentralEventos";
+import { GruposPermissoesResponse } from "~/types/response/GruposPermissoes";
+import { ColaboradoresResponse } from "~/types/response/Colaboradores";
+import { EmpresasResponse } from "~/types/response/Empresas";
 
 const callApi = (
   method: string,
   endpoint: string,
   data?: any,
-  loading?: string,
 ) => {
-  const config = useRuntimeConfig();
-  axios.defaults.baseURL = config.public.BASE_API;
-
-  loading === "disableLoading"
-    ? useAppStore().setLoading(false)
-    : useAppStore().setLoading(true);
-
+  axios.defaults.baseURL = process.env.BASE_API;
   return axios({
     method,
     url: axios.defaults.baseURL + endpoint,
@@ -27,16 +26,7 @@ const callApi = (
     },
   })
     .then((response) => {
-      useAppStore().setLoading(false);
       return response.data;
-    })
-    .catch((err) => {
-      useAppStore().setLoading(false);
-      useAppStore().setToast({
-        show: true,
-        title: "Erro",
-        content: err,
-      });
     });
 };
 
@@ -62,19 +52,19 @@ export const getUsersByFilter = (params: any) => {
 
 // ANCORA
 
-export const getUser = (params: any) => {
+export const getUser = (params: any): Promise<UsuarioResponse> => {
   return callApi("GET", "/portal/api/usuario", { params });
 };
 
-export const getUsers = (params: any) => {
+export const getUsers = (params: any): Promise<UsuariosResponse[]> => {
   return callApi("GET", "/portal/api/usuarios", { params });
 };
 
-export const getApiKeys = (params: any) => {
+export const getApiKeys = (params: any): Promise<ApiKeyResponse[]> => {
   return callApi("GET", "/portal/api/apikey", { params });
 };
 
-export const getPermissionGroups = (params: any) => {
+export const getPermissionGroups = (params: any): Promise<GruposPermissoesResponse[]> => {
   return callApi("GET", "/portal/api/perfil", { params });
 };
 
@@ -90,15 +80,15 @@ export const postSystem = (body: any) => {
   return callApi("POST", "/portal/api/sistema", { body });
 };
 
-export const getCompanies = (params: any) => {
+export const getCompanies = (params: any): Promise<EmpresasResponse[]> => {
   return callApi("GET", "/portal/api/empresas", { params });
 };
 
-export const getCommunications = (params: any) => {
+export const getCommunications = (params: any): Promise<ComunicacaoResponse[]> => {
   return callApi("GET", "/portal/api/central-eventos", { params });
 };
 
-export const getCollaborators = (params: any) => {
+export const getCollaborators = (params: any): Promise<ColaboradoresResponse[]> => {
   return callApi("GET", "/portal/api/colaboradores", { params });
 };
 

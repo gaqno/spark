@@ -92,8 +92,11 @@
       ]"
       :columns="columns"
       :data="apiKeys"
+      :dark-mode="app.darkMode"
       :description="`Você possui ${apiKeys.length} grupos de permissões cadastrados.`"
+      :loading="app.loading"
       :pagination="pagination"
+      :route="app.route"
       @prev="handlePagination('prev')"
       @next="handlePagination('next')"
       @sort="handlePagination('sort', $event)"
@@ -213,17 +216,6 @@ const fetchApiKeys = () => {
           prefixo: i.prefixo,
           status: i.status === "A",
         }));
-
-        // const obj = {
-        //   labels: apiKeys.value.map(i => i.nomeSistema).filter((v, i, a) => a.indexOf(v) === i && v),
-        //   datasets: [
-        //     {
-        //       backgroundColor: getRandomHEX,
-        //       data: apiKeys.value.map(i => i.nomePerfil),
-        //     },
-        //   ],
-        // };
-        // apiKeysChart.value = obj;
         resolve(res);
       })
       .catch((err) => {
