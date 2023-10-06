@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white">
     <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
-      <main class="flex flex-col items-center justify-center p-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
+      <main class="flex min-h-screen flex-col items-center justify-center p-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
         <div class="mb-auto mr-auto flex">
           <img src="@/static/img/logo.png">
         </div>
@@ -79,7 +79,7 @@
         </div>
       </main>
 
-      <section class="relative hidden h-32 items-end bg-slate-900 lg:col-span-5 lg:flex lg:h-full xl:col-span-6">
+      <section class="relative hidden h-full items-end bg-slate-900 lg:col-span-5 lg:flex lg:h-full xl:col-span-6">
         <img alt="Night" src="@/static/img/login_banner.png" class=" absolute inset-0 h-full w-full">
       </section>
     </div>
